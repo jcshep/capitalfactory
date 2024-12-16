@@ -1,0 +1,21 @@
+.slider { opacity: 0; transition: opacity .3s ease; transform: translateY(70px); }
+.slider.slick-initialized { opacity: 1; }
+.slider .slick-track { gap: 20px; display: flex; }
+.slider .slick-list { margin: 0 -20px; overflow: visible; }
+.slider button:before { content: none; }
+.slider button { top: calc(100% + 30px); right: 0; width: 35px; height: 35px; }
+.slider .slick-prev { right: 50px; left: unset; }
+.slider .slick-prev svg { transform: scaleX(-1); }
+.slider .slick-disabled { pointer-events: none; }
+.slider .slick-disabled path { opacity: .6; }
+.gallery .image-bg > img { max-height: 482px; }
+
+
+@media only screen and (max-width:1199px) {
+  .gallery .image-bg > img { max-height: 350px; }
+}
+
+@media only screen and (max-width:992px) {
+  .gallery .image-bg > img { max-height: 180px; }
+  .slider { transform: translateY(0); }
+}
