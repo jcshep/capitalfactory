@@ -1,0 +1,336 @@
+[
+    {
+        "key": "group_5f2872e9c03d9",
+        "title": "Review Page",
+        "fields": [
+            {
+                "key": "field_5f2874a868152",
+                "label": "Logo",
+                "name": "logo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5f2875a18898a",
+                "label": "Intro Text",
+                "name": "intro_text",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5f29870a0dd7f",
+                "label": "Gravity Form Selection",
+                "name": "review_initiation_form",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "6": "Bari Trail Blazers",
+                    "2": "Contact Us",
+                    "7": "Facebook Live",
+                    "4": "General Surgery",
+                    "8": "Online Seminar Registration",
+                    "9": "Review Our Practice",
+                    "1": "Sidebar Contact",
+                    "3": "Submit a Testimonial",
+                    "10": "Visit Feedback"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5f298e6e0e908",
+                "label": "From Email",
+                "name": "from_email",
+                "aria-label": "",
+                "type": "email",
+                "instructions": "All review email notifications will come from this address.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_5f2998389dea2",
+                "label": "Contact Form Link",
+                "name": "contact_form_link",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Enter the link to direct people if they click \"Not Satisfied\"",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5f29946ad8edc",
+                "label": "Accent Color",
+                "name": "accent_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": false,
+                "return_format": "string"
+            },
+            {
+                "key": "field_5f2985efe38c6",
+                "label": "Practioners",
+                "name": "review_forms",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add Form",
+                "sub_fields": [
+                    {
+                        "key": "field_5f29884666da2",
+                        "label": "Practitioner Name",
+                        "name": "practitioner_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_5f2985efe38c6"
+                    },
+                    {
+                        "key": "field_5f2985ffe38c7",
+                        "label": "Review Links",
+                        "name": "review_links",
+                        "aria-label": "",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "Add Row",
+                        "sub_fields": [
+                            {
+                                "key": "field_5f2986467e301",
+                                "label": "Review Button Link Text",
+                                "name": "review_button_link_text",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "parent_repeater": "field_5f2985ffe38c7"
+                            },
+                            {
+                                "key": "field_5f29864d7e302",
+                                "label": "Review Button URL",
+                                "name": "review_button_url",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "parent_repeater": "field_5f2985ffe38c7"
+                            }
+                        ],
+                        "rows_per_page": 20,
+                        "parent_repeater": "field_5f2985efe38c6"
+                    },
+                    {
+                        "key": "field_5f29866f5aee0",
+                        "label": "Review Email Subject Line",
+                        "name": "review_email_subject_line",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "parent_repeater": "field_5f2985efe38c6"
+                    },
+                    {
+                        "key": "field_5f2986735aee1",
+                        "label": "Review Email Body Copy",
+                        "name": "review_email_body_copy",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "This copy will go above the review buttons",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "",
+                        "parent_repeater": "field_5f2985efe38c6"
+                    },
+                    {
+                        "key": "field_5f2986865aee2",
+                        "label": "Review Text Message Copy",
+                        "name": "review_text_message_copy",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "This copy will go above the review links",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "",
+                        "parent_repeater": "field_5f2985efe38c6"
+                    }
+                ],
+                "rows_per_page": 20
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "review\/page-review.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

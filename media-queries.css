@@ -1,0 +1,26 @@
+
+
+
+@media only screen and (max-width:1199px) {}
+
+@media only screen and (max-width:991px) {
+
+
+
+}
+
+
+@media (max-width: 767px) {
+
+
+	.dropdown:hover>.dropdown-menu {display: block; }
+	.dropdown-menu {background: rgba(0,0,0,0.5); visibility: visible; top: 95%; padding: 0; margin: 0;}
+	.dropdown-menu li {padding: 0 !important; margin: 0 !important;}
+	.dropdown-menu li:hover a {background: transparent;}
+	.dropdown-menu li:hover a span {opacity: 1;}
+	.dropdown-menu li a {padding: 5px 15px; display: block; margin: 0;}
+	.dropdown-menu li a span {color: #FFF !important; opacity: 0.8; font-size: 12px;}
+
+
+
+}

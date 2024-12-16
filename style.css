@@ -1,0 +1,126 @@
+/*
+Theme Name: Capital Factory
+Description: Template
+Version: 1.0
+Author: Maven Creative
+*/
+
+
+@import "css/bootstrap.min.css";
+
+
+
+html {}
+body {background: #f2a902; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;}
+body.slide-out-open {right: 60%;}
+a {text-decoration: none; color: #00022b;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	transition: all .3s linear;
+}
+a:hover {text-decoration: none;}
+.clear {clear: both;}
+.alignleft {float: left; margin: 0 20px 20px 0;}
+.alignright {float: right; margin: 0 0 20px 20px;}
+.v-align {display: flex; align-items: center; align-content:center; flex-direction: column; justify-content: center}
+img {max-width: 100%;}
+
+.btn {font-size: 15px; font-weight: 500; padding-left: 25px; padding-right: 25px; font-weight: 600}
+.btn-white {background: #f8f7f1; border-radius: 100px; }
+
+.btn-primary {background: #f2a902; border-radius: 100px; border:2px solid #f2a902; color: #000; font-size: 17px; padding: 10px 40px; letter-spacing: 0.5px}
+.btn-outline-yellow {border:3px solid #f2a902; border-radius: 100px; color: #000; font-size: 18px; padding: 10px 40px; letter-spacing: 0.5px}
+.btn-md {font-family: 'Heading Now 1'; font-size: 12px; text-transform: uppercase; letter-spacing: 1px}
+
+h1, h2, h3, h4, h5 {}
+
+.spacer-xs {height: 5px}
+.spacer-sm {height: 15px}
+.spacer-md {height: 30px}
+.spacer-lg {height: 45px}
+.spacer-xl {height: 60px}
+.spacer-xxl {height: 90px}
+
+p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.7;}
+
+.p-45 {padding: 45px;}
+.p-60 {padding: 60px;}
+.p-75 {padding: 75px;}
+
+.rounded-corners-1 {border-radius: 72px; overflow: hidden; }
+.rounded-corners-2 {border-radius: 20px;}
+
+.display-xl {font-family: 'Heading Now 5'; font-size: 82px; text-transform: uppercase; line-height: 0.9}
+.display-lg {font-family: 'Heading Now 10'; font-size: 32px}
+.display-md {font-family: 'Heading Now 2'; font-size: 24px; text-transform: uppercase;}
+.display-sm {font-family: 'Heading Now 7'; font-size: 42px; letter-spacing: 1px; font-weight: 500; text-transform: uppercase;}
+.display-xs {font-family: 'Heading Now 1'; font-size: 12px; letter-spacing: 1px; font-weight: 500}
+
+
+.text-xl {font-size: 20px; letter-spacing: 0.2px}
+.text-lg {font-size: 16px; letter-spacing: 0.2px}
+.text-md {font-size: 14px; letter-spacing: 0.2px}
+.text-sm {font-size: 12px; letter-spacing: 0.2px}
+
+section.spacing-bottom-extra-large {margin-bottom: 120px;}
+section.spacing-bottom-large {margin-bottom: 90px;}
+section.spacing-bottom-medium {margin-bottom: 60px;}
+
+
+text-gray {color: #0B1E15}
+
+.tag {border:3px solid #000000; display: inline-block; padding: 4px 25px; text-transform: uppercase; font-weight: 400; font-size: 12px; letter-spacing: 1px; border-radius: 100px; font-family: 'Heading Now 2';}
+.tag.bd-white {border-color:#FFF;}
+
+.container {position: relative; max-width: 1445px}
+
+header {position: fixed; width: 100%; top: 0; z-index: 10}
+header .container {padding: 15px 45px}
+header .logo {max-width: 163px}
+
+.main-menu {background: rgba(0,0,0,0.5); border-radius: 100px; font-weight: 500; margin-top: 25px;}
+.main-menu ul {margin: 0; padding: 0; display: flex; justify-content: space-between;}
+.main-menu ul li {list-style: none; padding: 7px 20px;}
+.main-menu ul li a {display: block; color: #FFF; font-size: 15px; padding: 0 10px;}
+.main-menu ul li .sub-menu {display: none}
+
+.menu-right {margin-top: 25px;}
+.menu-right .btn {height: 36px; text-transform: uppercase; line-height: 36px; padding: 0 20px;}
+.menu-right .search-btn {padding-left: 0; padding-right: 0; width: 36px; text-align: }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

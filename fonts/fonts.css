@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Heading Now 1';
+    src: url('HeadingNowTrial-85Medium.woff2') format('woff2'),
+        url('HeadingNowTrial-85Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 2';
+    src: url('HeadingNowTrial-86Bold.woff2') format('woff2'),
+        url('HeadingNowTrial-86Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 3';
+    src: url('HeadingNowTrial-76Bold.woff2') format('woff2'),
+        url('HeadingNowTrial-76Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 4';
+    src: url('HeadingNowTrial-96Bold.woff2') format('woff2'),
+        url('HeadingNowTrial-96Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 5';
+    src: url('HeadingNowTrial-66Bold.woff2') format('woff2'),
+        url('HeadingNowTrial-66Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 6';
+    src: url('HeadingNowTrial-36Bold.woff2') format('woff2'),
+        url('HeadingNowTrial-36Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 7';
+    src: url('HeadingNowTrial-45Medium.woff2') format('woff2'),
+        url('HeadingNowTrial-45Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 8';
+    src: url('HeadingNowTrial-47Extrabold.woff2') format('woff2'),
+        url('HeadingNowTrial-47Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 9';
+    src: url('HeadingNowTrial-55Medium.woff2') format('woff2'),
+        url('HeadingNowTrial-55Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 10';
+    src: url('HeadingNowTrial-56Bold.woff') format('woff2'),
+        url('HeadingNowTrial-56Bold.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

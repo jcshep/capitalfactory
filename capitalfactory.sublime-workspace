@@ -1,0 +1,1844 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gettempl",
+				"get_template_directory_uri"
+			],
+			[
+				"ob",
+				"object-fit"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"get",
+				"get_template_part"
+			],
+			[
+				"get_temp",
+				"get_template_part"
+			],
+			[
+				"d",
+				"d-flex"
+			],
+			[
+				"ff",
+				"font-family"
+			],
+			[
+				"is_sin",
+				"is_singular"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"compl",
+				"completed_courses"
+			],
+			[
+				"colo",
+				"colorArray"
+			],
+			[
+				"col",
+				"colorArray"
+			],
+			[
+				"html",
+				"htmlentities()"
+			],
+			[
+				"inl",
+				"inline-flex"
+			],
+			[
+				"api",
+				"apimodel"
+			],
+			[
+				"in_",
+				"in_array()"
+			],
+			[
+				"ne",
+				"nearby_dealers"
+			],
+			[
+				"implo",
+				"implode()"
+			],
+			[
+				"secon",
+				"secondfilename"
+			],
+			[
+				"field",
+				"field_values"
+			],
+			[
+				"str",
+				"str_replace"
+			],
+			[
+				"boat",
+				"boat_object"
+			],
+			[
+				"fiel",
+				"field_values"
+			],
+			[
+				"inv",
+				"inventory_response"
+			],
+			[
+				"query_v",
+				"set_query_var"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"_",
+				"_REQUEST"
+			],
+			[
+				"conf",
+				"configuration_text"
+			],
+			[
+				"file",
+				"file_path"
+			],
+			[
+				"d-m",
+				"d-md-block"
+			],
+			[
+				"pdb",
+				"padding-bottom"
+			],
+			[
+				"d-",
+				"d-md-block"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"traf",
+				"transform"
+			],
+			[
+				"user",
+				"user_country"
+			],
+			[
+				"is",
+				"is_page"
+			],
+			[
+				"tranfo",
+				"transform"
+			],
+			[
+				"tran",
+				"transform-origin"
+			],
+			[
+				"explo",
+				"explode()"
+			],
+			[
+				"ad",
+				"address"
+			],
+			[
+				"get_site",
+				"get_site_url"
+			],
+			[
+				"pag",
+				"page_title"
+			],
+			[
+				"js",
+				"json_content"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"medi",
+				"medium_large"
+			],
+			[
+				"d-md",
+				"d-md-none"
+			],
+			[
+				"nth",
+				"nth-child"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"obj",
+				"object-position"
+			],
+			[
+				"su",
+				"subGroup"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"icon-c",
+				"icon-chevron-down"
+			],
+			[
+				"trans",
+				"translateY()"
+			],
+			[
+				"remove",
+				"removeOption"
+			],
+			[
+				"subg",
+				"subGroups"
+			],
+			[
+				"end",
+				"endforeach"
+			],
+			[
+				"for",
+				"for\tfor …"
+			],
+			[
+				"tt",
+				"text-transform"
+			],
+			[
+				"strrepl",
+				"str_replace()"
+			],
+			[
+				"un",
+				"unremovable"
+			],
+			[
+				"sal",
+				"salesRule"
+			],
+			[
+				"chec",
+				"checkbox"
+			],
+			[
+				"firs",
+				"firstConditionMet"
+			],
+			[
+				"min",
+				"min_price_range"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"bdrs",
+				"border-radius"
+			],
+			[
+				"hull",
+				"hull_bottom"
+			],
+			[
+				"dealer",
+				"dealer_ids"
+			],
+			[
+				"op",
+				"optionGroup"
+			],
+			[
+				"option",
+				"optionList"
+			],
+			[
+				"sale",
+				"salesRules"
+			],
+			[
+				"jso",
+				"json_decode"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"bg",
+				"background"
+			],
+			[
+				"transf",
+				"transform"
+			],
+			[
+				"quo",
+				"quoteOption"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"get_templat",
+				"get_template_directory_uri"
+			],
+			[
+				"array_ke",
+				"array_key_exists()"
+			],
+			[
+				"post",
+				"posts_per_page"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"organ",
+				"organization_code"
+			],
+			[
+				"pd",
+				"padding"
+			],
+			[
+				"second",
+				"secondbase"
+			],
+			[
+				"visul",
+				"visual-upholstery-1"
+			],
+			[
+				"ta",
+				"text-align"
+			],
+			[
+				"mg",
+				"margin"
+			],
+			[
+				"spec",
+				"specValues"
+			],
+			[
+				"color",
+				"colorGroup"
+			],
+			[
+				"bdl",
+				"border-left"
+			],
+			[
+				"strto",
+				"strtoupper()"
+			],
+			[
+				"dark",
+				"dark-teal"
+			],
+			[
+				"upd",
+				"updatePrice"
+			],
+			[
+				"sales",
+				"salesRulesConditions"
+			],
+			[
+				"valu",
+				"value_standard"
+			],
+			[
+				"fw",
+				"font-weight"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"has",
+				"has_ultimate_option"
+			],
+			[
+				"pl",
+				"padding-left"
+			],
+			[
+				"setc",
+				"setcookie()"
+			],
+			[
+				"sub",
+				"SubGroup"
+			],
+			[
+				"strrep",
+				"str_replace()"
+			],
+			[
+				"subgro",
+				"subgroup-msrp"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"hidde",
+				"hidden-sm"
+			],
+			[
+				"background-position",
+				"background-position-x"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"swi",
+				"switch\tswitch …"
+			],
+			[
+				"wp",
+				"wpurl\tWordpress Blog Info URL"
+			],
+			[
+				"whi",
+				"while\twhile …"
+			],
+			[
+				"foreac",
+				"foreach\tforeach …"
+			],
+			[
+				"el",
+				"elephant-conservation"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"img-1",
+				"img-14"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"hid",
+				"hidden-md"
+			],
+			[
+				"tech",
+				"technologies"
+			],
+			[
+				"tr",
+				"translateY()"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"bet",
+				"better-world"
+			],
+			[
+				"tele",
+				"Telegraf"
+			],
+			[
+				"tex",
+				"text-center"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"offset",
+				"offset-md-1"
+			],
+			[
+				"ord",
+				"order-md-1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"liv",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"respon",
+				"Snippet: Bootstrap 4 Responsive Embed"
+			],
+			[
+				"cla",
+				"Snippet: clamp"
+			],
+			[
+				"resp",
+				"Snippet: Bootstrap 4 Responsive Embed"
+			],
+			[
+				"cl",
+				"Snippet: clamp"
+			],
+			[
+				"respo",
+				"Snippet: Bootstrap 4 Responsive Embed"
+			],
+			[
+				"href",
+				"Snippet: Div onclick href"
+			],
+			[
+				"clam",
+				"Snippet: clamp"
+			],
+			[
+				"res",
+				"Snippet: Bootstrap 4 Responsive Embed"
+			],
+			[
+				"boot",
+				"Snippet: Bootstrap Modal"
+			],
+			[
+				"boots",
+				"Snippet: Bootstrap Modal"
+			],
+			[
+				"bootstr",
+				"Snippet: Bootstrap Modal"
+			],
+			[
+				"c",
+				"Snippet: clamp"
+			],
+			[
+				"clamp",
+				"Snippet: clamp"
+			],
+			[
+				"li",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"liquid ",
+				"Snippet: liquid for loop"
+			],
+			[
+				"liqui",
+				"Set Syntax: Liquid Markdown"
+			],
+			[
+				"pack insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack add",
+				"Package Control: Add Repository"
+			],
+			[
+				"pack li",
+				"Package Control: List Packages"
+			],
+			[
+				"live",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"pack inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"pack ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac e",
+				"Package Control: Enable Package"
+			],
+			[
+				"pac dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"packdi",
+				"Package Control: Disable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack en",
+				"Package Control: Enable Package"
+			],
+			[
+				"remov ",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"UI: Select Color Scheme"
+			],
+			[
+				"git",
+				"Git Conflict Resolver: Find Next Conflict"
+			],
+			[
+				"gi",
+				"Git Conflict Resolver: Keep Theirs"
+			],
+			[
+				"diab pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"com",
+				"Snippet: Comment - HTML section"
+			],
+			[
+				"comm",
+				"Snippet: Comment - HTML section"
+			],
+			[
+				"git ",
+				"Git Conflict Resolver: Keep Ours"
+			],
+			[
+				"find ",
+				"Git Conflict Resolver: Find Next Conflict"
+			],
+			[
+				"keep",
+				"Git Conflict Resolver: Keep Theirs"
+			],
+			[
+				"find",
+				"Git Conflict Resolver: Find Next Conflict"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"g",
+				"Gremlins: Highlight All"
+			],
+			[
+				"grem",
+				"Gremlins: Highlight All"
+			],
+			[
+				"instal pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"hom",
+				"Snippet: Comment - HTML comment"
+			],
+			[
+				"conf",
+				"Git Conflict Resolver: Keep Ours"
+			],
+			[
+				"pacdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"comm php",
+				"Snippet: Comment - Subsection Python comment"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"commsection",
+				"Snippet: Comment - Section footer Python comment"
+			],
+			[
+				"comm blcok",
+				"Snippet: Comment - Block style comment"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"padis",
+				"Package Control: Disable Package"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packrm",
+				"Package Control: Remove Package"
+			],
+			[
+				"prem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packrme",
+				"Package Control: Remove Package"
+			],
+			[
+				"painst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa add",
+				"Package Control: Add Channel"
+			],
+			[
+				"packag d",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"updat pack",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pac en",
+				"Package Control: Enable Package"
+			],
+			[
+				"disb",
+				"Package Control: Disable Package"
+			],
+			[
+				"packd",
+				"Package Control: Disable Package"
+			],
+			[
+				"syn",
+				"Set Syntax: PHP"
+			],
+			[
+				"em",
+				"Set Syntax: MATLAB"
+			],
+			[
+				"pack rem",
+				"Package Control: Remove Repository"
+			],
+			[
+				"packa remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"ds",
+				"Package Control: Disable Package"
+			],
+			[
+				"emm",
+				"Emmet: Merge Lines"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa lis",
+				"Package Control: List Packages"
+			],
+			[
+				"pack lis",
+				"Package Control: List Packages"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"dsiab",
+				"Package Control: Disable Package"
+			],
+			[
+				"disab ",
+				"Package Control: Disable Package"
+			],
+			[
+				"syn php",
+				"Set Syntax: PHP"
+			],
+			[
+				"kee",
+				"Git Conflict Resolver: Keep Theirs"
+			],
+			[
+				"packadsi",
+				"Package Control: Disable Package"
+			],
+			[
+				"comm css",
+				"Snippet: Comment - Subsection comment"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"add pack",
+				"Package Control: Add Repository"
+			],
+			[
+				"query",
+				"Snippet: jQuery Document Ready Function"
+			],
+			[
+				"project",
+				"Project: Edit Project"
+			],
+			[
+				"pab",
+				"Package Control: Enable Package"
+			],
+			[
+				"get conf",
+				"Git Conflict Resolver: Find Next Conflict"
+			],
+			[
+				"liverel",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"git con",
+				"Git Conflict Resolver: Keep Theirs"
+			],
+			[
+				"e",
+				"Package Control: Enable Package"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"color sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"iv",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"emmet",
+				"Emmet: Balance (inward)"
+			],
+			[
+				"packat up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"prefer",
+				"Preferences: Settings"
+			],
+			[
+				"comm ",
+				"Snippet: Comment - Full section Python comment"
+			],
+			[
+				"livere",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"prett",
+				"JsPrettier: Format Code"
+			],
+			[
+				"pret",
+				"JsPrettier: Format Code"
+			],
+			[
+				"pre",
+				"JsPrettier: Format Code"
+			],
+			[
+				"js",
+				"JsPrettier: Format Code"
+			],
+			[
+				"jspretti",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"packag ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack bro",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory"
+	],
+	"file_history":
+	[
+		"/Users/john/Creative/Code/Sampa/wp-content/themes/sampa22/functions.php",
+		"/Users/john/Creative/Code/Spark/wp-content/themes/spark/functions.php",
+		"/Users/john/Creative/Code/Sampa/wp-content/themes/sampa22/blog/blog-functions.php",
+		"/Users/john/Library/Caches/Transmit/BEB1760A-7BF5-426F-B30D-E56FA77CE86F/72.52.191.147/home/sampadocs/public_html/wp-config.php",
+		"/Users/john/Creative/Code/VIPSurg/wp-content/themes/vipsurg/page.php",
+		"/Users/john/Creative/Code/VIPSurg/wp-content/themes/vipsurg/page-home.php",
+		"/Users/john/Creative/Code/VIPSurg/wp-content/themes/vipsurg/functions.php",
+		"/Users/john/Creative/Code/VIPSurg/wp-content/themes/vipsurg/sidebar.php",
+		"/Users/john/Creative/Code/VIPSurg/wp-content/themes/vipsurg/style.css",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/retail-configurator-submission.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/form-submission.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/dealer-configurator-submission.php",
+		"/Users/john/Library/Caches/Transmit/71DB75D3-9257-4E22-8A64-5C7BC85228F0/72.52.191.147/home/vipsurg/public_html/stage/wp-config.php",
+		"/Users/john/Library/Caches/Transmit/6AEF682A-5DB0-4495-802E-452336EC3EB0/72.52.191.147/home/atl/public_html/wp-config.php",
+		"/Users/john/Library/Caches/Transmit/14979DBF-32F8-4C83-A1D8-3205E3A4DEEE/72.52.191.147/home/vipsurg/public_html/wp-config.php",
+		"/Users/john/Library/Caches/Transmit/09EBFCCD-AD30-410C-924B-EF4648740E68/72.52.191.147/home/vipsurg/public_html/wp-content/themes/vipsurg/js/theme.js",
+		"/Users/john/Library/Caches/Transmit/5969429A-DAC8-480E-A8E3-FDB49A8D89D0/72.52.191.147/home/vipsurg/public_html/wp-content/themes/vipsurg/style.css",
+		"/Users/john/Library/Caches/Transmit/B04FD9E4-1D0E-4565-8BC0-0BC0A98F5FAC/72.52.191.147/home/vipsurg/public_html/wp-content/themes/vipsurg/header.php",
+		"/Users/john/Library/Caches/Transmit/AB4722AC-756F-4A4F-93A2-BD3C1C04892A/72.52.191.147/home/vipsurg/public_html/wp-content/themes/vipsurg/functions.php",
+		"/Users/john/Library/Caches/Transmit/B431448C-248A-44F4-AD85-FDC72EF859E3/72.52.191.147/home/vipsurg/public_html/wp-content/themes/vipsurg/sidebar.php",
+		"/Users/john/Library/Caches/Transmit/69C1624A-B1F0-434C-8C97-0E949BE140F8/72.52.191.147/home/vipsurg/public_html/wp-content/themes/vipsurg/page-home.php",
+		"/Users/john/Library/Caches/Transmit/B9BA3BA3-7AE4-4FD0-B0B0-0F384252E83F/72.52.191.147/home/vipsurg/public_html/wp-content/themes/vipsurg/sidebar.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/modules/centered_text_with_image_background.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/modules/centered_text_with_image_background.css",
+		"/Users/john/Creative/Code/GAUrology/wp-content/themes/enfold-child/2024/lp-ngpg.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/builder.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/style.css",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/modules/hero.css",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/modules/hero.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/js/acf-admin-custom.js",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/functions.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/fonts/fonts.css",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/header.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/page-styles.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/page.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/fonts/stylesheet.css",
+		"/Users/john/Creative/Code/Enveda/wp-content/themes/enveda/page-platform.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-content/themes/capitalfactory/page-home.php",
+		"/Users/john/Creative/Code/CapitalFactory/wp-config.php",
+		"/Users/john/Creative/Code/Colossal/wp-content/themes/colossal/style.css",
+		"/Users/john/Creative/Code/GAUrology/wp-content/themes/enfold-child/2024/prostate-cancer.css",
+		"/Users/john/Library/Caches/Transmit/076E1CF3-386C-4385-8E7B-99828BDC1564/72.52.191.147/home/premierortho/public_html/wp-content/themes/premierortho/locations.php",
+		"/Users/john/Creative/Code/GAUrology/wp-content/themes/enfold-child/2024/style.css",
+		"/Users/john/Creative/Code/ABSS/wp-content/themes/abss24/header.php",
+		"/Users/john/Creative/Code/ABSS/wp-content/themes/abss24/media-queries.css",
+		"/Users/john/Creative/Code/ABSS/wp-content/themes/abss24/page-home.php",
+		"/Users/john/Creative/Code/ABSS/wp-content/themes/abss24/style.css",
+		"/Users/john/Creative/Code/ABSS/wp-content/themes/abss24/footer.php",
+		"/Users/john/Creative/Code/ABSS/wp-content/themes/abss24/page.php",
+		"/Users/john/Library/Caches/Transmit/214FADDC-BA94-4B2E-AD7B-69D0C24D8155/72.52.191.147/home/absspecialists/public_html/wp-content/themes/ABSS2020/sidebar.php",
+		"/Users/john/Library/Caches/Transmit/C0179EBD-19E9-4623-9BFE-A8306F2E311D/72.52.191.147/home/absspecialists/public_html/wp-content/themes/ABSS2020/page.php",
+		"/Users/john/Library/Caches/Transmit/9274F26B-B36C-460D-AEF0-CD88D935C217/u9q.ea3.myftpupload.com/home/ijkdcwHQx5Hw=Y/html/wp-content/themes/nvcardiology/style.css",
+		"/Users/john/Library/Caches/Transmit/CB418133-4B5A-4587-990B-2E8341957495/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/page.php",
+		"/Users/john/Library/Caches/Transmit/5D7E79F9-9D93-4AF9-93F4-0A0678B8C9BF/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/page-builder.php",
+		"/Users/john/Library/Caches/Transmit/F9C3BF60-4843-4598-B108-838B3A6ED349/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/page.php",
+		"/Users/john/Library/Caches/Transmit/F40AB150-FA27-46BA-9D5F-BC9011C47ADC/u9q.ea3.myftpupload.com/home/ijkdcwHQx5Hw=Y/html/wp-content/themes/nvcardiology/style.css",
+		"/Users/john/Library/Caches/Transmit/ACBB651E-684E-459C-88F9-B62FC30028A3/72.52.191.147/home/nevadacardiology/public_html/wp-content/themes/nvcardiology/style.css",
+		"/Users/john/Library/Caches/Transmit/B4F04EC2-9ABF-4674-8498-F6BF62FC6C20/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/sidebar.php",
+		"/Users/john/Library/Caches/Transmit/9E1AFA1E-6317-4B16-A4C9-B667428BA788/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/style.css",
+		"/Users/john/Library/Caches/Transmit/2F09587B-3FA2-456F-A3C5-643571B86DFC/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/map/mapdata.js",
+		"/Users/john/Library/Caches/Transmit/1F10878F-69D6-4BCC-967A-11A81A2BF12B/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/index.php",
+		"/Users/john/Library/Caches/Transmit/987D8BEE-1936-4C3D-BEF9-0CF33DA1D277/198.199.121.43/var/www/gcds/application/views/join.php",
+		"/Users/john/Library/Caches/Transmit/F4671F89-CDDF-45C5-B0EC-B6F33A64FEBA/198.199.121.43/var/www/gcds/css/join-page.css",
+		"/Users/john/Library/Caches/Transmit/38B44F29-E03A-4F1F-BBE1-1771E9215479/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/style.css",
+		"/Users/john/Library/Caches/Transmit/32812C45-2630-4A12-BED5-7C9A54097928/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/responsive.css",
+		"/Users/john/Library/Caches/Transmit/B2AB84D0-F42C-4FEC-AADF-89DAB8A2E167/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/notification/notification.php",
+		"/Users/john/Library/Caches/Transmit/BE82EDAE-0F6B-4AAA-BA42-80EFEDAFDC51/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/header.php",
+		"/Users/john/Creative/Code/Spark/wp-content/themes/spark/fortris-page-builder/modules/accordion.php",
+		"/Users/john/Library/Caches/Transmit/93D36376-4F99-4D17-A626-3CA09029264F/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/functions.php",
+		"/Users/john/Library/Caches/Transmit/AA86AE69-5899-4F9A-A3BE-830B5088FE18/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/fortris-page-builder/custom-fields.php",
+		"/Users/john/Creative/Code/Spark/wp-content/themes/spark/header.php",
+		"/Users/john/Library/Caches/Transmit/30C3E130-7E03-497B-9161-687091CF5588/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/fortris-page-builder/page-builder.css",
+		"/Users/john/Library/Caches/Transmit/D980100F-F62A-46D7-AA48-86728EB5BEB1/72.52.191.147/home/dcurolog/public_html/wp-content/themes/DCUrology/page-builder.php",
+		"/Users/john/Library/Caches/Transmit/D71B795C-7ACA-4E62-B245-8042285111BD/72.52.191.147/home/dcurolog/public_html/wp-content/themes/DCUrology/page-robotic.php",
+		"/Users/john/Library/Caches/Transmit/58DFE3D3-307C-4E20-830C-8F2E443BD726/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/page-builder.php",
+		"/Users/john/Library/Caches/Transmit/342969E4-1466-4073-8896-8CD4FDAFAC98/dcurology.sftp.wpengine.com/wp-content/themes/DCUrology/page.php",
+		"/Users/john/Library/Caches/Transmit/5C77C983-DB6E-4AEF-8275-802E076A81B2/72.52.191.147/home/dcurolog/public_html/wp-content/themes/DCUrology/page-landing-2.php",
+		"/Users/john/Library/Caches/Transmit/9AA850D7-AF08-4C92-B770-4E5B3092486B/72.52.191.147/home/dcurolog/public_html/wp-content/themes/DCUrology/page-robotic.php",
+		"/Users/john/Library/Caches/Transmit/D2205B83-44A7-466F-8EDD-6E634B6772A9/72.52.191.147/home/dcurolog/public_html/wp-content/themes/DCUrology/page.php",
+		"/Users/john/Library/Caches/Transmit/9C1B4C40-775B-44C7-8CBD-F8149756689A/72.52.191.147/home/dcurolog/public_html/wp-content/themes/DCUrology/header.php",
+		"/Users/john/Library/Caches/Transmit/572C8F3F-C126-4F64-85BA-BD32DBE50F56/72.52.191.147/home/dcurolog/public_html/wp-content/themes/DCUrology/page.php",
+		"/Users/john/Library/Caches/Transmit/41115674-40DC-4477-B92E-746BC9BE5B9C/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/functions.php",
+		"/Users/john/Library/Caches/Transmit/AA709B72-2FB5-443F-8C57-0D23319ACCAC/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/single-listing.php",
+		"/Users/john/Library/Caches/Transmit/283503EE-719D-4B4C-85D3-184AFFD6D9F0/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/header.php",
+		"/Users/john/Library/Caches/Transmit/7E575A01-BDA7-4E2A-B2A7-E4B6BCC93136/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/js/ajax-pagination.js",
+		"/Users/john/Library/Caches/Transmit/9F2C2296-D99E-4851-B72E-84A592F722A8/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/taxonomy-state.php",
+		"/Users/john/Library/Caches/Transmit/06BEC09E-F55E-4043-B8B5-02C8E7AD189F/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/style.css",
+		"/Users/john/Library/Caches/Transmit/738C7D74-4C3E-439A-A482-8C6251B0A105/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/listing-details.php",
+		"/Users/john/Library/Caches/Transmit/739E47F1-62B3-4EC1-9348-549456B967BE/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/js/ajax-pagination.js",
+		"/Users/john/Library/Caches/Transmit/0370B061-DD82-47C9-8CA4-0B7953319566/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/page-directory.php",
+		"/Users/john/Library/Caches/Transmit/82AD9CE4-2D12-4E7F-ABCE-641A28310378/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/header.php",
+		"/Users/john/Library/Caches/Transmit/C00E0B89-76BE-45F1-8292-E3F08DD0E43C/72.52.191.147/home/bsc/public_html/wp-content/themes/bsc2020/map/usmap.js",
+		"/Users/john/Desktop/html5usmapv4.2 (2)/usmap.js",
+		"/Users/john/Desktop/html5usmapv4.2/test.html",
+		"/Users/john/Creative/Code/Spark/wp-content/themes/spark/fortris-page-builder/modules/before-after.php",
+		"/Users/john/Creative/Code/Spark/wp-content/themes/spark/fortris-page-builder/page-builder.css",
+		"/Users/john/Library/Caches/Transmit/DE530BA9-C76B-4200-A572-5C14E4ED067C/72.52.191.147/home/theafibclinic/public_html/wp-content/themes/osorio/page-home.php",
+		"/Users/john/Library/Caches/Transmit/35BEBF89-DB9E-4888-9FF1-00A8F0971D05/72.52.191.147/home/revive/public_html/wp-content/themes/revive/header.php",
+		"/Users/john/Library/Caches/Transmit/9E941BC2-E31D-4104-9EC0-62133E8A9066/72.52.191.147/home/theafibclinic/public_html/wp-content/themes/osorio/style.css",
+		"/Users/john/Library/Caches/Transmit/19A7FB62-4609-440F-BC42-866F3F4DE2C2/72.52.191.147/home/theafibclinic/public_html/wp-content/themes/osorio/functions.php",
+		"/Users/john/Library/Caches/Transmit/09E1CA54-A8F2-44CE-A096-6C2503072144/72.52.191.147/home/theafibclinic/public_html/wp-content/themes/osorio/media-queries.css",
+		"/Users/john/Library/Caches/Transmit/BE382F82-CB3D-4ABC-8535-AD0352ECB358/72.52.191.147/home/revive/public_html/wp-content/themes/revive/style.css",
+		"/Users/john/Library/Caches/Transmit/56188FB1-84FC-46EA-B54E-5F6A99B8DB2F/72.52.191.147/home/revive/public_html/wp-content/themes/revive/page-payment-plans.php",
+		"/Users/john/Library/Caches/Transmit/260DF2EE-F737-4AC9-B15C-A12AB939219F/72.52.191.147/home/theafibclinic/public_html/wp-content/themes/osorio/header.php",
+		"/Users/john/Library/Caches/Transmit/40CD5C29-F41F-4978-9C3C-CB6DF7ED65D9/72.52.191.147/home/theafibclinic/public_html/wp-content/themes/osorio/footer.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/style.css",
+		"/Users/john/Library/Caches/Transmit/A72B5568-7C88-445B-BA67-6B18655B92A6/64.227.20.30/var/www/jerusalem/index.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-configurator-summary.php",
+		"/Users/john/Library/Caches/Transmit/38B89176-8559-473B-9289-7ED5E602F383/fcsprod.sftp.wpengine.com/wp-content/themes/FloridaCitrusSports/style.css",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-builder/modules/gallery.php",
+		"/Users/john/Creative/Code/FloridaCitrusSports/wp-content/themes/FCSeries-child/child.css",
+		"/Users/john/Creative/Code/FloridaCitrusSports/wp-content/themes/FCSeries-child/style.css",
+		"/Users/john/Library/Caches/Transmit/3F3D59B2-B016-4BD3-B8BF-8CC5DA8194BD/50.62.223.8/wordpress/wp-content/themes/cirtec/page-templates/tpl-our-facilities.php",
+		"/Users/john/Library/Caches/Transmit/E500024E-C667-473E-975D-070E07DB2AFA/fcsprod.sftp.wpengine.com/wp-content/themes/FloridaCitrusSports/style.css",
+		"/Users/john/Creative/Code/FloridaCitrusSports/wp-content/themes/FloridaCitrusSports/style.css",
+		"/Users/john/Library/Caches/Transmit/D55040E4-B715-462F-B243-5C8AD83C0482/50.62.223.8/wordpress/wp-config.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-advantages.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-boat-series-listing.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-boat-series.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-careers.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-events.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-factory.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-home.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-legacy.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-owners-resources.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-shopping-boat.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page-shopping.php",
+		"/Users/john/Creative/Code/Regal/wp-content/themes/regal/page.php"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 151.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"blog",
+			"modules",
+			"font",
+			"buford",
+			"heading now",
+			"css"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 40.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "capitalfactory.sublime-project",
+	"replace":
+	{
+		"height": 76.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"her",
+				"modules/hero.php"
+			],
+			[
+				"fun",
+				"functions.php"
+			],
+			[
+				"bui",
+				"builder.php"
+			],
+			[
+				"font",
+				"fonts/fonts.css"
+			],
+			[
+				"he",
+				"header.php"
+			],
+			[
+				"ho",
+				"page-home.php"
+			],
+			[
+				"pag",
+				"page.php"
+			],
+			[
+				"sty",
+				"style.css"
+			],
+			[
+				"foo",
+				"footer.php"
+			],
+			[
+				"me",
+				"media-queries.css"
+			],
+			[
+				"st",
+				"style.css"
+			],
+			[
+				"gall",
+				"page-builder/modules/gallery.php"
+			],
+			[
+				"hom",
+				"page-home.php"
+			],
+			[
+				"conf",
+				"page-configurator.php"
+			],
+			[
+				"boat",
+				"page-boat-series.php"
+			],
+			[
+				"med",
+				"media-queries.css"
+			],
+			[
+				"spec",
+				"page-builder/modules/specifications.php"
+			],
+			[
+				"them",
+				"js/theme.js"
+			],
+			[
+				"serie",
+				"page-boat-series-listing.php"
+			],
+			[
+				"seri",
+				"boat-series.css"
+			],
+			[
+				"form",
+				"assign-dealer-form.php"
+			],
+			[
+				"nea",
+				"nearest-dealer.php"
+			],
+			[
+				"dealer",
+				"assign-dealer-form.php"
+			],
+			[
+				"shopp",
+				"page-shopping-boat.php"
+			],
+			[
+				"shopping",
+				"page-shopping-boat.php"
+			],
+			[
+				"home",
+				"page-home.php"
+			],
+			[
+				"print",
+				"page-configurator-summary-print.php"
+			],
+			[
+				"summ",
+				"page-configurator-summary.php"
+			],
+			[
+				".js",
+				"js/theme.js"
+			],
+			[
+				"sing",
+				"single.php"
+			],
+			[
+				"single",
+				"single.php"
+			],
+			[
+				"card",
+				"shopping-boat-card.php"
+			],
+			[
+				"submis",
+				"form-submission.php"
+			],
+			[
+				"sho",
+				"page-shopping.php"
+			],
+			[
+				"deal",
+				"nearest-dealer.php"
+			],
+			[
+				"confsu",
+				"page-configurator-summary.php"
+			],
+			[
+				"shop",
+				"page-shopping.php"
+			],
+			[
+				"buil",
+				"page-builder/modules/boat_builder.php"
+			],
+			[
+				"func",
+				"functions.php"
+			],
+			[
+				"overl",
+				"choose-boat-overlay.php"
+			],
+			[
+				"deale",
+				"nearest-dealer.php"
+			],
+			[
+				"sum",
+				"page-configurator-summary.php"
+			],
+			[
+				"r",
+				"responsive.css"
+			],
+			[
+				"ass",
+				"assign-dealer-form.php"
+			],
+			[
+				"shop boa",
+				"page-shopping-boat.php"
+			],
+			[
+				"confi",
+				"page-configurator-summary.php"
+			],
+			[
+				"feat",
+				"page-builder/modules/feature.php"
+			],
+			[
+				"high",
+				"page-builder/modules/highlight_slider.php"
+			],
+			[
+				"resp",
+				"responsive.css"
+			],
+			[
+				"sub",
+				"retail-configurator-submission.php"
+			],
+			[
+				"lef",
+				"page-builder/modules/left_right.php"
+			],
+			[
+				"summar",
+				"page-configurator-summary.php"
+			],
+			[
+				"buik",
+				"page-builder/modules/links.php"
+			],
+			[
+				"jour",
+				"page-builder/modules/journey.php"
+			],
+			[
+				"video",
+				"page-builder/modules/video_slider.php"
+			],
+			[
+				"h",
+				"header.php"
+			],
+			[
+				"fac",
+				"page-factory.php"
+			],
+			[
+				"shopping boa",
+				"page-shopping-boat.php"
+			],
+			[
+				"fo",
+				"footer.php"
+			],
+			[
+				"submi",
+				"form-submission.php"
+			],
+			[
+				"builder",
+				"page-builder/modules/boat_builder.php"
+			],
+			[
+				"career",
+				"page-careers.php"
+			],
+			[
+				"shoppi",
+				"page-shopping-boat.php"
+			],
+			[
+				"build",
+				"page-builder/modules/boat_builder.php"
+			],
+			[
+				"shopping-bo",
+				"page-shopping-boat.php"
+			],
+			[
+				"galler",
+				"page-builder/modules/gallery.php"
+			],
+			[
+				"subm",
+				"form-submission.php"
+			],
+			[
+				"page-sho",
+				"page-shopping-boat.php"
+			],
+			[
+				"hea",
+				"header.php"
+			],
+			[
+				"confi sub",
+				"retail-configurator-submission.php"
+			],
+			[
+				"shopping boat",
+				"page-shopping-boat.php"
+			],
+			[
+				"retail",
+				"retail-configurator-submission.php"
+			],
+			[
+				"cus",
+				"custom-post-types.php"
+			],
+			[
+				"shoppin",
+				"shopping-data.php"
+			],
+			[
+				"config",
+				"page-configurator-summary.php"
+			],
+			[
+				"con",
+				"page-configurator.php"
+			],
+			[
+				"leg",
+				"page-legacy.php"
+			],
+			[
+				"adv",
+				"page-advantages.php"
+			],
+			[
+				"vid",
+				"page-builder/modules/video_slider.php"
+			],
+			[
+				"acc",
+				"page-builder/modules/accordion.php"
+			],
+			[
+				"conf sub",
+				"retail-configurator-submission.php"
+			],
+			[
+				"hig",
+				"page-builder/modules/highlight_slider.php"
+			],
+			[
+				"adva",
+				"page-advantages.php"
+			],
+			[
+				"boat seri",
+				"page-boat-series-listing.php"
+			],
+			[
+				"bu",
+				"page-builder/modules/boat_builder.php"
+			],
+			[
+				"co sum",
+				"js/configurator-summary.js"
+			],
+			[
+				"co",
+				"js/configurator.js"
+			],
+			[
+				"configurator-sum",
+				"js/configurator-summary.js"
+			],
+			[
+				"boa",
+				"boat-series.css"
+			],
+			[
+				"boat ser",
+				"page-boat-series-listing.php"
+			],
+			[
+				"spe",
+				"page-builder/modules/specifications.php"
+			],
+			[
+				"gallery ",
+				"page-builder/modules/gallery.php"
+			],
+			[
+				"choo",
+				"choose-boat-overlay.php"
+			],
+			[
+				"even",
+				"page-events.php"
+			],
+			[
+				"as",
+				"assign-dealer-form.php"
+			],
+			[
+				"sh",
+				"page-shopping-boat.php"
+			],
+			[
+				"find",
+				"page-builder/modules/find_dealer.php"
+			],
+			[
+				"res",
+				"responsive.css"
+			],
+			[
+				"eve",
+				"page-events.php"
+			],
+			[
+				"resou",
+				"page-builder/modules/resources.php"
+			],
+			[
+				"medi",
+				"media-queries.css"
+			],
+			[
+				"page",
+				"page.php"
+			],
+			[
+				"care",
+				"page-careers.php"
+			],
+			[
+				"car",
+				"page-careers.php"
+			],
+			[
+				"boat-ss",
+				"boat-series.css"
+			],
+			[
+				"tri",
+				"trim-selection.php"
+			],
+			[
+				"prici",
+				"js/range/price_range_script.js"
+			],
+			[
+				"shopping-",
+				"page-shopping-boat.php"
+			],
+			[
+				"near",
+				"nearest-dealer.php"
+			],
+			[
+				"dee",
+				"dealer-array.php"
+			],
+			[
+				"dea",
+				"nearest-dealer.php"
+			],
+			[
+				"ret",
+				"retail-configurator-submission.php"
+			],
+			[
+				"assi",
+				"dealer-assignment-modal.php"
+			],
+			[
+				"ava",
+				"page-advantages.php"
+			],
+			[
+				"trim",
+				"trim-selection.php"
+			],
+			[
+				"vide",
+				"page-builder/modules/video_slider.php"
+			],
+			[
+				"sales",
+				"sales-rules.php"
+			],
+			[
+				"",
+				"style.css"
+			],
+			[
+				"boxe",
+				"page-builder/modules/boxes.php"
+			],
+			[
+				"own",
+				"page-owners-resources.php"
+			],
+			[
+				"left",
+				"page-builder/modules/left_right.php"
+			],
+			[
+				"sp",
+				"page-builder/modules/specifications.php"
+			],
+			[
+				"left right",
+				"page-builder/modules/left_right.php"
+			],
+			[
+				"flee",
+				"fleet-by-series.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"col",
+				"page-builder/modules/collage.php"
+			],
+			[
+				"sin",
+				"single.php"
+			],
+			[
+				"boat-series-l",
+				"page-boat-series-listing.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 450.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1290.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,38 @@
+
+
+body {background: #EFEFEF; padding-top: 5vh}
+
+.container {max-width: 700px;}
+
+.btn {border: none;}
+
+.review-logo {max-width: 320px;}
+.review-intro {max-width: 600px; margin: 15px auto 0;}
+
+.review-form {max-width: 600px; margin: 0 auto; padding-top: 30px}
+.review-form label {display: none !important}
+.review-form input[type="text"],
+.review-form input[type="email"],
+.review-form input[type="tel"] {padding: 15px !important; border-radius: 5px; border: 1px solid #CCC;}
+.review-form input[type="submit"] {background: #000; border: 0;}
+.review-form input[type="submit"]:hover {color: #FFF;}
+.review-form li {list-style: none;}
+.review-form .gform_footer {text-align: center !important}
+.review-form .ginput_container_consent {text-align: center;}
+.ginput_container_consent label {display: inline !important}
+.review-form .gform_wrapper li.gfield.gfield_error .ginput_container {margin: 0 !important}
+/*.review-form .form {display: none;}*/
+/*.review-form .feedback {display: none; padding-top: 30px;}*/
+
+.feedback .ginput_container_phone {text-align: center;}
+
+.review-links {padding-bottom: 15px;}
+.review-links a {width: 300px; display: block; margin: 0 auto 5px;}
+a.active {background: #000 !important;}
+
+.alert {margin-top: 30px; margin-bottom: 0;}
+
+
+.rating {font-size: 40px;}
+
+
