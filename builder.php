@@ -24,6 +24,14 @@
 						get_template_part('modules/centered_text_with_image_background', 'hero', $module);
 						break;
 
+					case 'gallery':
+						get_template_part('modules/gallery', 'gallery', $module);
+						break;
+
+					case 'side_by_side':
+						get_template_part('modules/side_by_side', 'side_by_side', $module);
+						break;
+
 				}
 
 			?>
