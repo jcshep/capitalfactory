@@ -287,3 +287,5 @@ img.aligncenter {
 .wp-smiley {
 	margin:0;
 }
+
+.ui-sortable .acf-row > td { border-bottom: 1px solid black; }

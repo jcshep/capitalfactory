@@ -7,13 +7,14 @@
 		
 		<section class="spacing-top-<?= strtolower($section['spacing_top']) ?> spacing-bottom-<?= strtolower($section['spacing_bottom']) ?>">
 
-		<?php if ($section['modules']): ?>
+		<?php $j = 0; if ($section['modules']): ?>
 
 			<?php foreach ($section['modules'] as $module_key => $module): ?>
 				
 			
 
 			<?php  
+				$module['j'] = $j;
 				switch ($module['acf_fc_layout']) {
 					case 'hero':
 						get_template_part('modules/hero', 'hero', $module);
@@ -32,6 +33,14 @@
 						get_template_part('modules/side_by_side', 'side_by_side', $module);
 						break;
 
+					case 'testimonials':
+						get_template_part('modules/testimonials', 'testimonials', $module);
+						break;
+
+					case 'media':
+						get_template_part('modules/media', 'media', $module);
+						break;
+
 				}
 
 			?>
@@ -41,7 +50,7 @@
 				<div class="spacer-<?= $section['spacing_between_modules_within_section'] ?>"></div>
 			<?php endif ?>
 
-			<?php endforeach ?>
+			<?php $j++; endforeach ?>
 		
 		<?php endif ?>
 
