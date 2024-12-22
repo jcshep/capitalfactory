@@ -41,6 +41,10 @@
 						get_template_part('modules/media', 'media', $module);
 						break;
 
+					case 'cta':
+						get_template_part('modules/cta', 'cta', $module);
+						break;
+
 				}
 
 			?>

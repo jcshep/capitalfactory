@@ -1313,6 +1313,111 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6767c93af66f7": {
+                    "key": "layout_6767c93af66f7",
+                    "name": "cta",
+                    "label": "CTA",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6767c98df66fd",
+                            "label": "Background color",
+                            "name": "bg_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#E05D00",
+                            "enable_opacity": 0,
+                            "return_format": "string",
+                            "allow_in_bindings": 0
+                        },
+                        {
+                            "key": "field_6767c940f66f9",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6767c95af66fa",
+                            "label": "Content",
+                            "name": "content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6767c974f66fb",
+                            "label": "Button 1",
+                            "name": "button_1",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0
+                        },
+                        {
+                            "key": "field_6767c986f66fc",
+                            "label": "Button 2",
+                            "name": "button_2",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -1338,5 +1443,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1734610064
+    "modified": 1734855117
 }

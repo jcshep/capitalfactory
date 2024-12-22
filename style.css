@@ -67,6 +67,7 @@ p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.7;}
 .display-sm {font-family: 'Heading Now 7'; font-size: 42px; letter-spacing: 1px; font-weight: 500; text-transform: uppercase;}
 .display-xs {font-family: 'Heading Now 1'; font-size: 12px; letter-spacing: 1px; font-weight: 500}
 
+.gap-xs { gap: 10px; }
 .gap-sm { gap: 20px; }
 .overflow-hidden { overflow: hidden; }
 
