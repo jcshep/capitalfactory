@@ -1,0 +1,14 @@
+.company hr { border: 2px solid #a3a79d; }
+.company h2 { text-transform: uppercase; }
+.company a { text-decoration: underline; }
+.company a:hover { text-decoration: none; }
+
+
+@media screen and (max-width: 991px) {
+  .company .p-60 { padding: 45px; }
+}
+
+@media (min-width: 768px) {
+	.company .col-left { padding-right: 35px; }
+	.company .col-right { padding-left: 35px; }
+}

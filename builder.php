@@ -45,6 +45,10 @@
 						get_template_part('modules/cta', 'cta', $module);
 						break;
 
+					case 'company':
+						get_template_part('modules/company', 'company', $module);
+						break;
+
 				}
 
 			?>

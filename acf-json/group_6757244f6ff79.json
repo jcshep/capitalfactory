@@ -1418,6 +1418,15 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6767cdc274612": {
+                    "key": "layout_6767cdc274612",
+                    "name": "company",
+                    "label": "Company",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -1443,5 +1452,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1734855117
+    "modified": 1734856136
 }

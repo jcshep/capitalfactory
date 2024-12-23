@@ -67,8 +67,10 @@ p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.7;}
 .display-sm {font-family: 'Heading Now 7'; font-size: 42px; letter-spacing: 1px; font-weight: 500; text-transform: uppercase;}
 .display-xs {font-family: 'Heading Now 1'; font-size: 12px; letter-spacing: 1px; font-weight: 500}
 
+.gap-xxs { gap: 8px; }
 .gap-xs { gap: 10px; }
 .gap-sm { gap: 20px; }
+.gap-md { gap: 30px; }
 .overflow-hidden { overflow: hidden; }
 
 .text-xl {font-size: 20px; letter-spacing: 0.2px}
@@ -82,15 +84,17 @@ section.spacing-bottom-large {margin-bottom: 90px;}
 section.spacing-bottom-medium {margin-bottom: 60px;}
 
 
-.text-gray, .text-gray p { color: rgba(11, 30, 21, .6); }
+.text-gray, .text-gray p, .text-gray a { color: rgba(0, 0, 0, .6); }
 .bg-cream { background-color: #F3F0E5; }
 
+.tags { display: flex; flex-wrap: wrap; gap: 10px 20px; padding-left: 0; margin-left: 0; margin-bottom: 0; }
+.tags .tag { padding: 4px 18px; }
 .tag {border:3px solid #000000; display: inline-block; padding: 4px 25px; text-transform: uppercase; font-weight: 400; font-size: 12px; letter-spacing: 1px; border-radius: 100px; font-family: 'Heading Now 2';}
 .tag.bd-white {border-color:#FFF;}
 .tag.bd-light {border-color: rgba(255, 255, 255, .6); color: rgba(255, 255, 255, .6); }
 .tag.bd-gray { border-color: #a3a79d; color: #a3a79d; }
 
-.container {position: relative; max-width: 1445px}
+.container {position: relative; max-width: 1485px}
 
 .slick-arrow { width: 35px; height: 35px; }
 .slick-arrow:before { content: none; }
