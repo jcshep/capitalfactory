@@ -95,7 +95,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "30",
+                        "width": "25",
                         "class": "",
                         "id": ""
                     },
@@ -126,7 +126,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "30",
+                        "width": "25",
                         "class": "",
                         "id": ""
                     },
@@ -149,7 +149,7 @@
                 },
                 {
                     "key": "field_675796c3f9776",
-                    "label": "Spacing Between Modules Within Section",
+                    "label": "Spacing Between Modules In Section",
                     "name": "spacing_between_modules_within_section",
                     "aria-label": "",
                     "type": "select",
@@ -157,7 +157,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "30",
+                        "width": "25",
                         "class": "",
                         "id": ""
                     },
@@ -169,6 +169,68 @@
                         "overlap": "Overlap"
                     },
                     "default_value": "sm",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_675723c2faaaa"
+                },
+                {
+                    "key": "field_6776e0ad1961e",
+                    "label": "Adding Padding to Module Group",
+                    "name": "group_padding",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1,
+                    "parent_repeater": "field_675723c2faaaa"
+                },
+                {
+                    "key": "field_6776df2a91e45",
+                    "label": "Background Color",
+                    "name": "background_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6776e0ad1961e",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Transparent": "Transparent",
+                        "White": "White",
+                        "Gray": "Gray",
+                        "Yellow": "Yellow",
+                        "Blue": "Blue",
+                        "Green": "Green"
+                    },
+                    "default_value": "Transparent",
                     "return_format": "value",
                     "multiple": 0,
                     "allow_null": 0,
@@ -206,5 +268,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1733793732
+    "modified": 1735844150
 }

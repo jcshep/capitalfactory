@@ -6,3 +6,5 @@
 #hero video {position: absolute; width: 100%; height: 100%; left: 0; top: 0; object-fit: cover;}
 #hero .p-45 {padding-bottom: 145px;}
 
+#hero .bg-img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+

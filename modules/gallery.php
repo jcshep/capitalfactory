@@ -1,10 +1,11 @@
 
 
 <div class="container gallery">
-	<div class="p-45 image-bg bg-cream pb-0 rounded-corners-1">
+	<div class="p-60 image-bg bg-cream pb-0 rounded-corners-1">
 		<img src="<?= $args['background_image']['url'] ?>" alt="<?= $args['background_image']['alt'] ?>">
 
 		<div class="row">
+
 			<?php if ($args['gallery']): ?>
 				<div class="col-12 position-relative z-2">
 					<div class="slider">
@@ -16,8 +17,10 @@
 					</div>
 					<div class="spacer-xxl d-none d-lg-none"></div>
 					<div class="spacer-xxl"></div>
+					<div class="spacer-md"></div>
 				</div>
 			<?php endif; ?>
+
 			<?php if ($args['content']): ?>
 				<div class="col-12">
 					<div class="tag bd-gray"><?= $args['tag'] ?></div>
@@ -38,8 +41,9 @@
 					<?= $args['content'] ?>
 				</div>
 			<?php endif; ?>
+
 			<div class="col-12">
-				<div class="spacer-xxl d-none d-md-block"></div>
+				<div class="spacer-xxl d-none d-md-block"></div>				
 				<div class="spacer-md d-block d-md-none"></div>
 			</div>
 		</div>

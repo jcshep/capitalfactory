@@ -56,7 +56,7 @@
 		  <img src="<?php bloginfo('template_directory');?>/img/<?= $icon; ?>" alt="" width="22" height="22" class="mb-3 mb-md-0">
 	  <?php endif; ?>
 		<div>
-			<h3 class="display-xl"><?= $m['title']; ?></h3>
+			<h3 class="display-xxl"><?= $m['title']; ?></h3>
 			<?php if ($m['content'] && $variant !== 'v3'): ?><div class="text-md"><?= $m['content']; ?></div><?php endif; ?>
 		</div>
 	</div>

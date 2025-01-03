@@ -41,4 +41,15 @@
 
 
 <!-- Style -->
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/modules/centered_text_with_image_background.css">
+
+<?php
+// Check if function exists to ensure the file is included in a WordPress environment
+if (function_exists('wp_enqueue_style')) {
+	wp_enqueue_style(
+		'centered_text_with_image_background-style', // Handle
+		get_template_directory_uri() . '/modules/centered_text_with_image_background.css', // Path to CSS
+		array(), // Dependencies (if any)
+		filemtime(get_template_directory() . '/modules/centered_text_with_image_background.css') // Cache-busting
+	);
+}
+?>

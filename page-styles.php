@@ -19,7 +19,7 @@ get_header(); ?>
 
 		<div class="spacer-md"></div>
 
-		<!-- <div class="display-xxl">.DISPLAY-XXL</div> -->
+		<div class="display-xxl">.DISPLAY-XXL</div>
 		<div class="display-xl">.DISPLAY-XL</div>
 		<div class="display-lg">.DISPLAY-LG</div>
 		<div class="display-md">.DISPLAY-MD</div>
