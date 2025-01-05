@@ -69,7 +69,7 @@ p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.7;}
 .display-xs {font-family: 'Heading Now 1'; font-size: 12px; letter-spacing: 1px; font-weight: 500}
 
 .gap-xxs { gap: 8px; }
-.gap-xs { gap: 10px; }
+.gap-xs { gap: 10px !important; }
 .gap-sm { gap: 20px; }
 .gap-md { gap: 30px; }
 .overflow-hidden { overflow: hidden; }
@@ -90,6 +90,9 @@ section.group-padding .section-inside {padding: 0 60px; max-width: 1485px; margi
 .bg-cream { background-color: #F3F0E5; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 10px 20px; padding-left: 0; margin-left: 0; margin-bottom: 0; }
+.tags.tags-light .tag { background-color: #fff; }
+.tags.tags-light .tag.is-active,
+.tags.tags-light .tag:hover { color: #000; background-color: #F2A900; }
 .tags .tag { padding: 4px 18px; }
 .tag {border:3px solid #000000; display: inline-block; padding: 4px 25px; text-transform: uppercase; font-weight: 400; font-size: 12px; letter-spacing: 1px; border-radius: 100px; font-family: 'Heading Now 2';}
 

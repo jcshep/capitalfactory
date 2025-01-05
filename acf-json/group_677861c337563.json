@@ -81,6 +81,25 @@
             "name": "date_time",
             "aria-label": "",
             "type": "date_time_picker",
+            "instructions": "In case of event series: set first event date here",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y g:i a",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_677a59445dde0",
+            "label": "End time",
+            "name": "time_end",
+            "aria-label": "",
+            "type": "time_picker",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
@@ -93,14 +112,13 @@
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
-            "display_format": "d\/m\/Y g:i a",
-            "return_format": "d\/m\/Y g:i a",
-            "first_day": 1,
-            "allow_in_bindings": 0
+            "display_format": "g:i a",
+            "return_format": "g:i A",
+            "allow_in_bindings": 1
         },
         {
             "key": "field_677863ac7cf70",
@@ -142,14 +160,33 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
                     "display_format": "d\/m\/Y g:i a",
-                    "return_format": "d\/m\/Y g:i a",
+                    "return_format": "Y-m-d H:i:s",
                     "first_day": 1,
                     "allow_in_bindings": 0,
+                    "parent_repeater": "field_677863ac7cf70"
+                },
+                {
+                    "key": "field_677a58fd5dddf",
+                    "label": "Time end",
+                    "name": "event_time_end",
+                    "aria-label": "",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "g:i a",
+                    "return_format": "g:i A",
+                    "allow_in_bindings": 1,
                     "parent_repeater": "field_677863ac7cf70"
                 }
             ]
@@ -173,5 +210,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1735943152
+    "modified": 1736091832
 }

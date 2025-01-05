@@ -6,8 +6,13 @@
 	.display-xl { font-size: 54px; }
 }
 
+@media screen and (max-width: 991px) {
+  .p-60 { padding: 45px; }
+}
+
 @media (max-width: 767px) {
 	.display-xl { font-size: 48px; }
+	.display-xxl { font-size: 54px; }
 
 	.dropdown:hover>.dropdown-menu {display: block; }
 	.dropdown-menu {background: rgba(0,0,0,0.5); visibility: visible; top: 95%; padding: 0; margin: 0;}
@@ -31,4 +36,5 @@
 
 @media (max-width: 575px) {
   .display-xl { font-size: 36px; }
+	.display-xxl { font-size: 48px; }
 }

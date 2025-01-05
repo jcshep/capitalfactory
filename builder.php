@@ -50,6 +50,10 @@
 							case 'company':
 								get_template_part('modules/company', 'company', $module);
 								break;
+
+							case 'events':
+								get_template_part('modules/events', 'events', $module);
+								break;
 						}
 
 						?>
