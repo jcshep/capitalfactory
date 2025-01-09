@@ -10,7 +10,7 @@ Author: Maven Creative
 
 
 * { font-optical-sizing: auto; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
-body {overflow-x: hidden;background: #f2a902; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;}
+body {overflow-x: hidden;background: #f2a902; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body.slide-out-open {right: 60%;}
 a {text-decoration: none; color: #00022b;
 	-webkit-transition: all .3s linear;
@@ -39,7 +39,7 @@ img {max-width: 100%;}
 .btn-outline-white {border:3px solid #fff; border-radius: 100px; color: #000; font-size: 18px; letter-spacing: 0.5px;}
 .btn-md {font-family: 'Heading Now 1'; font-size: 12px; text-transform: uppercase; letter-spacing: 1px}
 
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {color: #f3f0e6;}
 .spacer-xs {height: 5px}
 .spacer-sm {height: 15px}
 .spacer-md {height: 30px}
@@ -80,11 +80,19 @@ p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.7;}
 .text-sm {font-size: 12px; letter-spacing: 0.2px}
 .text-xl p, .text-lg p, .text-md p, .text-sm p { font-family: inherit; font-size: inherit; }
 
+
+section.spacing-top-extra-large {padding-top: 120px;}
+section.spacing-top-large {padding-top: 90px;}
+section.spacing-top-medium {padding-top: 60px;}
+
 section.spacing-bottom-extra-large {margin-bottom: 120px;}
 section.spacing-bottom-large {margin-bottom: 90px;}
 section.spacing-bottom-medium {margin-bottom: 60px;}
 
 section.group-padding .section-inside {padding: 0 60px; max-width: 1485px; margin: 0 auto;}
+section.overlap {padding-top: 1px;}
+section.overlap .module-wrap:first-child {margin-top: 0;}
+section.overlap .module-wrap {margin-top: -100px;}
 
 .text-gray, .text-gray p, .text-gray a { color: rgba(0, 0, 0, .6); }
 .bg-cream { background-color: #F3F0E5; }
@@ -100,7 +108,7 @@ section.group-padding .section-inside {padding: 0 60px; max-width: 1485px; margi
 .tag.bd-light {border-color: rgba(255, 255, 255, .6); color: rgba(255, 255, 255, .6); }
 .tag.bd-gray { border-color: #a3a79d; color: #a3a79d; }
 .tag.bd-black { border-color: #000; }
-.tag.bg-white { background: #f4f0e5; color: #000; }
+.tag.bg-white { background: #f3f0e6; color: #000; }
 
 .container {position: relative; max-width: 1485px}
 

@@ -6,7 +6,9 @@
 			<?= $section['group_padding'] ? 'group-padding' : NULL ?>
 			background-color-<?= strtolower($section['background_color']) ?> 
 			spacing-top-<?= strtolower($section['spacing_top']) ?> 
-			spacing-bottom-<?= strtolower($section['spacing_bottom']) ?>">
+			spacing-bottom-<?= strtolower($section['spacing_bottom']) ?>
+			<?= $section['spacing_between_modules_within_section'] == 'overlap' ? 'overlap' : NULL ?>
+		">
 
 			<div class="section-inside">
 				<?php $j = 0;
@@ -14,7 +16,7 @@
 
 					<?php foreach ($section['modules'] as $module_key => $module): ?>
 
-
+						<div class="module-wrap">
 						<?php
 						$module['j'] = $j;
 						switch ($module['acf_fc_layout']) {
@@ -57,6 +59,7 @@
 						}
 
 						?>
+						</div>
 
 						<!-- Section between spacing -->
 						<?php if ($section['modules'] > 1): ?>

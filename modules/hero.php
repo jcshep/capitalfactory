@@ -12,15 +12,23 @@
 
 
 		<?php if ($args['style'] == 'Two Columns'): ?>
-			<div class="p-45 d-flex align-items-end position-relative h-100">
+			<div class="p-45 d-flex align-items-end position-relative h-100 two-columns">
 				<div class="row">
-					<div class="col-md-7">
-						<h1 class="display-xxl"><?= $args['title'] ?></h1>
-					</div> <!--col-->
-					<div class="col-md-4 pl-0">
+					<div class="col-md-7 pr-5">
 
-						<?php if ($args['subtitle']): ?>
-							<h2 class="display-md"><?= $args['subtitle'] ?></h2>
+
+						<?php if ($args['tag']): ?>
+							<div class="tag bd-black bg-white"><?= $args['tag'] ?></div>
+							<div class="spacer-md"></div>
+						<?php endif ?>
+
+						<h1 class="<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?>"><?= $args['title'] ?></h1>
+					</div> <!--col-->
+					<div class="col-md-4 pl-2">
+
+						<?php if ($args['tag']): ?>
+							<div class="spacer-md"></div>
+							<div class="spacer-md"></div>
 						<?php endif ?>
 
 						<?php if ($args['content']): ?>
@@ -32,22 +40,34 @@
 								<?= $args['button']['title'] ?>
 							</a>
 						<?php endif ?>
+
+						<div class="spacer-sm"></div>
+
+						<?php if ($args['button_secondary']): ?>
+							<a class="btn btn-secondary" target="<?= $args['button_secondary']['target'] ?>" href="<?= $args['button_secondary']['url'] ?>">
+								<?= $args['button_secondary']['title'] ?>
+							</a>
+						<?php endif ?>
 					</div> <!--col-->
 				</div> <!--row-->
 			</div>
 
-			<div class="spacer-xl"></div>
+			<div class="spacer-lg"></div>
 		<?php endif ?>
 
 
 		<?php if ($args['style'] == 'Centered'): ?>
 
-			<div class="p-45 d-flex justify-content-center flex-column align-items-center position-relative h-100">
+			<div class="p-45 d-flex justify-content-center flex-column align-items-center position-relative h-100 variation-centered">
+
+				<div class="spacer-xxl"></div>
+				<div class="spacer-xxl"></div>
 
 				<?php if ($args['tag']): ?>
 					<div class="tag bd-black bg-white"><?= $args['tag'] ?></div>
 					<div class="spacer-md"></div>
 				<?php endif ?>
+
 
 				<?php if ($args['content']): ?>
 					<div class="row">
@@ -56,6 +76,10 @@
 						</div>
 					</div>
 				<?php endif ?>
+
+				<div class="spacer-lg"></div>
+
+
 
 				<?php if ($args['subtitle']): ?>
 					<p class="text-xl"><?= $args['subtitle'] ?></p>

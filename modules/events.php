@@ -62,7 +62,9 @@
 							<div>
 								<a href="<?= get_permalink($post); ?>" class="event-item d-block">
 									<span class="ratio rounded-corners-4" style="--aspect-ratio: 53%">
-										<?php if (has_post_thumbnail($post)): ?><img src="<?= get_the_post_thumbnail_url($post); ?>" alt=""><?php endif; ?>
+										<?php if (get_field('cover_image')): ?>
+											<img src="<?= get_field('cover_image')['url']; ?>" alt="">
+										<?php endif; ?>
 									</span>
 									<span class="d-flex flex-column flex-wrap event-item-details">
 										<span class="mb-2 d-block event-item-date">
