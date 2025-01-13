@@ -2,7 +2,7 @@
   $queried = get_queried_object();
 	$args0 = array(  
 		'post_type' => array('event'),
-		'posts_per_page' => 12,
+		'posts_per_page' => ($queried->taxonomy == 'event-categories') ? -1 : 12,
 		'meta_key' => 'date_time',
 		'orderby' => 'meta_value',
 		'order' => 'ASC',

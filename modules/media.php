@@ -52,7 +52,7 @@
 
 			<?php if ($args['media']): ?>
 				<?php $i = 0; foreach ($args['media'] as $m): ?>
-					<?php if (isset($m['featured'])): ?>
+					<?php if ($m['featured']): ?>
 						<div class="col-12 media-item featured">
 							<?php get_template_part('modules/media-item', null, array('featured' => true, 'm' => $m, 'i' => $i, 'j' => $j, 'variant'=> $args['variant'])); ?>	
 						</div>
@@ -74,14 +74,13 @@
 						    </div>
 						  </div>
 						</div>
-
 					<?php endif; ?>
 				<?php $i++; endforeach; ?>
 
 				<div class="col-12">
-					<div class="<?php if ($args['variant'] !== 'v3'): ?>masonry <?php else: ?>grid <?php endif; ?>position-relative">
+					<div class="<?php if ($args['variant'] !== 'v3'): ?>masonry d-flex flex-wrap <?php else: ?>grid <?php endif; ?>position-relative">
 						<?php $i = 0; $k = 0; foreach ($args['media'] as $m): ?>
-							<?php if (!isset($m['featured'])): ?>
+							<?php if (!$m['featured']): ?>
 
 								<?php if ($i == 0 && ($args['variant'] !== 'v3')): ?><div class="media-item-sizer col-md-6 col-lg-4"></div><?php endif; ?>
 
@@ -138,10 +137,10 @@
 	<script>
 		(function() {
 			var grid = document.querySelector('#section<?= $j; ?> .masonry');
-			if (grid !== undefined) {
+			if (grid) {
 				var msnry = new Masonry( grid, {
 				  itemSelector: '.media-item',
-				  columnWidth: '.media-item-sizer',
+				  // columnWidth: '.media-item-sizer',
 				 // gutter: 34
 				});
 			}

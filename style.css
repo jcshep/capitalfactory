@@ -36,10 +36,13 @@ img {max-width: 100%;}
 .btn-primary { background: #f2a902; border-radius: 100px; border:2px solid #f2a902; color: #000; font-size: 17px; padding: 10px 40px; letter-spacing: 0.5px}
 .btn-secondary { background: #fff; border-radius: 100px; border:2px solid #fff; color: #000; font-size: 17px; padding: 10px 40px; letter-spacing: 0.5px }
 .btn-outline-yellow {border:3px solid #f2a902; border-radius: 100px; color: #000; font-size: 18px; padding: 10px 40px; letter-spacing: 0.5px}
+.btn-outline-yellow:hover { background: #f2a902 }
 .btn-outline-white {border:3px solid #fff; border-radius: 100px; color: #000; font-size: 18px; letter-spacing: 0.5px;}
 .btn-md {font-family: 'Heading Now 1'; font-size: 12px; text-transform: uppercase; letter-spacing: 1px}
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {color: #f3f0e6;}
+.bg-cream .h1, .bg-cream .h2, .bg-cream .h3, .bg-cream .h4, .bg-cream .h5, .bg-cream .h6, 
+.bg-cream h1, .bg-cream h2, .bg-cream h3, .bg-cream h4, .bg-cream h5, .bg-cream h6 { color: #000; }
 .spacer-xs {height: 5px}
 .spacer-sm {height: 15px}
 .spacer-md {height: 30px}

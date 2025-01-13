@@ -3,7 +3,7 @@
 .media-item img { flex-shrink: 0; }
 .media-item-text { padding: 32px 42px; color: #000; }
 .media-item-text img { margin-right: 20px; }
-.media-item-text h3 { margin-bottom: 20px; }
+.media-item-text h3 { color: inherit; margin-bottom: 20px; }
 .media-item-text *:last-child { margin-bottom: 0; }
 .media-item:not(.featured) { padding-left: 17px; padding-right: 17px; margin-bottom: 34px; }
 .media-item:not(.featured) h3 { line-height: 100%;font-size: 20px; }
