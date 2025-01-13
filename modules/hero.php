@@ -31,6 +31,10 @@
 							<div class="spacer-md"></div>
 						<?php endif ?>
 
+						<?php if ($args['subtitle']): ?>
+							<h2 class="display-md"><?= $args['subtitle'] ?></h2>
+						<?php endif ?>
+
 						<?php if ($args['content']): ?>
 							<p><?= $args['content'] ?></p>
 						<?php endif ?>
@@ -70,7 +74,7 @@
 
 
 				<?php if ($args['content']): ?>
-					<div class="row">
+					<div class="row w-100">
 						<div class="col-md-8 offset-md-2">
 							<h1 class="display-lg text-uppercase text-center"><?= $args['content'] ?></h1>
 						</div>
