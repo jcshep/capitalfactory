@@ -56,6 +56,10 @@
 							case 'events':
 								get_template_part('modules/events', 'events', $module);
 								break;
+
+							case 'pricing':
+								get_template_part('modules/pricing', 'pricing', $module);
+								break;
 						}
 
 						?>

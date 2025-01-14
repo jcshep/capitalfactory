@@ -1,0 +1,12 @@
+.pricing .grid { align-items: flex-start; display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.pricing .grid img { height: 204px; width: auto; margin: 20px auto 30px; display: block; }
+.pricing .grid ul { list-style-type: none; margin-left: 0; padding-left: 0; }
+.pricing .grid li { font-weight: 700; position: relative; padding: 25px 0 25px 32px; border-top: 1px solid rgba(0, 0, 0, .35); }
+.pricing .grid li:before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 22px; height: 22px; background-size: contain; background-repeat: no-repeat; background-image: url('../img/icon-list.svg'); }
+.pricing .grid small { font-size: 14px; color: rgba(0, 0, 0, .6); letter-spacing: .2px; }
+.pricing .grid .price { line-height: 1.4; font-weight: 700; font-size: 50px; }
+.pricing .grid .price span { font-size: 30px; }
+
+@media screen and (max-width: 991px) {
+  .pricing .grid { display: flex; flex-direction: column; }
+}
