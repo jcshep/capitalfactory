@@ -6,6 +6,7 @@
 .slider button { top: calc(100% + 30px); right: 0; }
 .gallery .image-bg > img { max-height: 482px; }
 .gallery .slick-slide img {aspect-ratio: 5 / 3; object-fit: cover;}
+.gallery-stat-num { font-family: 'Heading Now 10'; line-height: .8;font-size: 170px; font-weight: 700; }
 
 @media only screen and (max-width:1199px) {
   .gallery .image-bg > img { max-height: 350px; }

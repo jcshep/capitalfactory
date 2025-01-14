@@ -42,6 +42,17 @@
 				</div>
 			<?php endif; ?>
 
+			<?php if ($args['show_stats']): ?>
+				<?php foreach($args['stats'] as $s): ?>
+					<div class="col-md-4 gallery-stat">
+						<div class="rounded-corners-4 bg-white p-30">
+							<div class="gallery-stat-num"><?= $s['number']; ?></div>
+							<div class="gallery-stat-desc display-lg"><?= $s['text']; ?></div>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			<?php endif; ?>
+
 			<div class="col-12">
 				<div class="spacer-xxl d-none d-md-block"></div>				
 				<div class="spacer-md d-block d-md-none"></div>
