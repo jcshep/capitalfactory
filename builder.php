@@ -60,6 +60,10 @@
 							case 'pricing':
 								get_template_part('modules/pricing', 'pricing', $module);
 								break;
+
+							case 'stats':
+								get_template_part('modules/stats', 'stats', $module);
+								break;
 						}
 
 						?>
