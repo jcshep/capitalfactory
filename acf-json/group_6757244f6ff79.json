@@ -452,7 +452,7 @@
                 "layout_67572716f6667": {
                     "key": "layout_67572716f6667",
                     "name": "header_left_text_right_carousel_of_events",
-                    "label": "Carousel of Events.",
+                    "label": "Carousel of Events",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -2168,5 +2168,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1736958902
+    "modified": 1736965030
 }
