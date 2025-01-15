@@ -116,7 +116,7 @@
 				<div class="spacer-sm col-12"></div>
 			<?php endif; ?>
 
-			<div class="col-12 mt-5 gap-sm d-flex justify-content-center align-items-center">
+			<div class="col-12 mt-5 gap-sm d-flex flex-column flex-sm-row justify-content-center align-items-center">
 				<?php if ($args['btn_primary']): ?>
 					<a href="<?= $args['btn_primary']['url']; ?>" target="<?= $args['btn_primary']['target']; ?>" class="btn btn-primary"><?= $args['btn_primary']['title']; ?></a>
 				<?php endif; ?>

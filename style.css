@@ -43,6 +43,8 @@ img {max-width: 100%;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {color: #f3f0e6;}
 .bg-cream .h1, .bg-cream .h2, .bg-cream .h3, .bg-cream .h4, .bg-cream .h5, .bg-cream .h6, 
 .bg-cream h1, .bg-cream h2, .bg-cream h3, .bg-cream h4, .bg-cream h5, .bg-cream h6 { color: #000; }
+.bg-gray .h1, .bg-gray .h2, .bg-gray .h3, .bg-gray .h4, .bg-gray .h5, .bg-gray .h6, 
+.bg-gray h1, .bg-gray h2, .bg-gray h3, .bg-gray h4, .bg-gray h5, .bg-gray h6 { color: #000; }
 .spacer-xs {height: 5px}
 .spacer-sm {height: 15px}
 .spacer-md {height: 30px}
@@ -100,6 +102,7 @@ section.overlap .module-wrap {margin-top: -100px;}
 
 .text-gray, .text-gray p, .text-gray a { color: rgba(0, 0, 0, .6); }
 .bg-cream { background-color: #F3F0E5; }
+.bg-gray { background-color: #D6D2C4; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 10px 20px; padding-left: 0; margin-left: 0; margin-bottom: 0; }
 .tags.tags-light .tag { background-color: #fff; }
