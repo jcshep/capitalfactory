@@ -64,6 +64,10 @@
 							case 'stats':
 								get_template_part('modules/stats', 'stats', $module);
 								break;
+
+							case 'timeline':
+								get_template_part('modules/timeline', 'timeline', $module);
+								break;
 						}
 
 						?>

@@ -1,0 +1,13 @@
+.timeline > img { border-top-left-radius: 72px; border-top-right-radius: 72px; }
+.timeline img + .p-60 { border-top-left-radius: 0; border-top-right-radius: 0; }
+.timeline .slider-timeline .slick-list { overflow: visible; }
+.timeline .slider-timeline .slick-track { margin: 0 -16px; gap: 0 20px; }
+.timeline .slider-timeline .slick-slide { padding: 0 16px; }
+.timeline .slider-timeline button { top: calc(100% + 30px); right: 16px; }
+.timeline .slider-timeline .slick-prev { left: unset; right: 66px; }
+.timeline .slide-year { position: relative; font-size: 54px; letter-spacing: 2px; text-transform: uppercase; text-align: center; margin-bottom: 10px; font-family: 'Heading Now 10'; }
+.timeline .slide-year:before { content: ''; height: 4px; top: 60%; transform: translateY(-50%); background-color: rgba(0, 0, 0, .35); position: absolute; left: 0; right: 0; }
+.timeline .slide-year span { position: relative; z-index: 2; padding: 0 20px; }
+.timeline .slide-text { color: rgba(0, 0, 0, .6); text-transform: uppercase; font-family: 'Heading Now 10'; font-size: 20px; }
+.timeline .slide-text ul { padding-left: 25px; }
+.timeline .slide-text ul li::marker { font-size: 10px; }

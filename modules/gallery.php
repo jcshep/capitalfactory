@@ -43,6 +43,7 @@
 			<?php endif; ?>
 
 			<?php if ($args['show_stats']): ?>
+				<div class="col-12 spacer-xl"></div>
 				<?php foreach($args['stats'] as $s): ?>
 					<div class="col-md-4 gallery-stat">
 						<div class="rounded-corners-4 bg-white p-30">
