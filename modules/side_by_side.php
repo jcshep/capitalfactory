@@ -2,6 +2,8 @@
 	$variant = $args['variation'];
 	$img_square = $args['img_square'];
 	$bg_cream = $args['bg_cream'];
+
+	if ($variant !== 'v6'):
 ?>
 <div class="container side-by-side <?= $variant; ?><?php if ($img_square): ?> side-by-side-square<?php endif; ?>">
 	<div class="<?php if ($variant == 'v4'): ?>row <?php else: ?>grid gap-sm<?php if ($bg_cream): ?> bg-cream rounded-corners-3<?php endif; ?><?php endif; ?>">
@@ -76,6 +78,9 @@
 	</div>
 
 </div>
+
+<?php else: ?>
+<?php endif; ?>
 
 <?php if ($variant == 'v3'): ?>
 	<div class="spacer-lg"></div>
