@@ -2,10 +2,11 @@
 	$variant = $args['variation'];
 	$img_square = $args['img_square'];
 	$bg_cream = $args['bg_cream'];
+	$bg_color = $args['bg_color'];
 
 	if ($variant !== 'v6'):
 ?>
-<div class="container side-by-side <?= $variant; ?><?php if ($img_square): ?> side-by-side-square<?php endif; ?>">
+<div class="container side-by-side <?= $variant; ?><?php if ($img_square): ?> side-by-side-square<?php endif; ?><?php if ($args['image2'] && $args['image']): ?> v5<?php endif; ?>"<?php if ($bg_color): ?> style="--bg: <?= $bg_color; ?>"<?php endif; ?>>
 	<div class="<?php if ($variant == 'v4'): ?>row <?php else: ?>grid gap-sm<?php if ($bg_cream): ?> bg-cream rounded-corners-3<?php endif; ?><?php endif; ?>">
 		<div class="col-text-container<?php if ($variant == 'v4'): ?> col-md-7<?php endif; ?>">
 			<?php if ($variant == 'v4'): ?>
@@ -80,6 +81,46 @@
 </div>
 
 <?php else: ?>
+<div class="container timeline side-by-side text-white">
+	<?php if ($args['image']): ?>
+	  <img src="<?= $args['image']['url'] ?>" alt="<?= $args['image']['alt'] ?>">
+  <?php endif; ?>
+
+	<div class="p-60 image-bg pb-0 rounded-corners-1" style="background-color: <?= $args['bg_color'] ?>">
+
+		<div class="row">
+			<?php if ($args['content']): ?>
+				<div class="col-12">
+					<div class="tag text-white bd-white"><?= $args['tag'] ?></div>
+					<div class="spacer-xl"></div>
+				</div>
+				<div class="col-md-5">
+					<?php if ($args['title']): ?>
+						<h3 class="display-xl mb-0"><?= $args['title'] ?></h3>		
+						<div class="spacer-md"></div>
+					<?php endif ?>
+				</div>
+				<div class="col-md-6 ml-auto text-white">
+					<?= $args['content'] ?>
+					<div class="d-flex flex-wrap gap-xs">
+						<?php if ($args['button']): ?>
+							<a class="btn btn-primary mb-5 mb-md-0" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
+								<?= $args['button']['title'] ?>									
+							</a>
+						<?php endif ?>
+						<?php if ($args['button2']): ?>
+							<a class="btn btn-primary mb-5 mb-md-0" target="<?= $args['button2']['target'] ?>" href="<?= $args['button2']['url'] ?>">
+								<?= $args['button2']['title'] ?>									
+							</a>
+						<?php endif ?>
+					</div>
+				</div>
+				<div class="col-12 spacer-xxl d-none d-md-block"></div>
+				<div class="col-12 spacer-md d-block d-md-none"></div>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>
 <?php endif; ?>
 
 <?php if ($variant == 'v3'): ?>
