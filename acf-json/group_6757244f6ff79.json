@@ -748,7 +748,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#BF5700",
+                            "default_value": "#F3F0E5",
                             "enable_opacity": 0,
                             "return_format": "string",
                             "allow_in_bindings": 0
@@ -2524,5 +2524,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1737046005
+    "modified": 1737047372
 }
