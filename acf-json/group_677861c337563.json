@@ -50,6 +50,27 @@
             "new_lines": ""
         },
         {
+            "key": "field_678932ddf0761",
+            "label": "Full Description",
+            "name": "full_description",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_677863857cf6f",
             "label": "Event Type",
             "name": "event_type",
@@ -190,6 +211,81 @@
                     "parent_repeater": "field_677863ac7cf70"
                 }
             ]
+        },
+        {
+            "key": "field_678932f6f0762",
+            "label": "Location",
+            "name": "location",
+            "aria-label": "",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": "",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_67893335f0763",
+            "label": "Additional Location Details (i.e. Fifth Floor)",
+            "name": "additional_location_details",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_678933502f783",
+            "label": "Primary Button",
+            "name": "primary_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_678933602f784",
+            "label": "Secondary Button",
+            "name": "secondary_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
         }
     ],
     "location": [
@@ -210,5 +306,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1736091832
+    "modified": 1737044847
 }

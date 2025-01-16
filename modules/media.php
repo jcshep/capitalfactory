@@ -17,7 +17,7 @@
 					<div class="spacer-xl"></div>
 				</div>
 				<div class="col-md-6">
-					<h2 class="display-xxl"><?= $args['title']; ?></h2>
+					<h2 class="display-xl"><?= $args['title']; ?></h2>
 				</div>
 				<div class="col-md-6 pl-md-5">
 					<?php if ($args['content']): ?>
@@ -39,7 +39,7 @@
 				<div class="col-md-9 mx-auto text-center">
 					<div class="tag<?php if ($args['text_color'] == 'light'): ?> bd-light<?php endif; ?>"><?= $args['tag']; ?></div>
 					<div class="spacer-xl"></div>
-					<h2 class="display-xxl"><?= $args['title']; ?></h2>
+					<h2 class="display-xl"><?= $args['title']; ?></h2>
 					<?php if ($args['content']): ?>
 						<div class="spacer-md"></div>
 						<div class="px-0 col-md-6 mx-auto text-xl lh-1-4">

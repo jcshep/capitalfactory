@@ -1,13 +1,15 @@
 
 
 
-#hero {color:#FFF}
-#hero .container {border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; overflow: hidden; position: relative; aspect-ratio: 5 / 3}
+#hero {color:#FFF;}
+#hero .inside {border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; overflow: hidden; position: relative; aspect-ratio: 5 / 3; background: #000;}
 #hero video {position: absolute; width: 100%; height: 100%; left: 0; top: 0; object-fit: cover;}
-#hero .p-45 {padding-bottom: 145px;}
+#hero .p-60 {padding-bottom: 100px;}
 
-#hero .bg-img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+#hero .bg-img {position: absolute; top: 0; left: 15px; width: calc(100% - 30px); height: 100%; object-fit: cover; border-bottom-left-radius: 60px; border-bottom-right-radius: 60px;}
 
 #hero .variation-centered .display-lg {font-size: 50px;}
 
 #hero .two-columns .display-lg {font-size: 52px; text-transform: uppercase; line-height: 1.1;}
+#hero .btn {padding-left: 20px; padding-right: 20px;}
+#hero.centered p {max-width: 500px; text-align: center;}

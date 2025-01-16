@@ -1,27 +1,27 @@
-<?php 
-  $queried = get_queried_object();
-	$args0 = array(  
-		'post_type' => array('event'),
-		'posts_per_page' => ($queried->taxonomy == 'event-categories') ? -1 : 12,
-		'meta_key' => 'date_time',
-		'orderby' => 'meta_value',
-		'order' => 'ASC',
-		'fields' => 'ids'
-	); 
-	if ($queried->taxonomy == 'event-categories') {
-		$args0['tax_query'] = array(
-        array (
-            'taxonomy' => 'event-categories',
-            'field' => 'slug',
-            'terms' => $queried->slug,
-        )
-    );
-	}
+<?php
+$queried = get_queried_object();
+$args0 = array(
+	'post_type' => array('event'),
+	'posts_per_page' => ($queried->taxonomy == 'event-categories') ? -1 : 12,
+	'meta_key' => 'date_time',
+	'orderby' => 'meta_value',
+	'order' => 'ASC',
+	'fields' => 'ids'
+);
+if ($queried->taxonomy == 'event-categories') {
+	$args0['tax_query'] = array(
+		array(
+			'taxonomy' => 'event-categories',
+			'field' => 'slug',
+			'terms' => $queried->slug,
+		)
+	);
+}
 
-	$query = new WP_Query($args0);
-	$posts = $query->posts;
-	if ($args['variation'] == 'v1'):
-	?>
+$query = new WP_Query($args0);
+$posts = $query->posts;
+if ($args['variation'] == 'v1'):
+?>
 
 	<div class="container events">
 
@@ -33,7 +33,7 @@
 					<div class="spacer-lg"></div>
 				</div>
 				<div class="col-md-6 mb-5 pb-md-4">
-					<h2 class="display-xxl pb-md-4"><?= $args['title']; ?></h2>
+					<h2 class="display-xl"><?= $args['title']; ?></h2>
 				</div>
 				<div class="col-md-5 mb-5 pb-md-4 mx-auto">
 					<?= $args['content']; ?>
@@ -42,22 +42,22 @@
 					<div class="e-slider">
 						<?php foreach ($posts as $post): ?>
 							<?php
-								$type = get_field('event_type', $post);
+							$type = get_field('event_type', $post);
 
-								if ($type == 'Single Event') {
-									$start = get_field('date_time', $post); 
-									$end = get_field('time_end', $post); 
-								} else {
-									$first = get_field('event_series_dates', $post)[0];
-									if ($first) {
-										$start = $first['event_date_time'];
-										$end = $first['event_time_end'];
-									}
+							if ($type == 'Single Event') {
+								$start = get_field('date_time', $post);
+								$end = get_field('time_end', $post);
+							} else {
+								$first = get_field('event_series_dates', $post)[0];
+								if ($first) {
+									$start = $first['event_date_time'];
+									$end = $first['event_time_end'];
 								}
+							}
 
-								if ($start) {
-									$date = DateTime::createFromFormat('Y-m-d H:i:s', $start)->format('M. j / g:i A');
-								}
+							if ($start) {
+								$date = DateTime::createFromFormat('Y-m-d H:i:s', $start)->format('M. j / g:i A');
+							}
 							?>
 							<div>
 								<a href="<?= get_permalink($post); ?>" class="event-item d-block">
@@ -90,7 +90,7 @@
 	$terms = get_terms(array(
 		'taxonomy'   => 'event-categories',
 		'hide_empty' => true,
-		'orderby' => 'name', 
+		'orderby' => 'name',
 	));
 	?>
 	<div class="container events">
@@ -101,7 +101,7 @@
 					<div class="spacer-md"></div>
 					<div class="tag"><?= $args['tag'] ? $args['tag'] : 'Events'; ?></div>
 					<div class="spacer-xl"></div>
-					<h2 class="display-xxl pb-md-4 text-center"><?= $args['title'] ? $args['title'] : 'Upcoming Events'; ?></h2>
+					<h2 class="display-xl text-center"><?= $args['title'] ? $args['title'] : 'Upcoming Events'; ?></h2>
 					<div class="spacer-xl"></div>
 					<?php if ($terms): ?>
 						<ul class="grid tags gap-xs tags-light d-flex flex-wrap justify-content-center list-unstyled">
@@ -114,11 +114,11 @@
 					<div class="spacer-xl"></div>
 				</div>
 				<?php foreach ($posts as $post):
-					$terms = wp_get_post_terms($post, 'event-categories'); 
+					$terms = wp_get_post_terms($post, 'event-categories');
 					$type = get_field('event_type', $post);
 
 					if ($type == 'Single Event') {
-						$start = get_field('date_time', $post); 
+						$start = get_field('date_time', $post);
 						$date = DateTime::createFromFormat('Y-m-d H:i:s', $start)->format('M j @ g:ia');
 					}
 				?>
@@ -126,7 +126,9 @@
 						<a href="<?= get_permalink($post); ?>" class="event-item event-box-item d-block">
 							<span class="row">
 								<span class="ratio mb-3 mb-md-0 rounded-corners-4 col-md-6" style="--aspect-ratio: 65%">
-									<?php if (has_post_thumbnail($post)): ?><img src="<?= get_the_post_thumbnail_url($post); ?>" alt=""><?php endif; ?>
+									<?php if (get_field('cover_image')): ?>
+										<img src="<?= get_field('cover_image')['url']; ?>" alt="">
+									<?php endif; ?>
 								</span>
 								<span class="col-md-6 px-0 px-md-3 d-flex flex-column">
 									<ul class="tags mb-3 tags-light gap-xs d-flex flex-wrap list-unstyled">
@@ -140,7 +142,7 @@
 									<span class="display-lg mb-3 d-block text-uppercase"><?= get_the_title($post); ?></span>
 									<ul class="mt-auto mb-0 hours d-flex gap-xs">
 										<?php if ($date): ?><li><?= $date; ?></li><?php endif; ?>
-										<li><img src="<?php bloginfo('template_directory');?>/img/icon-chevron.svg" class="" alt=""></li>
+										<li><img src="<?php bloginfo('template_directory'); ?>/img/icon-chevron.svg" class="" alt=""></li>
 									</ul>
 								</span>
 							</span>

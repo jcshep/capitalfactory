@@ -17,7 +17,7 @@
 .side-by-side.v5 .display-xl { font-size: 54px; max-width: 460px; }
 .side-by-side.v5 .grid { grid-template-columns: 430px auto; }
 
-
+.side-by-side.v3.no-tag .p-60 {padding-top: 0;}
 
 @media only screen and (max-width: 1200px) {
   .side-by-side-square .col-text-container + div { aspect-ratio: unset; }

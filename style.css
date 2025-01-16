@@ -12,6 +12,10 @@ Author: Maven Creative
 * { font-optical-sizing: auto; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
 body {overflow-x: hidden;background: #f2a902; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body.slide-out-open {right: 60%;}
+
+body.bg-color-grey {background: #d6d2c3;}
+body.bg-color-blue {background: #009bc6;}
+
 a {text-decoration: none; color: #00022b;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
@@ -55,12 +59,14 @@ img {max-width: 100%;}
 .lh-1-4 p { line-height: 1.4; }
 .text-cream { color: #f3f0e6 !important; }
 
-p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.7;}
+p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.5;}
 
 .p-30 {padding: 30px;}
 .p-45 {padding: 45px;}
 .p-60 {padding: 60px;}
 .p-75 {padding: 75px;}
+
+.pl-60 {padding-left: 60px;}
 
 .rounded-corners-1 {border-radius: 72px; overflow: hidden; }
 .rounded-corners-2 {border-radius: 20px; overflow: hidden;}
@@ -68,7 +74,7 @@ p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.7;}
 .rounded-corners-4 {border-radius: 15px; overflow: hidden;}
 
 .display-xxl {font-family: 'Heading Now 5'; font-size: 84px; text-transform: uppercase; line-height: 0.9}
-.display-xl {font-family: 'Heading Now 10'; font-size: 94px; text-transform: uppercase; line-height: 0.9}
+.display-xl {font-family: 'Heading Now 10'; font-size: 84px; text-transform: uppercase; line-height: 0.9}
 .display-lg {font-family: 'Heading Now 10'; font-size: 32px}
 .display-md {font-family: 'Heading Now 2'; font-size: 24px; text-transform: uppercase;}
 .display-sm {font-family: 'Heading Now 7'; font-size: 42px; letter-spacing: 1px; font-weight: 500; text-transform: uppercase;}
@@ -94,11 +100,16 @@ section.spacing-top-medium {padding-top: 60px;}
 section.spacing-bottom-extra-large {margin-bottom: 120px;}
 section.spacing-bottom-large {margin-bottom: 90px;}
 section.spacing-bottom-medium {margin-bottom: 60px;}
+section.spacing-bottom-small {margin-bottom: 30px;}
 
-section.group-padding .section-inside {padding: 0 60px; max-width: 1485px; margin: 0 auto;}
+
 section.overlap {padding-top: 1px;}
 section.overlap .module-wrap:first-child {margin-top: 0;}
 section.overlap .module-wrap {margin-top: -100px;}
+
+section.group-padding .section-inside {padding: 30px 20px; max-width: 1455px; margin: 0 auto; border-radius: 60px;}
+section.background-color-yellow .section-inside {background: #f2a902;}
+section.background-color-gray .section-inside {background: #e1ded2;}
 
 .text-gray, .text-gray p, .text-gray a { color: rgba(0, 0, 0, .6); }
 .bg-cream { background-color: #F3F0E5; }

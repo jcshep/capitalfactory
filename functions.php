@@ -391,6 +391,25 @@ add_filter('acf/fields/flexible_content/layout_title', 'add_reference_link_to_fl
 
 
 
+function add_page_background_color_body_class($classes) {
+    // Check if ACF is active and the page_background_color field exists
+    if (function_exists('get_field')) {
+        // Get the value of the ACF dropdown field
+        $background_color = 'bg-color-'.strtolower(get_field('page_background_color'));
+
+        // If the field has a value, add it as a class
+        if ($background_color) {
+            $classes[] = sanitize_html_class($background_color); // Sanitize the class name
+        }
+    }
+
+    return $classes;
+}
+add_filter('body_class', 'add_page_background_color_body_class');
+
+
+
+
 
 function enqueue_acf_admin_scripts() {
     wp_enqueue_script('acf-admin-custom', get_template_directory_uri() . '/js/acf-admin-custom.js', ['jquery'], null, true);
@@ -399,3 +418,9 @@ function enqueue_acf_admin_scripts() {
 add_action('admin_enqueue_scripts', 'enqueue_acf_admin_scripts');
 
 
+
+function my_acf_google_map_api( $api ) {
+  $api['key'] = 'AIzaSyBBNxicqCP6SRJwzNfnimhbQHBX2rarwAE';
+  return $api;
+}
+add_filter( 'acf/fields/google_map/api', 'my_acf_google_map_api' );

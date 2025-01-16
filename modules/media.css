@@ -1,3 +1,6 @@
+.media h2 {color: #0b1e15;}
+.media.text-white h2 {color: #f3f0e5;}
+
 .media-item .img { border: 2px solid #F2A900; }
 .media-item .has-video .img:after { content: ''; filter: brightness(0) invert(100%); background-repeat: no-repeat;background-size: contain; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 50px; height: 54px; background-image: url('../img/icon-play.svg'); transition: .3s ease all; }
 .media-item img { flex-shrink: 0; }
@@ -19,7 +22,7 @@
 
 .v3.media .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; }
 .v3.media .grid .media-item { width: calc(33.33% - 32px); }
-.v3.media .has-icon { padding: 86px 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%; background-color: rgba(255, 255, 255, .6); }
+.v3.media .has-icon { padding: 86px 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%; background-color: #faf9f5; }
 .v3.media .has-icon img { height: 66px; width: auto; margin: 0 auto 20px; } 
 .v3.media .has-icon .media-item-text { padding: 0; justify-content: center; text-align: center; }
 .v3.media .has-icon h3 { letter-spacing: 1px; font-size: 25px; line-height: 1.2; }

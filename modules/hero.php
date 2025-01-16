@@ -1,28 +1,32 @@
-<div id="hero">
+<div id="hero" class="<?= strtolower(str_replace(' ', '-', $args['style'])) ?>">
 
 	<div class="container">
 
+		<div class="inside">
 		<?php if ($args['background_media'] == 'Video') : ?>
 			<video id="background-video" playsinline autoplay muted loop data-speed="0.9" width="100%" height="auto"></video>
 		<?php endif; ?>
 
 		<?php if ($args['background_media'] == 'Image') : ?>
-			<img src="<?= $args['image']['sizes']['large'] ?>" class="bg-img" alt="">
+			<?php if( $args['image']) : ?>
+				<img src="<?= $args['image']['sizes']['large'] ?>" class="bg-img" alt="">
+			<?php endif; ?>			
 		<?php endif; ?>
+
+		
 
 
 		<?php if ($args['style'] == 'Two Columns'): ?>
-			<div class="p-45 d-flex align-items-end position-relative h-100 two-columns">
+			<div class="p-60 d-flex align-items-end position-relative h-100 two-columns">
 				<div class="row">
 					<div class="col-md-7 pr-5">
-
 
 						<?php if ($args['tag']): ?>
 							<div class="tag bd-black bg-white"><?= $args['tag'] ?></div>
 							<div class="spacer-md"></div>
 						<?php endif ?>
 
-						<h1 class="<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?>"><?= $args['title'] ?></h1>
+						<h1 class="<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?> pr-5"><?= $args['title'] ?></h1>
 					</div> <!--col-->
 					<div class="col-md-4 pl-2">
 
@@ -40,12 +44,12 @@
 						<?php endif ?>
 
 						<?php if ($args['button']): ?>
-							<a class="btn btn-primary" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
+							<a class="btn btn-primary mr-3" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
 								<?= $args['button']['title'] ?>
 							</a>
 						<?php endif ?>
 
-						<div class="spacer-sm"></div>
+						<!-- <div class="spacer-sm"></div> -->
 
 						<?php if ($args['button_secondary']): ?>
 							<a class="btn btn-secondary" target="<?= $args['button_secondary']['target'] ?>" href="<?= $args['button_secondary']['url'] ?>">
@@ -93,9 +97,8 @@
 		<?php endif; ?>
 
 
-
-
-
+		
+		</div>
 
 	</div>
 
