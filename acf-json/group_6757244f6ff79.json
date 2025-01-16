@@ -452,7 +452,7 @@
                 "layout_67572716f6667": {
                     "key": "layout_67572716f6667",
                     "name": "header_left_text_right_carousel_of_events",
-                    "label": "Carousel of Events",
+                    "label": "Carousel of Events.",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
@@ -723,15 +723,35 @@
                                 "v2": "Variation 2",
                                 "v3": "Variation 3",
                                 "v4": "Variation 4",
-                                "v5": "Variation 5"
+                                "v5": "Variation 5",
+                                "v6": "Variation 6"
                             },
                             "default_value": "v1",
-                            "return_format": "",
+                            "return_format": "value",
                             "allow_null": 0,
                             "other_choice": 0,
                             "allow_in_bindings": 0,
-                            "layout": "",
+                            "layout": "vertical",
                             "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_67893759e9fd7",
+                            "label": "Background color",
+                            "name": "bg_color",
+                            "aria-label": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#F3F0E5",
+                            "enable_opacity": 0,
+                            "return_format": "string",
+                            "allow_in_bindings": 0
                         },
                         {
                             "key": "field_6783aceb785b0",
@@ -752,6 +772,11 @@
                                         "field": "field_675f1717bb423",
                                         "operator": "!=",
                                         "value": "v5"
+                                    },
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "!=",
+                                        "value": "v6"
                                     }
                                 ]
                             ],
@@ -786,6 +811,11 @@
                                         "field": "field_675f1717bb423",
                                         "operator": "!=",
                                         "value": "v5"
+                                    },
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "!=",
+                                        "value": "v6"
                                     }
                                 ]
                             ],
@@ -844,6 +874,11 @@
                                         "field": "field_675f1717bb423",
                                         "operator": "!=",
                                         "value": "v3"
+                                    },
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "!=",
+                                        "value": "v6"
                                     }
                                 ]
                             ],
@@ -912,6 +947,11 @@
                                         "field": "field_675f1717bb423",
                                         "operator": "!=",
                                         "value": "v3"
+                                    },
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "!=",
+                                        "value": "v6"
                                     }
                                 ]
                             ],
@@ -2484,5 +2524,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1736969275
+    "modified": 1737047372
 }

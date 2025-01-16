@@ -1,7 +1,9 @@
 <?php
-$variant = $args['variation'];
-$img_square = $args['img_square'];
-$bg_cream = $args['bg_cream'];
+	$variant = $args['variation'];
+	$img_square = $args['img_square'];
+	$bg_cream = $args['bg_cream'];
+
+	if ($variant !== 'v6'):
 ?>
 <div class="container side-by-side 
 		<?= $variant; ?> 
@@ -115,7 +117,12 @@ $bg_cream = $args['bg_cream'];
 
 </div>
 
+<?php else: ?>
+<?php endif; ?>
 
+<?php if ($variant == 'v3'): ?>
+	<div class="spacer-lg"></div>
+<?php endif; ?>
 
 
 <?php
