@@ -1,6 +1,6 @@
 .testimonials-img { width: 70px; height: 70px; object-fit: cover; border-radius: 50%; margin-right: 30px; flex-shrink: 0; }
-.testimonials p { font-family: 'Heading Now 10'; font-size: 32px; line-height: 100%; color: rgba(11,30,21, .6); font-weight: 500; text-transform: uppercase; text-align: center; }
-.testimonials-author { font-size: 18px; text-transform: uppercase; letter-spacing: 2px; font-weight: 500; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.testimonials p { font-family: 'Heading Now 10'; font-size: 32px; line-height: 100%; color: rgba(11,30,21, .6); font-weight: 700; text-transform: uppercase; text-align: center; }
+.testimonials-author { font-size: 18px; text-transform: uppercase; letter-spacing: 2px; font-weight: 500;}
 .testimonials-author-title { font-size: 20px; line-height: 1.4; font-weight: 500; color: rgba(11,30,21, .6); }
 .testimonials .t-slider > div { flex-shrink: 0; width: 100%; }
 .testimonials .t-slider { padding-bottom: 70px; }

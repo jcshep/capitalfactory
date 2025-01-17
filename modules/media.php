@@ -26,13 +26,20 @@
 						</div>
 					<?php endif; ?>
 				</div>
-				<div class="spacer-lg mb-1 col-12"></div>
+
+
+				<?php if(isset($args['media'])) : ?>								  
+					<div class="spacer-lg mb-1 col-12"></div>
+				<?php endif; ?>
+				
 
 				<?php if ($args['subtitle']): ?>
 				  <div class="text-center col-12">
 				  	<h3 class="subtitle"><?= $args['subtitle']; ?></h3>
 				  </div>
-				  <div class="col-12 spacer-md mb-1"></div>
+				  <?php if($args['media']) : ?>								  
+				  	<div class="col-12 spacer-md mb-1"></div>
+				  <?php endif; ?>
 			  <?php endif; ?>
 
 			<?php else: ?>
@@ -46,6 +53,7 @@
 							<?= $args['content']; ?>
 						</div>
 					<?php endif; ?>
+					
 					<div class="spacer-xl"></div>
 				</div>
 			<?php endif; ?>

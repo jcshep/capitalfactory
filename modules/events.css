@@ -16,6 +16,12 @@ a.event-item:hover { color: #475467; }
 .hours li:last-of-type { transition: background-color .3s ease; display: flex; align-items: center; justify-content: center;padding: 7px 14px; }
 .event-box-item:hover .hours li:last-of-type { background-color: #F2A900; }
 
+.events.v3 .lower {position: relative; padding-left: 20px; margin-top: 20px;}
+.events.v3 .lower:before {width: 6px; background: #f2a902; content:" "; height: 100%; position: absolute; left: 0;}
+.events.v3 .event-item {margin-bottom: 60px;;}
+.events.v3 #events {padding-bottom: 30px}
+
+
 @media only screen and (max-width:992px) {
 	.events .slick-slide { width: 60vw;  }
 }

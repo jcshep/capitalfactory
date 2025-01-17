@@ -6,7 +6,7 @@
 			<div class="col-12 text-center">
 				<div class="tag"><?= $args['tag']; ?></div>
 				<div class="spacer-xl"></div>
-				<h2 class="display-xxl"><?= $args['title']; ?></h2>
+				<h2 class="display-xl"><?= $args['title']; ?></h2>
 				<div class="spacer-xl"></div>
 				<?php if ($args['stats']): ?>
 					<div class="row stats-grid">

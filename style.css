@@ -15,6 +15,7 @@ body.slide-out-open {right: 60%;}
 
 body.bg-color-grey {background: #d6d2c3;}
 body.bg-color-blue {background: #009bc6;}
+body.bg-color-green {background: #43695b;}
 
 a {text-decoration: none; color: #00022b;
 	-webkit-transition: all .3s linear;
@@ -92,6 +93,8 @@ p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.5;}
 .text-sm {font-size: 12px; letter-spacing: 0.2px}
 .text-xl p, .text-lg p, .text-md p, .text-sm p { font-family: inherit; font-size: inherit; }
 
+.text-dark {color: #000000 !important;}
+.text-light {color: #f3f0e6 !important;}
 
 section.spacing-top-extra-large {padding-top: 120px;}
 section.spacing-top-large {padding-top: 90px;}
@@ -110,6 +113,7 @@ section.overlap .module-wrap {margin-top: -100px;}
 section.group-padding .section-inside {padding: 30px 20px; max-width: 1455px; margin: 0 auto; border-radius: 60px;}
 section.background-color-yellow .section-inside {background: #f2a902;}
 section.background-color-gray .section-inside {background: #e1ded2;}
+section.background-color-dark-green .section-inside {background: #0b1e15;}
 
 .text-gray, .text-gray p, .text-gray a { color: rgba(0, 0, 0, .6); }
 .bg-cream { background-color: #F3F0E5; }

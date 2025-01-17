@@ -22,10 +22,12 @@
 
 .v3.media .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; }
 .v3.media .grid .media-item { width: calc(33.33% - 32px); }
-.v3.media .has-icon { padding: 86px 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%; background-color: #faf9f5; }
+.v3.media .has-icon { padding: 86px 30px; display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%; background-color: #faf9f5; }
 .v3.media .has-icon img { height: 66px; width: auto; margin: 0 auto 20px; } 
 .v3.media .has-icon .media-item-text { padding: 0; justify-content: center; text-align: center; }
 .v3.media .has-icon h3 { letter-spacing: 1px; font-size: 25px; line-height: 1.2; }
+
+.v3.media .has-icon p { color: #6d7873;}
 
 .media .subtitle { font-family: 'Heading Now 8'; line-height: 100%; font-size: 32px; letter-spacing: .2px; text-transform: uppercase; }
 

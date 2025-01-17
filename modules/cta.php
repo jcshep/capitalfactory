@@ -3,8 +3,8 @@
 	<div id="cta" class="p-60 rounded-corners-1 text-white" style="background-color: <?= strtolower($args['bg_color']) ?>">
 		<div class="row align-items-start py-1">
 			<div class="col-12 spacer-md"></div>
-			<div class="col-md-6">
-				<h2 class="display-lg pb-4"><?= $args['title']; ?></h2>
+			<div class="col-md-6 <?= $args['text_color'] == 'Light' ? 'text-white' : 'text-dark' ?>">
+				<h2 class="display-lg pb-4 text-uppercase <?= $args['text_color'] == 'Light' ? 'text-white' : 'text-dark' ?>"><?= $args['title']; ?></h2>
 				<?= $args['content']; ?>
 			</div>
 			<div class="col-md-6 d-flex justify-content-md-end flex-wrap gap-xs">

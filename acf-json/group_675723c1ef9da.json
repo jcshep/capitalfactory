@@ -228,7 +228,8 @@
                         "Gray": "Gray",
                         "Yellow": "Yellow",
                         "Blue": "Blue",
-                        "Green": "Green"
+                        "Green": "Green",
+                        "Dark Green": "Dark Green"
                     },
                     "default_value": "Transparent",
                     "return_format": "value",
@@ -268,5 +269,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1735844150
+    "modified": 1737061806
 }

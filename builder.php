@@ -5,7 +5,7 @@
 		<section class="
 			<?php if ($section['group_padding']) : ?>
 				group-padding
-				background-color-<?= strtolower($section['background_color']) ?> 
+				background-color-<?= strtolower(str_replace(' ','-', $section['background_color'])) ?> 
 			<?php endif; ?>			
 			spacing-top-<?= strtolower($section['spacing_top']) ?> 
 			spacing-bottom-<?= strtolower($section['spacing_bottom']) ?>
@@ -69,6 +69,14 @@
 
 								case 'timeline':
 									get_template_part('modules/timeline', 'timeline', $module);
+									break;
+
+								case 'basic_text':
+									get_template_part('modules/basic_text', 'basic_text', $module);
+									break;
+
+								case 'people':
+									get_template_part('modules/people', 'people', $module);
 									break;
 							}
 

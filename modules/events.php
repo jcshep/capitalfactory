@@ -23,7 +23,7 @@ $posts = $query->posts;
 if ($args['variation'] == 'v1'):
 ?>
 
-	<div class="container events">
+	<div class="container events <?= $args['variation'] ?>">
 
 		<div id="events" class="p-60 rounded-corners-1 bg-cream">
 			<div class="row align-items-start py-1">
@@ -38,6 +38,7 @@ if ($args['variation'] == 'v1'):
 				<div class="col-md-5 mb-5 pb-md-4 mx-auto">
 					<?= $args['content']; ?>
 				</div>
+
 				<div class="col-12">
 					<div class="e-slider">
 						<?php foreach ($posts as $post): ?>
@@ -85,7 +86,11 @@ if ($args['variation'] == 'v1'):
 			</div>
 		</div>
 	</div>
-<?php else: ?>
+
+<?php endif; ?>
+
+
+<?php if ($args['variation'] == 'v2'): ?>
 	<?php
 	$terms = get_terms(array(
 		'taxonomy'   => 'event-categories',
@@ -93,7 +98,7 @@ if ($args['variation'] == 'v1'):
 		'orderby' => 'name',
 	));
 	?>
-	<div class="container events">
+	<div class="container events <?= $args['variation'] ?>">
 
 		<div id="events" class="p-60 rounded-corners-1 bg-cream">
 			<div class="row align-items-start py-1">
@@ -157,6 +162,75 @@ if ($args['variation'] == 'v1'):
 			</div>
 		</div>
 	</div>
+<?php endif; ?>
+
+
+
+
+
+<?php if ($args['variation'] == 'v3'): ?>
+
+
+	<div class="container events <?= $args['variation'] ?>">
+
+		<div id="events" class="p-60 rounded-corners-1 bg-cream">
+			<div class="row align-items-start py-1">
+				<div class="col-12 text-center">
+					<div class="spacer-md"></div>
+					<div class="tag"><?= $args['tag'] ? $args['tag'] : 'Events'; ?></div>
+					<div class="spacer-xl"></div>
+					<h2 class="display-xl text-center"><?= $args['title'] ? $args['title'] : 'Upcoming Events'; ?></h2>
+
+					<div class="spacer-xl"></div>
+				</div>
+
+
+				<?php
+				$args = array(
+					'post_type' => 'event',
+					'posts_per_page' => 6,
+					'meta_key' => 'date_time',
+					'orderby' => 'meta_value',
+					'order' => 'ASC',
+				);
+				$the_query = new WP_Query($args);
+				$posts = $the_query->posts;
+				wp_reset_postdata(); // End loop.
+
+				foreach ($posts as $post):
+
+
+					$type = get_field('event_type', $post);
+
+					if ($type == 'Single Event') {
+						$start = get_field('date_time', $post);
+						$date = DateTime::createFromFormat('Y-m-d H:i:s', $start)->format('M j @ g:ia');
+					}
+				?>
+
+
+					<div class="col-md-4">
+						<a href="<?= get_permalink($post); ?>" class="event-item d-block">
+
+							<div class="ratio mb-3 mb-md-0 rounded-corners-4" style="--aspect-ratio: 55%">
+								<?php if (get_field('cover_image')): ?>
+									<img src="<?= get_field('cover_image')['url']; ?>" alt="">
+								<?php endif; ?>
+							</div>
+
+							<div class="lower">
+								<?php if ($date): ?><?= $date; ?><?php endif; ?>
+
+								<span class="display-lg mb-3 d-block text-uppercase"><?= get_the_title($post); ?></span>
+							</div>
+						</a>
+					</div>
+				<?php endforeach; ?>
+
+			</div>
+		</div>
+	</div>
+
 <?php endif; ?>
 
 <!-- Style -->

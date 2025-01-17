@@ -1,0 +1,5 @@
+
+.people .name {font-size: 20px; font-weight: 800; margin: 10px 0 0; letter-spacing: 2px; text-transform: uppercase;}
+.people .col {max-width: 20%; margin-bottom: 30px; min-width: 20%;}
+.people .text-xl {color: #687268;}
+.people img {border-radius: 10px; aspect-ratio: 1 / 1; width: 100%; object-fit: cover;}

@@ -18,6 +18,10 @@
 
 .side-by-side.v3.no-tag .p-60 {padding-top: 0;}
 
+.side-by-side.v6 .image-bg {border-top-right-radius: 0; border-top-left-radius: 0;}
+.side-by-side.v6 .top-img {border-top-right-radius: 70px; border-top-left-radius: 70px; aspect-ratio: 3 / 1; object-fit: cover;}
+
+
 @media only screen and (max-width: 1200px) {
   .side-by-side-square .col-text-container + div { aspect-ratio: unset; }
 }

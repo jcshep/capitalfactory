@@ -3,106 +3,142 @@
 	<div class="container">
 
 		<div class="inside">
-		<?php if ($args['background_media'] == 'Video') : ?>
-			<video id="background-video" playsinline autoplay muted loop data-speed="0.9" width="100%" height="auto"></video>
-		<?php endif; ?>
 
-		<?php if ($args['background_media'] == 'Image') : ?>
-			<?php if( $args['image']) : ?>
-				<img src="<?= $args['image']['sizes']['large'] ?>" class="bg-img" alt="">
-			<?php endif; ?>			
-		<?php endif; ?>
-
-		
+			<?php if (isset($args['background_mask'])) : ?>
+				<div class="background-mask" style="opacity:<?= $args['background_mask'] ?>%"></div>
+			<?php endif; ?>
 
 
-		<?php if ($args['style'] == 'Two Columns'): ?>
-			<div class="p-60 d-flex align-items-end position-relative h-100 two-columns">
-				<div class="row">
-					<div class="col-md-7 pr-5">
+			<?php if ($args['background_media'] == 'Video') : ?>
+				<video id="background-video" playsinline autoplay muted loop data-speed="0.9" width="100%" height="auto"></video>
+			<?php endif; ?>
 
-						<?php if ($args['tag']): ?>
-							<div class="tag bd-black bg-white"><?= $args['tag'] ?></div>
-							<div class="spacer-md"></div>
-						<?php endif ?>
-
-						<h1 class="<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?> pr-5"><?= $args['title'] ?></h1>
-					</div> <!--col-->
-					<div class="col-md-4 pl-2">
-
-						<?php if ($args['tag']): ?>
-							<div class="spacer-md"></div>
-							<div class="spacer-md"></div>
-						<?php endif ?>
-
-						<?php if ($args['subtitle']): ?>
-							<h2 class="display-md"><?= $args['subtitle'] ?></h2>
-						<?php endif ?>
-
-						<?php if ($args['content']): ?>
-							<p><?= $args['content'] ?></p>
-						<?php endif ?>
-
-						<?php if ($args['button']): ?>
-							<a class="btn btn-primary mr-3" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
-								<?= $args['button']['title'] ?>
-							</a>
-						<?php endif ?>
-
-						<!-- <div class="spacer-sm"></div> -->
-
-						<?php if ($args['button_secondary']): ?>
-							<a class="btn btn-secondary" target="<?= $args['button_secondary']['target'] ?>" href="<?= $args['button_secondary']['url'] ?>">
-								<?= $args['button_secondary']['title'] ?>
-							</a>
-						<?php endif ?>
-					</div> <!--col-->
-				</div> <!--row-->
-			</div>
-
-			<div class="spacer-lg"></div>
-		<?php endif ?>
+			<?php if ($args['background_media'] == 'Image') : ?>
+				<?php if ($args['image']) : ?>
+					<img src="<?= $args['image']['sizes']['large'] ?>" class="bg-img" alt="">
+				<?php endif; ?>
+			<?php endif; ?>
 
 
-		<?php if ($args['style'] == 'Centered'): ?>
-
-			<div class="p-45 d-flex justify-content-center flex-column align-items-center position-relative h-100 variation-centered">
-
-				<div class="spacer-xxl"></div>
-				<div class="spacer-xxl"></div>
-
-				<?php if ($args['tag']): ?>
-					<div class="tag bd-black bg-white"><?= $args['tag'] ?></div>
-					<div class="spacer-md"></div>
-				<?php endif ?>
 
 
-				<?php if ($args['content']): ?>
-					<div class="row w-100">
-						<div class="col-md-8 offset-md-2">
-							<h1 class="display-lg text-uppercase text-center"><?= $args['content'] ?></h1>
-						</div>
+
+			<?php if ($args['style'] == 'Two Columns'): ?>
+				<div class="content-wrap d-flex align-items-end h-100">
+					<div class="p-60 position-relative two-columns">
+						<div class="row">
+							<div class="col-md-7 pr-5">
+
+								<?php if ($args['tag']): ?>
+									<div class="tag bd-black bg-white"><?= $args['tag'] ?></div>
+									<div class="spacer-md"></div>
+								<?php endif ?>
+
+								<h1 class="<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?> pr-5"><?= $args['title'] ?></h1>
+							</div> <!--col-->
+
+							<div class="col-md-4 pl-2">
+
+								<?php if ($args['tag']): ?>
+									<div class="spacer-md"></div>
+									<div class="spacer-md"></div>
+								<?php endif ?>
+
+								<?php if ($args['subtitle']): ?>
+									<h2 class="display-md"><?= $args['subtitle'] ?></h2>
+								<?php endif ?>
+
+								<?php if ($args['content']): ?>
+									<p><?= $args['content'] ?></p>
+								<?php endif ?>
+
+								<?php if ($args['button']): ?>
+									<a class="btn btn-primary mr-3" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
+										<?= $args['button']['title'] ?>
+									</a>
+								<?php endif ?>
+
+								<!-- <div class="spacer-sm"></div> -->
+
+								<?php if ($args['button_secondary']): ?>
+									<a class="btn btn-secondary" target="<?= $args['button_secondary']['target'] ?>" href="<?= $args['button_secondary']['url'] ?>">
+										<?= $args['button_secondary']['title'] ?>
+									</a>
+								<?php endif ?>
+							</div> <!--col-->
+						</div> <!--row-->
 					</div>
-				<?php endif ?>
+				</div>
 
 				<div class="spacer-lg"></div>
+			<?php endif ?>
+
+
+			<?php if ($args['style'] == 'Centered'): ?>
+
+
+				<div class="content-wrap p-45 d-flex justify-content-center flex-column align-items-center position-relative h-100 variation-centered">
+
+					<div class="spacer-xxl"></div>
+					<div class="spacer-xxl"></div>
+					<div class="spacer-xxl"></div>
+
+					<?php if ($args['tag']): ?>
+						<div class="tag bd-black bg-white"><?= $args['tag'] ?></div>
+						<div class="spacer-lg"></div>
+					<?php endif ?>
+
+
+					<?php if ($args['title']): ?>
+						<div class="row w-100">
+							<div class="col-md-8 offset-md-2">
+								<h1 class="display-xl text-uppercase text-center <?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?>"><?= $args['title'] ?></h1>
+							</div>
+						</div>
+
+						<div class="spacer-sm"></div>
+					<?php endif ?>
+
+					<?php if ($args['subtitle']): ?>
+						<p class="text-xl"><?= $args['subtitle'] ?></p>
+					<?php endif ?>
+
+
+					<?php if ($args['content']): ?>
+						<p class="text-xl mb-0"><?= $args['content'] ?></p>
+					<?php endif; ?>
 
 
 
-				<?php if ($args['subtitle']): ?>
-					<p class="text-xl"><?= $args['subtitle'] ?></p>
-				<?php endif ?>
-			</div>
+					<div class="spacer-lg"></div>
 
-		<?php endif; ?>
+					<?php if ($args['button']): ?>
+						<a class="btn btn-primary mr-3" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
+							<?= $args['button']['title'] ?>
+						</a>
+					<?php endif ?>
+
+					<!-- <div class="spacer-sm"></div> -->
+
+					<?php if ($args['button_secondary']): ?>
+						<a class="btn btn-secondary" target="<?= $args['button_secondary']['target'] ?>" href="<?= $args['button_secondary']['url'] ?>">
+							<?= $args['button_secondary']['title'] ?>
+						</a>
+					<?php endif ?>
 
 
-		
+				</div>
 		</div>
+
+	<?php endif; ?>
+
+
 
 	</div>
 
 </div>
+
+
 
 
 
