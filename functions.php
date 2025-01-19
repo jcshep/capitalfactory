@@ -59,6 +59,7 @@ add_action('admin_init', 'enable_menu_description_by_default');
 // Add custom menus
 register_nav_menus( array(
 	'primary' => __( 'Primary Navigation', 'wpfme' ),
+	'overlay' => __( 'Overlay Navigation', 'wpfme' ),
 ) );
 
 
@@ -185,9 +186,17 @@ function manage_scripts() {
 	  wp_enqueue_script('loadPosts');
 	}
 
-	//Menu
-	wp_register_script('menu-js', get_template_directory_uri() . '/js/Menu.js?cache='.time());
-	wp_enqueue_script('menu-js');
+  //Menu
+  wp_register_script('menu-js', get_template_directory_uri() . '/js/Menu.js?cache='.time());
+  wp_enqueue_script('menu-js');
+
+
+  //Nav
+  wp_register_script('body-scroll-lock-js', get_template_directory_uri() . '/js/body-scroll-lock.js');
+  wp_enqueue_script('body-scroll-lock-js');
+
+  wp_register_script('nav-js', get_template_directory_uri() . '/js/nav.js?cache='.time(), 'body-scroll-lock-js');
+  wp_enqueue_script('nav-js');
 	
 
 	
@@ -444,6 +453,7 @@ function get_nav_menu_items_hierarchical($location, $args = []) {
     if (empty($m->menu_item_parent)) {
       $menu[$m->ID] = array();
       $menu[$m->ID]['ID'] = $m->ID;
+      $menu[$m->ID]['object_id'] = $m->object_id;
       $menu[$m->ID]['title'] = $m->title;
       $menu[$m->ID]['url'] = $m->url;
       $menu[$m->ID]['text'] = $m->description;
@@ -465,4 +475,28 @@ function get_nav_menu_items_hierarchical($location, $args = []) {
     }
   }
   return $menu;
+}
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Theme Header Settings',
+    //     'menu_title'    => 'Header',
+    //     'parent_slug'   => 'theme-general-settings',
+    // ));
+
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Theme Footer Settings',
+    //     'menu_title'    => 'Footer',
+    //     'parent_slug'   => 'theme-general-settings',
+    // ));
+
 }

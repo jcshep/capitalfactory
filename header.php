@@ -45,7 +45,7 @@ echo $meta_description;
 
 	<div class="container d-flex align-items-start justify-content-between">
 
-		<a href="<?php bloginfo('url'); ?>">
+		<a href="<?php bloginfo('url'); ?>" class="logo-container">
 			<img src="<?php bloginfo('template_directory');?>/img/logo.png" class="logo" alt="">
 		</a>
 
@@ -54,24 +54,26 @@ echo $meta_description;
 		?>
 		<div class="main-menu d-none d-lg-block">
 			<ul id="menu-main" class="menu position-relative">
-				<?php $i = 0; foreach ($menu as $item): ?>
+				<?php foreach ($menu as $item): ?>
 				<li<?php if ($item['children']): ?> class="has-children"<?php endif; ?>>
 					<?php if (!$item['children']): ?>
 						<a 
 						href="<?= $item['url']; ?>" 
 						target="<?= $item['target'] ? $item['target'] : '_self'; ?>"
+						<?php if ($item['object_id'] == get_the_ID()): ?> aria-current="page"<?php endif; ?>
 						>
 						<?= $item['title']; ?>
 					</a>
 				<?php else: ?>
-					<a href="<?= $item['url']; ?>"> 
+					<a href="<?= $item['url']; ?>"
+						<?php if ($item['object_id'] == get_the_ID()): ?> aria-current="page"<?php endif; ?>> 
 						<?= $item['title']; ?>
 						<span class="has-hover-icon"><img src="<?php bloginfo('template_directory');?>/img/icon-chevron-down.svg" alt=""></span>
 					</a>
 
 					<ul class="sub-menu">
 						<li class="sub-menu-left">
-							<a href="<?= $item['url']; ?>">
+							<a href="<?= $item['url']; ?>"<?php if ($item['object_id'] == get_the_ID()): ?> aria-current="page"<?php endif; ?>>
 								<?php if (get_field('icon', $item['ID'])): ?>
 									<img src="<?= get_field('icon', $item['ID'])['url']; ?>">
 								<?php endif; ?>
@@ -82,7 +84,7 @@ echo $meta_description;
 							<ul class="sub-menu-right">
 								<?php foreach ($item['children'] as $child): ?>
 									<li>
-										<a target="<?= $child['target'] ? $child['target'] : '_self'; ?>" href="<?= $child['url']; ?>">
+										<a target="<?= $child['target'] ? $child['target'] : '_self'; ?>" href="<?= $child['url']; ?>"<?php if ($child['object_id'] == get_the_ID()): ?> aria-current="page"<?php endif; ?>>
 											<?php if (get_field('icon', $child['ID'])): ?>
 												<img src="<?= get_field('icon', $child['ID'])['url']; ?>">
 											<?php endif; ?>
@@ -96,13 +98,13 @@ echo $meta_description;
 					</ul>
 				<?php endif; ?>
 			</li>
-			<?php $i++; endforeach; ?>	
+			<?php endforeach; ?>	
 		</ul>
 		<?php //wp_nav_menu( 'menu=Main' ) ?>	
 	</div>
 
 	<div class="menu-right">
-		<a href="" class="btn btn-white btn-md">Menu</a>
+		<a href="" class="hamburger btn btn-white btn-md">Menu</a>
 		<a href="" class="btn btn-white search-btn">
 			<span class="d-flex align-items-center justify-content-center h-100">
 				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.5236 15.1303L13.5582 11.165C14.2486 10.047 14.666 8.74293 14.666 7.33278C14.666 3.28283 11.3831 0 7.33301 0C3.28293 0 0 3.28283 0 7.33278C0 11.3827 3.28293 14.6656 7.33301 14.6656C8.74321 14.6656 10.0474 14.2482 11.1642 13.5589L15.1308 17.5242C15.4501 17.8329 15.8778 18.0037 16.3218 17.9999C16.7659 17.9962 17.1906 17.818 17.5045 17.504C17.8184 17.1899 17.9964 16.7651 17.9999 16.3211C18.0035 15.8771 17.8325 15.4494 17.5236 15.1303ZM7.33301 12.4093C4.52955 12.4093 2.25631 10.1362 2.25631 7.33278C2.25631 4.5294 4.52955 2.25624 7.33301 2.25624C10.1365 2.25624 12.4097 4.5294 12.4097 7.33278C12.4097 10.1362 10.1365 12.4093 7.33301 12.4093Z" fill="#0B1E15"/> </svg>
@@ -110,11 +112,9 @@ echo $meta_description;
 		</a>
 	</div>
 </div>
-
-
-
-
 </header>
+
+<?php get_template_part('header-menu-right'); ?>
 <!--Header Section End -->
 
 

@@ -90,13 +90,29 @@
 			<div class="col-12 spacer-xl"></div>
 
 			<div class="col-md-4">
+
+				<?php //if( have_rows('socials', 'option') ): ?>
 				<ul class="list-unstyled socials p-0 m-0 d-flex align-items-center mb-4 pb-4 pb-md-1">
 					<li><a href="" target="_blank"><?= file_get_contents(get_template_directory_uri() . '/img/icon-x.svg'); ?></a></li>
 					<li><a href="" target="_blank"><?= file_get_contents(get_template_directory_uri() . '/img/icon-linkedin.svg'); ?></a></li>
 					<li><a href="" target="_blank"><?= file_get_contents(get_template_directory_uri() . '/img/icon-instagram.svg'); ?></a></li>
 					<li><a href="" target="_blank"><?= file_get_contents(get_template_directory_uri() . '/img/icon-tiktok.svg'); ?></a></li>
+
+    			<?php //while( have_rows('socials', 'option') ) : the_row(); $link = get_sub_field('link'); ?>
+    			<?php 
+    				// $img = get_sub_field('icon');
+					  // if( $link ): 
+					  //   $link_url = $link['url'];
+					  //   $link_title = $link['title'];
+					  //   $link_target = $link['target'] ? $link['target'] : '_self';
+					  ?>
+						<!-- <li><a href="<?= esc_url( $link_url ); ?>" target="<?= esc_attr( $link_target ); ?>" aria-label="<?= esc_html( $link_title ); ?>"><?= file_get_contents($img['url']); ?></a></li> -->
+				  <?php //endwhile; ?>
 				</ul>
-				<p class="d-none d-md-block copy">© <?= date('Y'); ?> Capital Factory. All rights reserved. <a href="" target="_blank">Terms</a> & <a href="" target="_blank">Privacy</a>.</p>
+				<?php //endif; ?>
+				<div class="d-none d-md-block copy">
+					<?= get_field('copyrights', 'option'); ?>
+				</div>
 			</div>
 			<div class="col-md-8">
 				<div class="newsletter flex-wrap flex-lg-nowrap rounded-corners-3 text-white d-flex justify-content-between align-items-center">
@@ -108,7 +124,7 @@
 				</div>
 			</div>
 			<div class="col-12 d-block d-md-none mt-5 copy">
-				<p class="mb-0">© <?= date('Y'); ?> Capital Factory. All rights reserved. <a href="" target="_blank">Terms</a> & <a href="" target="_blank">Privacy</a>.</p>
+				<?= get_field('copyrights', 'option'); ?>
 			</div>
 		</div>
 	</div>

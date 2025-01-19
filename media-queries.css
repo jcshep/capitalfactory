@@ -17,6 +17,9 @@
 
 @media screen and (max-width: 991px) {
   .p-60 { padding: 45px; }
+  header .container, .nav .container { padding-left: 15px; padding-right: 15px; }
+  .nav-row { grid-template-columns: 1fr 1fr 1fr; gap: 26px; }
+  .nav-box { height: 340px; width: calc(300% + 26px + 26px); }
 }
 
 @media (max-width: 767px) {
@@ -30,6 +33,10 @@
 	.dropdown-menu li:hover a span {opacity: 1;}
 	.dropdown-menu li a {padding: 5px 15px; display: block; margin: 0;}
 	.dropdown-menu li a span {color: #FFF !important; opacity: 0.8; font-size: 12px;}
+
+	header .logo, header .logo-container { max-width: 65px; }
+  .nav-row { grid-template-columns: 1fr 1fr; gap: 26px; }
+  .nav-box { height: 340px; width: calc(200% + 26px); }
 
 	.footer-bottom .copy { max-width: 100%; }
 	.footer-bottom .grid { display: grid; gap: 32px; grid-template-columns: repeat(2, 1fr); }
@@ -46,4 +53,8 @@
 @media (max-width: 575px) {
   .display-xl { font-size: 36px; }
 	.display-xxl { font-size: 48px; }
+
+	.nav-row { display: flex; flex-wrap: wrap; }
+	.nav-row > ul { min-height: 1px; width: 100%; padding: 14px 20px; }
+	.nav-box { height: 340px; width: 100%; }
 }
