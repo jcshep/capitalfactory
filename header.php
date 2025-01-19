@@ -86,8 +86,8 @@ echo $meta_description;
 											<?php if (get_field('icon', $child['ID'])): ?>
 												<img src="<?= get_field('icon', $child['ID'])['url']; ?>">
 											<?php endif; ?>
-											<span class="sub-menu-title"><?= $child['title']; ?></span>
-											<span class="sub-menu-text"><?= $item['text']; ?></span>
+											<span class="sub-menu-title"><?= get_field('title', $child['ID']) ? get_field('title', $child['ID']) : $child['title']; ?></span>
+											<span class="sub-menu-text"><?= $child['text']; ?></span>
 										</a>
 									</li>
 								<?php endforeach; ?>
