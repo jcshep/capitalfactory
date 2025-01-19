@@ -2,6 +2,14 @@
 	.display-xl { font-size: 70px; }
 }
 
+@media screen and (max-width: 1220px) {
+	header .logo { max-width: 130px; }
+	.main-menu ul li { padding: 7px 10px; }
+	.main-menu ul li a { font-size: 14px; }
+	.sub-menu-title { font-size: 14px; }
+	.sub-menu-text { font-size: 12px; }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	.display-xl { font-size: 54px; }
 }

@@ -148,9 +148,25 @@ header .logo {max-width: 163px}
 
 .main-menu {background: rgba(0,0,0,0.5); border-radius: 100px; font-weight: 500; margin-top: 25px;}
 .main-menu ul {margin: 0; padding: 0; display: flex; justify-content: space-between;}
-.main-menu ul li {list-style: none; padding: 7px 20px;}
-.main-menu ul li a {display: block; color: #FFF; font-size: 15px; padding: 0 10px;}
-.main-menu ul li .sub-menu {display: none}
+.main-menu ul li { list-style: none; padding: 7px 20px; }
+.main-menu ul li a { position: relative;display: block; color: #FFF; font-size: 15px; padding: 0 10px;}
+.main-menu .has-children > a:before { content: ""; display: block; position: absolute; right: 0; left: 0; top: 100%; height: 0; }
+.main-menu .has-children.has-hover > a:before { height: 50px; }
+.main-menu ul .has-children .has-hover-icon { position: absolute; right: -5px; top: 0; }
+.main-menu .has-hover .sub-menu { opacity: 1; pointer-events: all; transform: none; transition: transform 300ms 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 200ms 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.main-menu ul .sub-menu { box-shadow: 0px 4px 14px 0 rgba(0,0,0,.35); background-color: #fff; border-radius: 12px; opacity: 0; pointer-events: none; transform: translateY(-1rem); position: absolute; left: 38px; right: 38px; z-index: 2; top: calc(100% + 13px); transition: transform 0ms 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94),opacity 350ms 0ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.main-menu ul .sub-menu li { padding: 0; position: relative; z-index: 2; }
+.main-menu ul ul a { padding-left: 40px; padding-left: 40px; color: #000; }
+.main-menu ul ul img { position: absolute; left: 0; top: 0; width: 28px; height: 28px; object-fit: contain; }
+.main-menu .sub-menu-left { width: 100%; display: flex; }
+.main-menu .sub-menu-left > a { background-color: #F3F0E5; display: block; padding: 27px 30px 40px 70px; width: 50%; border-radius: 12px; background-color: #F3F0E5; }
+.main-menu .sub-menu-left img { top: 25px; left: 30px; }
+.main-menu .sub-menu-right { gap: 26px; width: 50%; display: flex; flex-direction: column; padding: 27px 30px 40px; }
+.main-menu .sub-menu-right img { top: -2px; left: 0; }
+.sub-menu-title { font-weight: 700; font-size: 16px; }
+.sub-menu-text { max-width: 230px; display: block; margin-top: 8px; color: #0B1E15; opacity: .5; font-size: 14px; line-height: 1.35; }
+.sub-menu-title { transition: color .3s ease; }
+.main-menu ul ul a:hover .sub-menu-title {  color: #f2a902; }
 
 .menu-right {margin-top: 25px;}
 .menu-right .btn {height: 36px; text-transform: uppercase; line-height: 36px; padding: 0 20px;}

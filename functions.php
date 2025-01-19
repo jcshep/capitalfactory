@@ -184,6 +184,10 @@ function manage_scripts() {
 	  wp_register_script('loadPosts', get_template_directory_uri() . '/blog/loadPosts.js?cache='.time());
 	  wp_enqueue_script('loadPosts');
 	}
+
+	//Menu
+	wp_register_script('menu-js', get_template_directory_uri() . '/js/Menu.js?cache='.time());
+	wp_enqueue_script('menu-js');
 	
 
 	
@@ -424,3 +428,41 @@ function my_acf_google_map_api( $api ) {
   return $api;
 }
 add_filter( 'acf/fields/google_map/api', 'my_acf_google_map_api' );
+
+
+//get menu array
+function get_nav_menu_items_hierarchical($location, $args = []) {
+  $locations = get_nav_menu_locations();
+
+  if (!isset($locations[$location])) {
+    return [];
+  }
+  $object = wp_get_nav_menu_object( $locations[$location] );
+  $array_menu = wp_get_nav_menu_items( $object->name, $args); 
+  $menu = array();
+  foreach ($array_menu as $m) {
+    if (empty($m->menu_item_parent)) {
+      $menu[$m->ID] = array();
+      $menu[$m->ID]['ID'] = $m->ID;
+      $menu[$m->ID]['title'] = $m->title;
+      $menu[$m->ID]['url'] = $m->url;
+      $menu[$m->ID]['text'] = $m->description;
+      $menu[$m->ID]['target'] = $m->target;
+      $menu[$m->ID]['children'] = array();
+    }
+  }
+  $submenu = array();
+  foreach ($array_menu as $m) {
+    if ($m->menu_item_parent) {
+      $submenu[$m->ID] = array();
+      $submenu[$m->ID]['ID'] = $m->ID;
+      $submenu[$m->ID]['object_id'] = $m->object_id;
+      $submenu[$m->ID]['title'] = $m->title;
+      $submenu[$m->ID]['text'] = $m->description;
+      $submenu[$m->ID]['url'] = $m->url;
+      $submenu[$m->ID]['target'] = $m->target;
+      $menu[$m->menu_item_parent]['children'][$m->ID] = $submenu[$m->ID];
+    }
+  }
+  return $menu;
+}
