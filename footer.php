@@ -106,7 +106,7 @@
 					  //   $link_title = $link['title'];
 					  //   $link_target = $link['target'] ? $link['target'] : '_self';
 					  ?>
-						<!-- <li><a href="<?= esc_url( $link_url ); ?>" target="<?= esc_attr( $link_target ); ?>" aria-label="<?= esc_html( $link_title ); ?>"><?= file_get_contents($img['url']); ?></a></li> -->
+						<!-- <li><a href="<?php //echo esc_url( $link_url ); ?>" target="<?php //echo esc_attr( $link_target ); ?>" aria-label="<?php //echo esc_html( $link_title ); ?>"><?php //echo file_get_contents($img['url']); ?></a></li> -->
 				  <?php //endwhile; ?>
 				</ul>
 				<?php //endif; ?>

@@ -164,12 +164,14 @@ if (function_exists('wp_enqueue_style')) {
 		var url = "https://player.vimeo.com/external/1037527479.mpd?s=45f5ec256dd406bfe5a05bb065cc99daf43c83b6&logging=false"; // replace this with your .mpd URL
 		var video = document.getElementById("background-video");
 		var player = dashjs.MediaPlayer().create();
+		if (video) {
 
-		// Initialize the player with autoplay and loop functionality
-		player.initialize(video, url, true);
+			// Initialize the player with autoplay and loop functionality
+			player.initialize(video, url, true);
 
-		// Ensure video is muted and looped
-		video.muted = true;
-		video.loop = true;
+			// Ensure video is muted and looped
+			video.muted = true;
+			video.loop = true;
+		}
 	})();
 </script>
