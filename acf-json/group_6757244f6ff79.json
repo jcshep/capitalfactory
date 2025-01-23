@@ -474,7 +474,7 @@
                 "layout_675c503b43291": {
                     "key": "layout_675c503b43291",
                     "name": "gallery",
-                    "label": "Gallery",
+                    "label": "Gallery Carousel",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -714,7 +714,7 @@
                 "layout_675f16e4bb421": {
                     "key": "layout_675f16e4bb421",
                     "name": "side_by_side",
-                    "label": "Side by side",
+                    "label": "Side by Side",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -728,7 +728,7 @@
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "50",
-                                "class": "",
+                                "class": "side-by-side-variation",
                                 "id": ""
                             },
                             "choices": {
@@ -1288,7 +1288,7 @@
                 "layout_67619b609f71f": {
                     "key": "layout_67619b609f71f",
                     "name": "media",
-                    "label": "Media",
+                    "label": "Media Grid",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1302,7 +1302,7 @@
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "33",
-                                "class": "",
+                                "class": "media-module-variations",
                                 "id": ""
                             },
                             "choices": {
@@ -1911,7 +1911,7 @@
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
-                                "class": "",
+                                "class": "events-variations",
                                 "id": ""
                             },
                             "choices": {
@@ -2797,5 +2797,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1737071921
+    "modified": 1737646759
 }
