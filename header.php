@@ -5,7 +5,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<title><?php
 			global $page, $paged;
-			$page_title = get_post_meta($post->ID, 'page-title', true);
+			$page_title = get_post_meta($post->ID, 'page_title', true);
 			if ($page_title == '') {
 				$page_title = single_post_title('', false);
 			}
@@ -13,7 +13,7 @@
 			?></title>
 
 	<meta name="description" content="<?php
-										$meta_description = get_post_meta($post->ID, 'meta-description', true);
+										$meta_description = get_post_meta($post->ID, 'meta_description', true);
 										if ($meta_description == '') {
 											global $post;
 											if (is_single()) {

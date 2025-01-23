@@ -30,7 +30,7 @@
 
 
 
-			<!-- <?php if ($args['timeline']): ?>
+			<?php if ($args['timeline']): ?>
 				<div class="col-12 position-relative z-2">
 					<div class="slider-timeline">
 						<?php foreach($args['timeline'] as $img): ?>
@@ -45,7 +45,7 @@
 					<div class="spacer-md"></div>
 					<div class="spacer-md"></div>
 				</div>
-			<?php endif; ?> -->
+			<?php endif; ?>
 		</div>
 	</div>
 </div>
