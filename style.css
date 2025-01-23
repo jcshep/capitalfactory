@@ -93,7 +93,7 @@ p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.5;}
 .text-sm {font-size: 12px; letter-spacing: 0.2px}
 .text-xl p, .text-lg p, .text-md p, .text-sm p { font-family: inherit; font-size: inherit; }
 
-.text-dark {color: #000000 !important;}
+.text-dark {color: #00022b !important;}
 .text-light {color: #f3f0e6 !important;}
 
 section.spacing-top-extra-large {padding-top: 120px;}

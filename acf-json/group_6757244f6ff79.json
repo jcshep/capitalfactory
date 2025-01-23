@@ -1028,6 +1028,35 @@
                             "delay": 0
                         },
                         {
+                            "key": "field_67926e4c38b50",
+                            "label": "Lower Section Embed",
+                            "name": "lower_section_embed",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v6"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
                             "key": "field_67897967370da",
                             "label": "Title Font Color",
                             "name": "title_font_color",
@@ -1041,6 +1070,13 @@
                                         "field": "field_675f1717bb423",
                                         "operator": "==",
                                         "value": "v3"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v6"
                                     }
                                 ]
                             ],
@@ -1102,6 +1138,13 @@
                                         "operator": "==",
                                         "value": "v3"
                                     }
+                                ],
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v6"
+                                    }
                                 ]
                             ],
                             "wrapper": {
@@ -1131,7 +1174,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "60",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -1148,7 +1191,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "40",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -2797,5 +2840,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1737646759
+    "modified": 1737650436
 }
