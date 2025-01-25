@@ -78,6 +78,10 @@
 								case 'people':
 									get_template_part('modules/people', 'people', $module);
 									break;
+
+								case 'media_kit':
+									get_template_part('modules/media-kit', 'media-kit', $module);
+									break;
 							}
 
 							?>

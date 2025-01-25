@@ -39,6 +39,8 @@ img {max-width: 100%;}
 
 .btn-big { padding-top: 14px; padding-bottom: 14px; font-size: 18px; }
 .btn-primary { background: #f2a902; border-radius: 100px; border:2px solid #f2a902; color: #000; font-size: 17px; padding: 10px 40px; letter-spacing: 0.5px}
+.btn-primary img { transition: filter .15s ease-in-out; }
+.btn-primary:hover img { filter: brightness(0) invert(100%); }
 .btn-secondary { background: #fff; border-radius: 100px; border:2px solid #fff; color: #000; font-size: 17px; padding: 10px 40px; letter-spacing: 0.5px }
 .btn-outline-yellow {border:3px solid #f2a902; border-radius: 100px; color: #000; font-size: 18px; padding: 10px 40px; letter-spacing: 0.5px}
 .btn-outline-yellow:hover { background: #f2a902 }
