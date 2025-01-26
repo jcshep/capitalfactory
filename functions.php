@@ -175,6 +175,14 @@ function manage_scripts()
 	wp_register_style('style', get_template_directory_uri() . '/style.css');
 	wp_enqueue_style('style');
 
+	if (is_page_template('template-events.php')) {
+		wp_register_style('hero', get_template_directory_uri() . '/modules/hero.css');
+		wp_enqueue_style('hero');
+
+		wp_register_style('events', get_template_directory_uri() . '/modules/events.css');
+		wp_enqueue_style('events');
+	}
+
 	// Media Queries CSS
 	wp_register_style('media-queries', get_template_directory_uri() . '/media-queries.css');
 	wp_enqueue_style('media-queries');
@@ -602,4 +610,24 @@ if (function_exists('acf_add_options_page')) {
 	//     'parent_slug'   => 'theme-general-settings',
 	// ));
 
+}
+
+
+function make_google_calendar_link($name, $begin, $end, $details, $location) {
+	$params = array('&dates=', '/', '&details=', '&location=', '&sf=true&output=xml');
+	$url = 'https://www.google.com/calendar/render?action=TEMPLATE&text=';
+	$arg_list = func_get_args();
+    for ($i = 0; $i < count($arg_list); $i++) {
+    	$current = $arg_list[$i];
+    	if(is_int($current)) {
+    		$t = new DateTime('@' . $current, new DateTimeZone('UTC'));
+    		$current = $t->format('Ymd\THis\Z');
+    		unset($t);
+    	}
+    	else {
+    		$current = urlencode($current);
+    	}
+    	$url .= (string) $current . $params[$i];
+    }
+    return $url;
 }

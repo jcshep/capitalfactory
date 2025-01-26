@@ -17,3 +17,14 @@
 #hero .two-columns .display-lg {font-size: 52px; text-transform: uppercase; line-height: 1.1;}
 #hero .btn {padding-left: 20px; padding-right: 20px;}
 #hero.centered p {max-width: 900px; text-align: center;}
+
+.hero-date { padding: 7px 24px; font-size: 20px; }
+
+@media only screen and (max-width:768px) {
+  #hero .inside { display: flex; align-items: flex-end; min-height: 90vh; aspect-ratio: unset; }
+  .hero-date { padding: 7px 15px; font-size: 14px; }
+}
+
+@media only screen and (max-width:991px) {
+  .p-60 { padding: 30px !important; }
+}
