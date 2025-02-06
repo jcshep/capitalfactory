@@ -240,10 +240,13 @@ header .logo-container { display: block; width: 163px; }
 
 
 
-
-
-
-
+.gform_wrapper {text-align: left;}
+.gform_wrapper .gform_body legend,
+.gform_wrapper .gform_body label {font-family:'Heading Now 2'; letter-spacing: 1px; text-transform: uppercase; opacity: 0.7;}
+.gform_wrapper .gform_button {background: #F2A903 !important; font-family:'Heading Now 1' !important; text-transform: uppercase !important; border-radius: 100px !important; border: 2px solid #f2a902 !important; color: #000 !important; font-size: 16px !important; padding: 10px 40px !important; letter-spacing: 1.5px !important;}
+.gform_wrapper input {border: none !important; border-radius: 20px !important;}
+.gform_wrapper select {border: none !important;  border-radius: 20px !important; }
+.gform_wrapper textarea {border: none !important; min-block-size: 250px !important;  border-radius: 20px !important;}
 
 
 
