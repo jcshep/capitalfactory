@@ -12,7 +12,7 @@
 			<?php if ($args['repeater']): ?>
 				<div class="col-12 grid gap-md">
 					<?php foreach($args['repeater'] as $r): ?>
-						<div class="rounded-corners-3 p-30" style="background-color: <?= $r['bg_color']; ?>">
+						<div class="rounded-corners-3 w-100 p-30" style="background-color: <?= $r['bg_color']; ?>">
 							<?php if ($r['img']): ?><img src="<?= $r['img']['url'] ?>" alt="<?= $r['img']['alt'] ?>"><?php endif; ?>
 							<div class="spacer-md"></div>
 							<h3 class="display-lg mb-0 text-center"><?= $r['title']; ?></h3>
