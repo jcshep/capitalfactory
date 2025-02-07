@@ -739,7 +739,7 @@
                             "label": "Background color",
                             "name": "bg_color",
                             "aria-label": "",
-                            "type": "color_picker",
+                            "type": "select",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -748,10 +748,21 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#F3F0E5",
-                            "enable_opacity": 0,
-                            "return_format": "string",
-                            "allow_in_bindings": 0
+                            "choices": {
+                                "#f3f0e5": "Beige",
+                                "#f2a902": "Yellow",
+                                "#d6d2c3": "Grey",
+                                "#009bc6": "Blue",
+                                "#43695b": "Green"
+                            },
+                            "default_value": "#f3f0e5",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 1,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         },
                         {
                             "key": "field_6783aceb785b0",
@@ -1216,7 +1227,7 @@
                             "label": "Background color",
                             "name": "bg_color",
                             "aria-label": "",
-                            "type": "color_picker",
+                            "type": "select",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1225,10 +1236,22 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#F3F0E5",
-                            "enable_opacity": 0,
-                            "return_format": "string",
-                            "allow_in_bindings": 0
+                            "choices": {
+                                "#f3f0e5": "Beige",
+                                "#f2a902": "Yellow",
+                                "#d6d2c3": "Grey",
+                                "#009bc6": "Blue",
+                                "#43695b": "Green",
+                                "#E05D00": "Orange"
+                            },
+                            "default_value": "#f3f0e5",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 1,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         },
                         {
                             "key": "field_67619c06d1152",
@@ -1671,7 +1694,7 @@
                             "label": "Background color",
                             "name": "bg_color",
                             "aria-label": "",
-                            "type": "color_picker",
+                            "type": "select",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1680,10 +1703,22 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "choices": {
+                                "#f3f0e5": "Beige",
+                                "#f2a902": "Yellow",
+                                "#d6d2c3": "Grey",
+                                "#009bc6": "Blue",
+                                "#43695b": "Green",
+                                "#E05D00": "Orange"
+                            },
                             "default_value": "#E05D00",
-                            "enable_opacity": 0,
-                            "return_format": "string",
-                            "allow_in_bindings": 0
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 1,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         },
                         {
                             "key": "field_6767c940f66f9",
@@ -2008,7 +2043,7 @@
                                     "label": "Background color",
                                     "name": "bg_color",
                                     "aria-label": "",
-                                    "type": "color_picker",
+                                    "type": "select",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -2017,10 +2052,22 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "#F3F0E5",
-                                    "enable_opacity": 0,
-                                    "return_format": "string",
-                                    "allow_in_bindings": 0,
+                                    "choices": {
+                                        "#f3f0e5": "Beige",
+                                        "#f2a902": "Yellow",
+                                        "#d6d2c3": "Grey",
+                                        "#009bc6": "Blue",
+                                        "#43695b": "Green",
+                                        "#E05D00": "Orange"
+                                    },
+                                    "default_value": "#f3f0e5",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 1,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
                                     "parent_repeater": "field_678698514a2b2"
                                 },
                                 {
@@ -2736,37 +2783,12 @@
                             },
                             "return_format": "array",
                             "allow_in_bindings": 0
-                        },
-                        {
-                            "key": "field_67898dfcb2735",
-                            "label": "Text Color",
-                            "name": "text_color",
-                            "aria-label": "",
-                            "type": "radio",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "Light": "Light",
-                                "Dark": "Dark"
-                            },
-                            "default_value": "",
-                            "return_format": "value",
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "allow_in_bindings": 0,
-                            "layout": "horizontal",
-                            "save_other_choice": 0
                         }
                     ],
                     "min": "",
                     "max": ""
-                }, "layout_67898c470a00c": {
+                },
+                "layout_67898c470a00c": {
                     "key": "layout_67898c470a00c",
                     "name": "basic_text",
                     "label": "Basic Text",
@@ -2972,7 +2994,6 @@
                             },
                             "choices": {
                                 "none": "None",
-                                "2": "Contact",
                                 "1": "Join Capital Factory"
                             },
                             "default_value": false,
@@ -3048,5 +3069,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1738857018
+    "modified": 1738907909
 }
