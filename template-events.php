@@ -194,7 +194,7 @@ if ($posts):
 							</div>
 						<?php endforeach; ?>
 					</div>
-					<a href="<?= get_post_type_archive_link('event'); ?>" class="btn btn-all btn-primary">View All Events</a>
+					<a href="<?php bloginfo("url");?>/events" class="btn btn-all btn-primary">View All Events</a>
 					<div class="spacer-xl d-none d-md-block"></div>
 				</div>
 			</div>

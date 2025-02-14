@@ -132,10 +132,13 @@ if ($variant !== 'v6'):
 
 			<div class="row">
 				<?php if ($args['content']): ?>
-					<div class="col-12">
-						<div class="tag  <?= $args['title_font_color'] == 'Light' ? 'text-white bd-white' : 'text-dark bd-dark' ?>"><?= $args['tag'] ?></div>
-						<div class="spacer-xl"></div>
-					</div>
+					<?php if ($args['tag']) : ?>
+						<div class="col-12">
+							<div class="tag  <?= $args['title_font_color'] == 'Light' ? 'text-white bd-white' : 'text-dark bd-dark' ?>"><?= $args['tag'] ?></div>
+							<div class="spacer-xl"></div>
+						</div>
+					<?php endif; ?>
+
 					<div class="col-md-5">
 						<?php if ($args['title']): ?>
 							<h3 class="display-xl mb-0 <?= $args['title_font_color'] == 'Light' ? 'text-white' : 'text-dark' ?>"><?= $args['title'] ?></h3>

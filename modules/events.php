@@ -79,8 +79,10 @@ if ($args['variation'] == 'v1'):
 								</a>
 							</div>
 						<?php endforeach; ?>
-					</div>
-					<a href="<?= get_post_type_archive_link('event'); ?>" class="btn btn-all btn-primary">View All Events</a>
+					</div>					
+					<a href="<?php bloginfo("url");?>/events" class="btn btn-all btn-primary">View All Events</a>
+					
+					
 					<div class="spacer-xl d-none d-md-block"></div>
 				</div>
 			</div>
@@ -156,7 +158,7 @@ if ($args['variation'] == 'v1'):
 				<?php endforeach; ?>
 				<div class="col-12 spacer-md"></div>
 				<div class="col-12 d-flex flex-column align-items-center justify-content-center">
-					<a href="<?= get_post_type_archive_link('event'); ?>" class="btn btn-all mt-0 btn-primary">View All Events</a>
+					<a href="<?php bloginfo("url");?>/events" class="btn btn-all mt-0 btn-primary">View All Events</a>
 					<div class="spacer-md"></div>
 				</div>
 			</div>

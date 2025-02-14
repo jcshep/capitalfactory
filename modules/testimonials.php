@@ -3,7 +3,18 @@
 	<div class="p-45 bg-cream rounded-corners-1">
 		<div class="row">
 			<div class="col-12 text-center">
-				<div class="tag bd-gray">Testimonials</div>
+				<?php if($args['tag']) : ?>
+					<div class="tag bd-gray"><?= $args['tag'] ?></div>	
+				<?php else: ?>
+					<div class="tag bd-gray">Testimonials</div>
+				<?php endif; ?>
+				
+				<?php if($args['title']) : ?>
+					<div class="spacer-xl"></div>
+					<h3 class="display-xl mb-0 testimonial-title"><?= $args['title'] ?></h3>
+					<div class="spacer-sm"></div>
+				<?php endif; ?>
+
 				<div class="spacer-md"></div>
 				<img src="<?php bloginfo('template_directory');?>/img/icon-quote.svg" class="d-block mx-auto" alt="">
 				<div class="spacer-md"></div>

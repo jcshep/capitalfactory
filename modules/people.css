@@ -3,3 +3,15 @@
 .people .col {max-width: 20%; margin-bottom: 30px; min-width: 20%;}
 .people .text-xl {color: #687268;}
 .people img {border-radius: 10px; aspect-ratio: 1 / 1; width: 100%; object-fit: cover;}
+
+
+
+.col-md-15 {position:relative; width:100%; padding-right:15px; padding-left:15px;}
+.mentor-card {padding:15px; transition:all 0.3s ease;}
+.mentor-avatar {width:150px; height:150px; object-fit:cover; margin:0 auto;}
+.mentor-avatar-placeholder {width:150px; height:150px; background-color:#f0f0f0; margin:0 auto;}
+.mentor-name {font-size:1.1rem; margin-bottom:0.5rem; letter-spacing: 1px; text-transform:uppercase; font-weight: 700}
+.mentor-title {font-size:0.9rem; line-height:1.4;}
+
+
+@media (min-width:768px) {.col-md-15 {flex:0 0 20%; max-width:20%;}}

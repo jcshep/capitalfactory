@@ -76,6 +76,54 @@
                             "save_other_choice": 0
                         },
                         {
+                            "key": "field_67896c7ca30f3",
+                            "label": "Background Mask",
+                            "name": "background_mask",
+                            "aria-label": "",
+                            "type": "range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0,
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_67a959b3e24a8",
+                            "label": "Height",
+                            "name": "height",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Tall": "Tall",
+                                "Short": "Short"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        },
+                        {
                             "key": "field_67572474d13d3",
                             "label": "Title",
                             "name": "title",
@@ -461,7 +509,7 @@
                 "layout_675c503b43291": {
                     "key": "layout_675c503b43291",
                     "name": "gallery",
-                    "label": "Gallery",
+                    "label": "Gallery Carousel",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -701,7 +749,7 @@
                 "layout_675f16e4bb421": {
                     "key": "layout_675f16e4bb421",
                     "name": "side_by_side",
-                    "label": "Side by side",
+                    "label": "Side by Side",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -715,7 +763,7 @@
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "50",
-                                "class": "",
+                                "class": "side-by-side-variation",
                                 "id": ""
                             },
                             "choices": {
@@ -766,7 +814,7 @@
                         },
                         {
                             "key": "field_6783aceb785b0",
-                            "label": "Keep image square",
+                            "label": "Keep image natural proportions",
                             "name": "img_square",
                             "aria-label": "",
                             "type": "true_false",
@@ -1026,6 +1074,143 @@
                             "delay": 0
                         },
                         {
+                            "key": "field_67926e4c38b50",
+                            "label": "Lower Section Embed",
+                            "name": "lower_section_embed",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v6"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_67897967370da",
+                            "label": "Title Font Color",
+                            "name": "title_font_color",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v3"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v6"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Light": "Light",
+                                "Dark": "Dark"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_678979c5370dc",
+                            "label": "Title Font Size",
+                            "name": "title_font_size",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Small": "Small",
+                                "Large": "Large"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_678979b0370db",
+                            "label": "Content Font Color",
+                            "name": "content_font_color",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v3"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v6"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Light": "Light",
+                                "Dark": "Dark"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
+                        },
+                        {
                             "key": "field_675f182f21098",
                             "label": "Button",
                             "name": "button",
@@ -1035,7 +1220,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "60",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -1052,7 +1237,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "40",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -1069,6 +1254,48 @@
                     "label": "Testimonials",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_67ae9302d523d",
+                            "label": "Tag",
+                            "name": "tag",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_67ae9309d523e",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
                         {
                             "key": "field_6761685774fad",
                             "label": "Testimonials",
@@ -1192,7 +1419,7 @@
                 "layout_67619b609f71f": {
                     "key": "layout_67619b609f71f",
                     "name": "media",
-                    "label": "Media",
+                    "label": "Media Grid",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1206,7 +1433,7 @@
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "33",
-                                "class": "",
+                                "class": "media-module-variations",
                                 "id": ""
                             },
                             "choices": {
@@ -1555,20 +1782,7 @@
                                     "type": "textarea",
                                     "instructions": "",
                                     "required": 0,
-                                    "conditional_logic": [
-                                        [
-                                            {
-                                                "field": "field_67619b649f721",
-                                                "operator": "!=",
-                                                "value": "v3"
-                                            },
-                                            {
-                                                "field": "field_67619b649f721",
-                                                "operator": "!=",
-                                                "value": "v2"
-                                            }
-                                        ]
-                                    ],
+                                    "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "50",
                                         "class": "",
@@ -1699,7 +1913,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
@@ -1719,6 +1933,32 @@
                             "ui": 0,
                             "ajax": 0,
                             "placeholder": ""
+                        },
+                        {
+                            "key": "field_67898f9c40aad",
+                            "label": "Text Color",
+                            "name": "text_color",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Light": "Light",
+                                "Dark": "Dark"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "allow_in_bindings": 0,
+                            "layout": "horizontal",
+                            "save_other_choice": 0
                         },
                         {
                             "key": "field_6767c940f66f9",
@@ -1826,12 +2066,13 @@
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
-                                "class": "",
+                                "class": "events-variations",
                                 "id": ""
                             },
                             "choices": {
                                 "v1": "Variation 1",
-                                "v2": "Variation 2"
+                                "v2": "Variation 2",
+                                "v3": "Variation 3"
                             },
                             "default_value": "v1",
                             "return_format": "value",
@@ -2994,7 +3235,13 @@
                             },
                             "choices": {
                                 "none": "None",
-                                "1": "Join Capital Factory"
+                                "7": "Fellowship Form Lead Generation",
+                                "2": "Hubspot Test",
+                                "6": "Investor Relations Deal Flow Registration",
+                                "1": "Join Capital Factory",
+                                "4": "Member Application",
+                                "5": "Mentor Application",
+                                "3": "Venue Inquiry"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -3044,6 +3291,15 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_67ad45854f09e": {
+                    "key": "layout_67ad45854f09e",
+                    "name": "startups",
+                    "label": "CF Portfolio (Airtable)",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -3069,5 +3325,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1738907909
+    "modified": 1739494161
 }

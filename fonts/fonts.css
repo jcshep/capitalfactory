@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Heading Now 1';
-    src: url('HeadingNowTrial-85Medium.woff2') format('woff2'),
-        url('HeadingNowTrial-85Medium.woff') format('woff');
+    src: url('HeadingNow-57Extrabold.woff2') format('woff2'),
+        url('HeadingNow-57Extrabold.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Heading Now 2';
-    src: url('HeadingNowTrial-86Bold.woff2') format('woff2'),
-        url('HeadingNowTrial-86Bold.woff') format('woff');
+    src: url('HeadingNow-77Extrabold.woff2') format('woff2'),
+        url('HeadingNow-77Extrabold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: 'Heading Now 7';
-    src: url('HeadingNowTrial-45Medium.woff2') format('woff2'),
-        url('HeadingNowTrial-45Medium.woff') format('woff');
+    src: url('HeadingNow-57Extrabold.woff2') format('woff2'),
+        url('HeadingNow-57Extrabold.woff2') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -81,8 +81,17 @@
 
 @font-face {
     font-family: 'Heading Now 10';
-    src: url('HeadingNowTrial-56Bold.woff') format('woff2'),
-        url('HeadingNowTrial-56Bold.woff2') format('woff');
+    src: url('HeadingNow-67Extrabold.woff') format('woff2'),
+        url('HeadingNow-67Extrabold.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heading Now 57';
+    src: url('HeadingNow-57Extrabold.woff2') format('woff2'),
+        url('HeadingNow-57Extrabold.woff') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

@@ -47,7 +47,7 @@ img {max-width: 100%;}
 .btn-outline-yellow {border:3px solid #f2a902; border-radius: 100px; color: #000; font-size: 18px; padding: 10px 40px; letter-spacing: 0.5px}
 .btn-outline-yellow:hover { background: #f2a902 }
 .btn-outline-white {border:3px solid #fff; border-radius: 100px; color: #000; font-size: 18px; letter-spacing: 0.5px;}
-.btn-md {font-family: 'Heading Now 1'; font-size: 12px; text-transform: uppercase; letter-spacing: 1px}
+.btn-md {font-family:Helvetica; font-size: 12px; text-transform: uppercase; letter-spacing: 1px}
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {color: #f3f0e6;}
 .bg-cream .h1, .bg-cream .h2, .bg-cream .h3, .bg-cream .h4, .bg-cream .h5, .bg-cream .h6, 
@@ -80,11 +80,11 @@ p {font-weight: 500; font-size: 18px; margin-bottom: 30px; line-height: 1.5;}
 .rounded-corners-4 {border-radius: 15px; overflow: hidden;}
 .rounded-corners-5 {border-radius: 5px; overflow: hidden;}
 
-.display-xxl {font-family: 'Heading Now 5'; font-size: 84px; text-transform: uppercase; line-height: 0.9}
-.display-xl {font-family: 'Heading Now 10'; font-size: 84px; text-transform: uppercase; line-height: 0.9}
-.display-lg {font-family: 'Heading Now 10'; font-size: 32px}
+.display-xxl {font-family: 'Heading Now 10'; font-size: 84px; text-transform: uppercase; line-height: 0.9}
+.display-xl {font-family: 'Heading Now 57'; font-size: 84px; text-transform: uppercase; line-height: 0.9}
+.display-lg {font-family: 'Heading Now 57'; font-size: 32px}
 .display-md {font-family: 'Heading Now 2'; font-size: 24px; text-transform: uppercase;}
-.display-sm {font-family: 'Heading Now 7'; font-size: 42px; letter-spacing: 1px; font-weight: 500; text-transform: uppercase;}
+.display-sm {font-family: 'Heading Now 57'; font-size: 42px; letter-spacing: 1px; font-weight: 500; text-transform: uppercase;}
 .display-xs {font-family: 'Heading Now 1'; font-size: 12px; letter-spacing: 1px; font-weight: 500}
 
 .gap-xxs { gap: 8px; }
@@ -150,7 +150,7 @@ section.background-color-dark-green .section-inside {background: #0b1e15;}
 .slick-disabled { pointer-events: none; }
 .slick-disabled path { fill: rgba(255, 255, 255, .6); }
 
-header {position: fixed; width: 100%; top: 0; z-index: 10}
+header {position: absolute; width: 100%; top: 0; z-index: 10}
 header .container {padding: 15px 60px}
 header .logo { max-width: 163px; transition: all .3s ease;}
 header .logo-container { display: block; width: 163px; }
@@ -217,9 +217,9 @@ header .logo-container { display: block; width: 163px; }
 .footer-top .display-xl { font-size: 52px; line-height: 1; }
 .footer-bottom { margin-top: -96px; z-index: 2; background-color: #E1DED2; }
 .footer-bottom .logo { filter: brightness(0); max-width: 163px;}
-.footer-bottom .grid { display: flex; gap: 32px; }
+.footer-bottom .grid {}
 .footer-bottom h3 { font-size: 14px; color: #BF5700; margin-bottom: 20px; }
-.footer-bottom .grid ul { display: flex; flex-direction: column; list-style-type: none; padding-left: 0; margin: 0; gap: 20px 0; }
+.footer-bottom .grid ul { display: flex; flex-direction: column; list-style-type: none; padding-left: 0; margin: 0; gap: 10px 0; }
 .footer-bottom a:hover, 
 .footer-bottom .current-menu-item { color: #BF5700; }
 .footer-bottom .socials { gap: 23px; }
@@ -227,6 +227,11 @@ header .logo-container { display: block; width: 163px; }
 .footer-bottom .socials a:hover path { fill: #BF5700;; }
 .footer-bottom .copy { max-width: 180px; font-size: 16px; }
 .footer-bottom .copy p { margin-bottom: 0; }
+
+ul#menu-footer { display: flex; flex-direction: row; list-style-type: none; padding-left: 0; margin: 0; gap: 0 0; justify-content: space-between;}
+ul#menu-footer > li {display: block; padding: 0 20px; }
+ul#menu-footer > li > a {font-size: 14px; color: #BF5700; margin-bottom: 20px; font-weight: 700; display: block}
+
 .copy p { font-size: 15px; font-weight: 400; margin-bottom: 0; }
 .copy a { text-decoration: underline !important; text-decoration-color: #000; }
 .copy a:hover { color: #000; text-decoration-color: transparent !important; }
@@ -234,12 +239,12 @@ header .logo-container { display: block; width: 163px; }
 .newsletter h4 { font-size: 20px; margin-bottom: 20px; }
 .newsletter p { font-size: 16px; max-width: 244px; line-height: 1.4; }
 .newsletter .gfield { position: relative; }
-.newsletter .gfield input { font-weight: 500 !important; font-size: 12px !important; border: 3px solid #F2A900 !important; border-radius: 100px !important; color: #F3F0E5 !important; letter-spacing: 1px !important; background: transparent !important; padding: 12px 28px !important; text-transform: uppercase !important; font-family: 'Heading Now 5' !important; }
-.newsletter .gfield input[type="email"] { min-width: 252px; }
+.newsletter .gfield input { font-weight: 500 !important; font-size: 12px !important; border: 3px solid #F2A900 !important; border-radius: 100px !important; color: #F3F0E5 !important; letter-spacing: 1px !important; background: transparent !important; padding: 12px 28px !important; text-transform: uppercase !important; font-weight: 700 !important; letter-spacing: 1.5px !important}
+.newsletter .gfield input[type="email"] { min-width: 285px; }
 .newsletter .gfield input::-webkit-input-placeholder, 
 .newsletter .gfield input::-moz-placeholder, 
 .newsletter .gfield input:-ms-input-placeholder,
-.newsletter .gfield input:-moz-placeholder { font-size: 12px !important; font-weight: 500;font-family: 'Heading Now 5'; color: #F3F0E5; letter-spacing: 1px; }
+.newsletter .gfield input:-moz-placeholder { font-size: 12px !important; font-weight: 500; font-family:Arial, Helvetica, sans-serif !important; color: #F3F0E5; letter-spacing: 1px; }
 .newsletter .gform_fields { display: flex !important; }
 .newsletter .gfield input[type="submit"] { font-size: 12px !important; background-color: #fff !important; color: #000 !important; }
 .newsletter .gfield input[type="submit"]:hover { background: #F2A900 !important; }
@@ -250,8 +255,8 @@ header .logo-container { display: block; width: 163px; }
 
 .gform_wrapper {text-align: left;}
 .gform_wrapper .gform_body legend,
-.gform_wrapper .gform_body label {font-family:'Heading Now 2'; letter-spacing: 1px; text-transform: uppercase; opacity: 0.7;}
-.gform_wrapper .gform_button {background: #F2A903 !important; font-family:'Heading Now 1' !important; text-transform: uppercase !important; border-radius: 100px !important; border: 2px solid #f2a902 !important; color: #000 !important; font-size: 16px !important; padding: 10px 40px !important; letter-spacing: 1.5px !important;}
+.gform_wrapper .gform_body label {font-family:Arial, Helvetica, sans-serif; letter-spacing: 1px; text-transform: uppercase; opacity: 0.7;}
+body .gform_wrapper .gform_button {background: #F2A903 !important; font-family:Arial, Helvetica, sans-serif !important; text-transform: uppercase !important; border-radius: 100px !important; border: 2px solid #f2a902 !important; color: #000 !important; font-size: 16px !important; padding: 10px 40px !important; letter-spacing: 1.5px !important; font-weight: 700 !important;}
 .gform_wrapper input {border: none !important; border-radius: 20px !important;}
 .gform_wrapper select {border: none !important;  border-radius: 20px !important; }
 .gform_wrapper textarea {border: none !important; min-block-size: 250px !important;  border-radius: 20px !important;}

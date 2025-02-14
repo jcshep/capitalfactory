@@ -1,4 +1,4 @@
-<div id="hero" class="<?= strtolower(str_replace(' ', '-', $args['style'])) ?>">
+<div id="hero" class="<?= strtolower(str_replace(' ', '-', $args['style'])) ?> <?= strtolower($args["height"]) ?>">
 
 	<div class="container">
 
@@ -34,7 +34,7 @@
 									<div class="spacer-md"></div>
 								<?php endif ?>
 
-								<h1 class="<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?> pr-5"><?= $args['title'] ?></h1>
+								<h1 class="<?= $args['title_font_size'] == 'Large' ? 'display-xxl' : 'display-lg' ?> pr-5"><?= $args['title'] ?></h1>
 							</div> <!--col-->
 
 							<div class="col-md-4 pl-2">
@@ -112,19 +112,22 @@
 
 					<div class="spacer-lg"></div>
 
-					<?php if ($args['button']): ?>
-						<a class="btn btn-primary mr-3" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
-							<?= $args['button']['title'] ?>
-						</a>
-					<?php endif ?>
+					<div>
+						<?php if ($args['button']): ?>
+							<a class="btn btn-primary mr-3" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
+								<?= $args['button']['title'] ?>
+							</a>
+						<?php endif ?>
 
-					<!-- <div class="spacer-sm"></div> -->
+						<!-- <div class="spacer-sm"></div> -->
 
-					<?php if ($args['button_secondary']): ?>
-						<a class="btn btn-secondary" target="<?= $args['button_secondary']['target'] ?>" href="<?= $args['button_secondary']['url'] ?>">
-							<?= $args['button_secondary']['title'] ?>
-						</a>
-					<?php endif ?>
+						<?php if ($args['button_secondary']): ?>
+							<a class="btn btn-secondary" target="<?= $args['button_secondary']['target'] ?>" href="<?= $args['button_secondary']['url'] ?>">
+								<?= $args['button_secondary']['title'] ?>
+							</a>
+						<?php endif ?>
+
+					</div>
 
 
 				</div>
@@ -139,6 +142,20 @@
 </div>
 
 
+
+
+<?php if (is_front_page()) : ?>
+	<div class="spacer-xl"></div>
+	<div class="welcome">
+		<div class="container">
+			<img src="<?php bloginfo('template_directory'); ?>/img/robot-dude.png" class="robot" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/img/welcome-mask.png" class="mask" alt="">
+			<div class="bg">
+				<img src="<?php bloginfo('template_directory'); ?>/img/austin.jpg" alt="">
+			</div>
+		</div>
+	</div>
+<?php endif; ?>
 
 
 
@@ -174,4 +191,11 @@ if (function_exists('wp_enqueue_style')) {
 			video.loop = true;
 		}
 	})();
+
+	$(document).ready(function() {
+		$(window).on("scroll", function() {
+			var scrollPos = $(window).scrollTop();
+			$(".welcome .bg img").css("transform", "translateY(" + scrollPos * 0.3 + "px)");
+		});
+	});
 </script>
