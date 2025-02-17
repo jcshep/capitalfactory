@@ -475,6 +475,7 @@ function add_reference_link_to_radio_buttons($field)
 			'v4' => get_template_directory_uri() . '/img/admin/side-by-side-v4.png',
 			'v5' => get_template_directory_uri() . '/img/admin/side-by-side-v5.png',
 			'v6' => get_template_directory_uri() . '/img/admin/side-by-side-v6.png',
+			'v7' => get_template_directory_uri() . '/img/admin/side-by-side-v7.png',
 		];
 
 		// Loop through each radio button choice 

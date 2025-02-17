@@ -4,7 +4,7 @@ $img_square = $args['img_square'];
 $bg_cream = $args['bg_cream'];
 $bg_color = $args['bg_color'];
 
-if ($variant !== 'v6'):
+if ($variant !== 'v6' && $variant !== 'v7'):
 ?>
 
 
@@ -133,22 +133,36 @@ if ($variant !== 'v6'):
 			<div class="row">
 				<?php if ($args['content']): ?>
 					<?php if ($args['tag']) : ?>
-						<div class="col-12">
+						<div class="col-12<?php if ($args['title_centered']): ?> text-center<?php endif; ?>">
 							<div class="tag  <?= $args['title_font_color'] == 'Light' ? 'text-white bd-white' : 'text-dark bd-dark' ?>"><?= $args['tag'] ?></div>
 							<div class="spacer-xl"></div>
 						</div>
 					<?php endif; ?>
 
-					<div class="col-md-5">
+					<div class="<?php if ($variant == 'v6'): ?>col-md-5<?php else: ?>col-12<?php endif; ?><?php if ($args['title_centered']): ?> text-center<?php endif; ?>">
 						<?php if ($args['title']): ?>
-							<h3 class="display-xl mb-0 <?= $args['title_font_color'] == 'Light' ? 'text-white' : 'text-dark' ?>"><?= $args['title'] ?></h3>
+							<h3 class="
+							<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?> 
+							mb-0 
+							<?= $args['title_font_color'] == 'Light' ? 'text-white' : 'text-dark' ?>">
+							<?= $args['title'] ?></h3>
 							<div class="spacer-md"></div>
 						<?php endif ?>
 					</div>
-					<div class="col-md-6 ml-auto text-white">
+					<div class="<?php if ($variant == 'v6'): ?>col-md-6 ml-auto<?php else: ?>col-12<?php endif; ?>">
 						<div class="<?= $args['content_font_color'] == 'Light' ? 'text-white' : 'text-dark' ?>">
 							<?= $args['content'] ?>
 						</div>
+
+
+						<?php if ($args['boxes']): ?>
+							<div class="boxes-grid">
+								<?php foreach ($args['boxes'] as $box): ?>
+									<div class="bg-white display-lg py-5 px-2 text-dark text-uppercase rounded-corners-4 text-center"><?= $box['text']; ?></div>
+								<?php endforeach; ?>
+							</div>
+						<?php endif; ?>
+
 						<div class="d-flex flex-wrap gap-xs">
 							<?php if ($args['button']): ?>
 								<a class="btn btn-primary mb-5 mb-md-0" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
