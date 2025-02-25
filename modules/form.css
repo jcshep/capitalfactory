@@ -1,0 +1,11 @@
+
+.form {padding: 60px; background: #f4f0e5; z-index: 10; position: relative; overflow: visible;}
+.form h3 {max-width: 800px; margin: 0 auto; color: #000; font-size: 60px;}
+.form p {max-width: 900px; margin: 0 auto;}
+/* .form.text-white .tag {border-color: #f3f0e7; opacity: 0.7;} */
+.form .tag {opacity: 0.5;}
+.form.text-dark .display-xl {color: #000;}
+
+.form .form-inside {max-width: 900px; margin: 0 auto}
+
+.form .gsection_title {font-family: 'Heading Now 55'; font-size: 37px; padding: 0; max-width: none; padding-top: 30px;}

@@ -4,7 +4,7 @@
             <?php if ($args['type'] == 'Team') : ?>
 
                 <div class="spacer-md"></div>
-                <div class="tag">Our Team</div>
+                <div class="tag">Our Leadership Team</div>
                 <div class="spacer-xl"></div>
 
                 <div class="row">

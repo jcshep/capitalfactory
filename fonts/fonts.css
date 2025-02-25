@@ -71,9 +71,9 @@
 }
 
 @font-face {
-    font-family: 'Heading Now 9';
-    src: url('HeadingNowTrial-55Medium.woff2') format('woff2'),
-        url('HeadingNowTrial-55Medium.woff') format('woff');
+    font-family: 'Heading Now 55';
+    src: url('HeadingNow-55Medium.woff2') format('woff2'),
+        url('HeadingNow-55Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

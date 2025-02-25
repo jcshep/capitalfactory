@@ -13,7 +13,7 @@
 					<?php foreach($args['stats'] as $s): ?>
 						<div class="col-md-6 stats-grid-item">
 							<div class="rounded-corners-4 p-30 d-flex flex-column align-items-center justify-content-center">
-								<div class="gallery-stat-num"><?= $s['number']; ?></div>
+								<div class="gallery-stat-num heading-2"><?= $s['number']; ?></div>
 								<div class="gallery-stat-desc display-lg"><?= $s['text']; ?></div>
 							</div>
 						</div>

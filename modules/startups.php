@@ -28,7 +28,7 @@
                         }
                 ?>
                         <div class="col-md-15">
-                            <div class="startup-card text-left mb-4">
+                            <a class="startup-card text-left mb-4" href="<?php the_permalink(); ?>">
 
 
                                 <div class="img-placeholder">
@@ -45,7 +45,7 @@
                                 <?php if (get_field('title')) : ?>
                                     <div class="mentor-title text-muted"><?php echo esc_html(get_field('title')); ?></div>
                                 <?php endif; ?>
-                            </div>
+                            </a>
                         </div>
                     <?php
                         $counter++;

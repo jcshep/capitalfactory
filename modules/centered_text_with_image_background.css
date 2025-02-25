@@ -8,5 +8,7 @@
 #centered-text-image-bg.size-short {min-height: 500px; padding-bottom: 30px; padding-top: 30px;}
 #centered-text-image-bg.size-tall {min-height: 800px}
 
+#centered-text-image-bg h2 {font-size: 47px; color: #000;}
+
 
 #centered-text-image-bg .bg-dark {background: transparent !important; color: #FFF}
