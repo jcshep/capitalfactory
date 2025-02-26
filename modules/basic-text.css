@@ -1,8 +1,18 @@
+.basic-text h1,
+.basic-text h2,
+.basic-text h3,
+.basic-text h4 {color: #000; font-family: 'Heading Now 55'; margin-bottom: 28px}
 
+.basic-text h1 {font-size: 54px;}
+.basic-text h2 {font-size: 40px;}
+.basic-text h3 {font-size: 38px;}
+.basic-text h4 {font-size: 30px;}
 
-.basic-text {padding: 60px;;}
-.basic-text h3 {max-width: 800px; margin: 0 auto;}
-.basic-text p {max-width: 900px; margin: 0 auto;}
+.basic-text h2.display-xl {font-size: 70px; font-family: 'Heading Now 57';}
+
+.basic-text {}
+.basic-text .inside {max-width: 900px; margin: 0 auto}
 .basic-text.text-white .tag {border-color: #f3f0e7; opacity: 0.7;}
+.basic-text.text-white h2.display-xl {color: #f3f0e6;}
 .basic-text .tag {opacity: 0.5;}
 .basic-text.text-dark .display-xl {color: #000;}

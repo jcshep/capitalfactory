@@ -388,8 +388,50 @@
                             "append": ""
                         },
                         {
-                            "key": "field_675787961962e",
+                            "key": "field_67b695f8339c7",
                             "label": "Title",
+                            "name": "title_1",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_67b6960f339c8",
+                            "label": "Title 2",
+                            "name": "title_2",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_675787961962e",
+                            "label": "Subtitle",
                             "name": "title",
                             "aria-label": "",
                             "type": "text",
@@ -1205,6 +1247,35 @@
                             "save_other_choice": 0
                         },
                         {
+                            "key": "field_67b691d5ff31d",
+                            "label": "Title Centered",
+                            "name": "title_centered",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_675f1717bb423",
+                                        "operator": "==",
+                                        "value": "v7"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
                             "key": "field_678979b0370db",
                             "label": "Content Font Color",
                             "name": "content_font_color",
@@ -1236,7 +1307,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "50",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -1305,15 +1376,7 @@
                             "type": "link",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_675f1717bb423",
-                                        "operator": "!=",
-                                        "value": "v7"
-                                    }
-                                ]
-                            ],
+                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "25",
                                 "class": "",
@@ -1330,15 +1393,7 @@
                             "type": "link",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_675f1717bb423",
-                                        "operator": "!=",
-                                        "value": "v7"
-                                    }
-                                ]
-                            ],
+                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "25",
                                 "class": "",
@@ -1383,7 +1438,7 @@
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1394,10 +1449,10 @@
                             },
                             "default_value": "",
                             "maxlength": "",
-                            "allow_in_bindings": 0,
+                            "allow_in_bindings": 1,
+                            "rows": 2,
                             "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "new_lines": "br"
                         },
                         {
                             "key": "field_6761685774fad",
@@ -2138,6 +2193,75 @@
                             },
                             "return_format": "array",
                             "allow_in_bindings": 0
+                        },
+                        {
+                            "key": "field_67b8a1ec486b0",
+                            "label": "Button Opens Form Modal",
+                            "name": "button_opens_form_modal",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_67b8a21e486b1",
+                            "label": "Gravity Form",
+                            "name": "gravity_form",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_67b8a1ec486b0",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "None",
+                                "12": "\"Visit Us\" Contact Form",
+                                "14": "All Access Application",
+                                "13": "Email Subscription Form",
+                                "9": "Federal Team Contact",
+                                "7": "Fellowship Fund Lead Generation",
+                                "10": "Footer Contact",
+                                "2": "Hubspot Test",
+                                "6": "Investor Relations Deal Flow Registration",
+                                "1": "Join Capital Factory",
+                                "4": "Member Application",
+                                "5": "Mentor Application",
+                                "11": "Press Form",
+                                "8": "Sponsorships Lead Generation",
+                                "3": "Venue Inquiry"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
@@ -3164,7 +3288,7 @@
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -3175,10 +3299,31 @@
                             },
                             "default_value": "",
                             "maxlength": "",
-                            "allow_in_bindings": 0,
+                            "allow_in_bindings": 1,
+                            "rows": 2,
                             "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_67be02598fda8",
+                            "label": "Subtitle",
+                            "name": "subtitle",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 1,
+                            "rows": 2,
+                            "placeholder": "",
+                            "new_lines": "br"
                         },
                         {
                             "key": "field_67898c5e0a010",
@@ -3243,6 +3388,27 @@
                             "allow_in_bindings": 0,
                             "layout": "horizontal",
                             "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_67b894d65e1b6",
+                            "label": "White Background",
+                            "name": "white_background",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
                         }
                     ],
                     "min": "",
@@ -3338,7 +3504,20 @@
                             },
                             "choices": {
                                 "none": "None",
-                                "1": "Join Capital Factory"
+                                "12": "\"Visit Us\" Contact Form",
+                                "14": "All Access Application",
+                                "13": "Email Subscription Form",
+                                "9": "Federal Team Contact",
+                                "7": "Fellowship Fund Lead Generation",
+                                "10": "Footer Contact",
+                                "2": "Hubspot Test",
+                                "6": "Investor Relations Deal Flow Registration",
+                                "1": "Join Capital Factory",
+                                "4": "Member Application",
+                                "5": "Mentor Application",
+                                "11": "Press Form",
+                                "8": "Sponsorships Lead Generation",
+                                "3": "Venue Inquiry"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -3422,5 +3601,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1739820608
+    "modified": 1740505695
 }

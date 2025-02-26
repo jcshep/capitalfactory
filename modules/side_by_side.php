@@ -23,10 +23,12 @@ if ($variant !== 'v6' && $variant !== 'v7'):
 				</div>
 
 				<div class="col-md-6 pl-60">
-					<h2 class="
-						<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?> 
+					<h2 class="text-uppercase						
+						<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg heading-55 ' ?> 
 						<?= $args['title_font_color'] == 'Light' ? 'text-white' : 'text-dark' ?>
-						"><?= $args['title']; ?></h2>
+						">
+						<?= $args['title']; ?>
+					</h2>
 				</div>
 
 				<div class="col-md-5">
@@ -131,54 +133,57 @@ if ($variant !== 'v6' && $variant !== 'v7'):
 		<div class="p-60 image-bg pb-0 rounded-corners-1" style="background-color: <?= $args['bg_color'] ?>">
 
 			<div class="row">
-				<?php if ($args['content']): ?>
-					<?php if ($args['tag']) : ?>
-						<div class="col-12<?php if ($args['title_centered']): ?> text-center<?php endif; ?>">
-							<div class="tag  <?= $args['title_font_color'] == 'Light' ? 'text-white bd-white' : 'text-dark bd-dark' ?>"><?= $args['tag'] ?></div>
-							<div class="spacer-xl"></div>
-						</div>
-					<?php endif; ?>
 
-					<div class="<?php if ($variant == 'v6'): ?>col-md-5<?php else: ?>col-12<?php endif; ?><?php if ($args['title_centered']): ?> text-center<?php endif; ?>">
-						<?php if ($args['title']): ?>
-							<h3 class="
+				<?php if ($args['tag']) : ?>
+					<div class="col-12<?php if ($args['title_centered']): ?> text-center<?php endif; ?>">
+						<div class="tag  <?= $args['title_font_color'] == 'Light' ? 'text-white bd-white' : 'text-dark bd-dark' ?>"><?= $args['tag'] ?></div>
+						<div class="spacer-xl"></div>
+					</div>
+				<?php endif; ?>
+
+				<div class="<?php if (!$args['title_centered']): ?>col-md-5<?php else: ?>col-12<?php endif; ?><?php if ($args['title_centered']): ?> text-center<?php endif; ?>">
+					<?php if ($args['title']): ?>
+						<h3 class="
 							<?= $args['title_font_size'] == 'Large' ? 'display-xl' : 'display-lg' ?> 
 							mb-0 
 							<?= $args['title_font_color'] == 'Light' ? 'text-white' : 'text-dark' ?>">
 							<?= $args['title'] ?></h3>
-							<div class="spacer-md"></div>
+						<div class="spacer-md"></div>
+					<?php endif ?>
+				</div>
+
+				<div class="<?php if ($variant == 'v6'): ?>col-md-6 ml-auto<?php else: ?>col-12 text-center<?php endif; ?>">
+
+					<div class="<?= $args['content_font_color'] == 'Light' ? 'text-white' : 'text-dark' ?>">
+						<?= $args['content'] ?>
+					</div>
+
+
+					<?php if ($args['boxes']): ?>
+						<div class="spacer-lg"></div>
+						<div class="boxes-grid">
+							<?php foreach ($args['boxes'] as $box): ?>
+								<div class="bg-white display-lg py-5 px-2 text-dark text-uppercase rounded-corners-4 text-center"><?= $box['text']; ?></div>
+							<?php endforeach; ?>
+						</div>
+					<?php endif; ?>
+
+					<div class="d-flex flex-wrap gap-xs">
+						<?php if ($args['button']): ?>
+							<a class="btn btn-primary mb-5 mb-md-0" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
+								<?= $args['button']['title'] ?>
+							</a>
+						<?php endif ?>
+						<?php if ($args['button2']): ?>
+							<a class="btn btn-primary mb-5 mb-md-0" target="<?= $args['button2']['target'] ?>" href="<?= $args['button2']['url'] ?>">
+								<?= $args['button2']['title'] ?>
+							</a>
 						<?php endif ?>
 					</div>
-					<div class="<?php if ($variant == 'v6'): ?>col-md-6 ml-auto<?php else: ?>col-12<?php endif; ?>">
-						<div class="<?= $args['content_font_color'] == 'Light' ? 'text-white' : 'text-dark' ?>">
-							<?= $args['content'] ?>
-						</div>
+				</div>
 
-
-						<?php if ($args['boxes']): ?>
-							<div class="boxes-grid">
-								<?php foreach ($args['boxes'] as $box): ?>
-									<div class="bg-white display-lg py-5 px-2 text-dark text-uppercase rounded-corners-4 text-center"><?= $box['text']; ?></div>
-								<?php endforeach; ?>
-							</div>
-						<?php endif; ?>
-
-						<div class="d-flex flex-wrap gap-xs">
-							<?php if ($args['button']): ?>
-								<a class="btn btn-primary mb-5 mb-md-0" target="<?= $args['button']['target'] ?>" href="<?= $args['button']['url'] ?>">
-									<?= $args['button']['title'] ?>
-								</a>
-							<?php endif ?>
-							<?php if ($args['button2']): ?>
-								<a class="btn btn-primary mb-5 mb-md-0" target="<?= $args['button2']['target'] ?>" href="<?= $args['button2']['url'] ?>">
-									<?= $args['button2']['title'] ?>
-								</a>
-							<?php endif ?>
-						</div>
-					</div>
-					<div class="col-12 spacer-xxl d-none d-md-block"></div>
-					<div class="col-12 spacer-md d-block d-md-none"></div>
-				<?php endif; ?>
+				<div class="col-12 spacer-xxl d-none d-md-block"></div>
+				<div class="col-12 spacer-md d-block d-md-none"></div>
 
 
 				<?php if ($args['lower_section_embed']): ?>

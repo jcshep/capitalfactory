@@ -1,7 +1,7 @@
 .stats img:first-of-type { position: absolute; left: 0; bottom: 0; max-height: 390px; }
 .stats .grid { display: grid; grid-template-columns: repeat(2, 1fr); }
 .stats .gallery-stat-num { font-size: 100px; }
-.stats .stats-grid-item > div { margin-bottom: 30px; min-height: 420px; background-color: #D6D2C4; }
+.stats .stats-grid-item > div { margin-bottom: 30px; min-height: 320px; background-color: #D6D2C4; }
 
 @media only screen and (max-width: 992px) {
   .stats img:first-of-type { max-height: 300px; }

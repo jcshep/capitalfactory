@@ -14,10 +14,18 @@
 				<div class="spacer-xl"></div>
 			<?php endif ?>
 
+			<?php if($args['title_1']) : ?>
+				<p class="text-xl title-2 mb-2"><strong><?= $args['title_1'] ?></strong></h2>
+			<?php endif; ?>
+
+			<?php if($args['title_2']) : ?>
+				<h2 class="display-lg title-1 text-uppercase"><?= $args['title_2'] ?></h2>
+			<?php endif; ?>
+
 			<?php if ($args['add_white_container_around_text']): ?>
-				<p class="text-xl"><?= $args['title'] ?></p>	
+				<p class="text-xl title-2 mb-3"><strong><?= $args['title'] ?></strong></p>	
 			<?php else: ?>
-				<h3 class="display-sm mb-3"><?= $args['title'] ?></h3>		
+				<h3 class="display-sm title-2 mb-3"><?= $args['title'] ?></h3>		
 			<?php endif ?>
 			
 			
