@@ -9,7 +9,7 @@ add_action('admin_menu', function() {
     add_submenu_page(
         'edit.php?post_type=startup',    // Parent slug
         'Import Startups',               // Page title
-        'Import',                        // Menu title
+        'Import Startups',                        // Menu title
         'manage_options',                // Capability
         'import-startups',               // Menu slug
         'render_import_page'             // Callback function
@@ -115,7 +115,7 @@ function import_startups_batch() {
 
     $apiKey = "patvsDl2DOi1a14vQ.2947477e39a5777c5b49482b7e0b2f60c009561b8ffc3c014aba6478f6bf24ce";
     $baseId = "app3c8mUha4KsZAQV";
-    $tableName = "tbljHA2exehxeQG11";
+    $tableName = "tblyvgEPnmslAObJO";
     $batch_size = 100; // Process 5 records at a time
     $offset = isset($_POST['offset']) ? sanitize_text_field($_POST['offset']) : null;
 
@@ -157,18 +157,6 @@ function import_startups_batch() {
                 wp_delete_post($startup->ID, true);
             }
 
-            // Delete existing taxonomy terms
-            $taxonomies = ['industry', 'startup-technology'];
-            foreach ($taxonomies as $taxonomy) {
-                $terms = get_terms([
-                    'taxonomy'   => $taxonomy,
-                    'hide_empty' => false
-                ]);
-
-                foreach ($terms as $term) {
-                    wp_delete_term($term->term_id, $taxonomy);
-                }
-            }
         }
 
         foreach ($data['records'] as $record) {
@@ -176,7 +164,7 @@ function import_startups_batch() {
             
             // Create startup post
             $post_data = [
-                'post_title'   => $fields['Company'] ?? 'Untitled Startup',
+                'post_title'   => $fields['Name'] ?? 'Untitled Startup',
                 'post_content' => $fields['Description'] ?? '',
                 'post_type'    => 'startup',
                 'post_status'  => 'publish'
@@ -217,38 +205,104 @@ function import_startups_batch() {
 
                 // Map Airtable fields to ACF fields
                 update_field('cohort', $fields['Cohort'] ?? '', $post_id);
+                update_field('pitch_vc_link', $fields['Pitch'] ?? '', $post_id);
                 update_field('website', $fields['Website'] ?? '', $post_id);
                 update_field('portfolio_onboard', $fields['Portfolio Onboard'] ?? '', $post_id);
                 update_field('tagline', $fields['Tagline'] ?? '', $post_id);
+                update_field('star_rating', $fields['Star Rating'] ?? '', $post_id);
                 update_field('description', $fields['Description'] ?? '', $post_id);
-                update_field('pitch_vc_link', $fields['Pitch.vc link'] ?? '', $post_id);
+                update_field('status', $fields['Status'] ?? '', $post_id);
+                update_field('twitter', $fields['Twitter'] ?? '', $post_id);
                 update_field('uei', $fields['UEI'] ?? '', $post_id);
 
                 // Handle custom taxonomy "industry"
                 if (!empty($fields['Industry'])) {
-                    $industry_names = explode(',', $fields['Industry']);
-                    $industry_names = array_map('trim', $industry_names);
-                    $industry_names = array_filter($industry_names, function ($industry) {
-                        return !is_numeric($industry) && !empty($industry);
-                    });
-
-                    foreach ($industry_names as $industry) {
-                        if (!term_exists($industry, 'industry')) {
-                            wp_insert_term($industry, 'industry');
+                    $industries = $fields['Industry'];
+                    $industry_term_ids = [];
+                    
+                    foreach ($industries as $industry_name) {
+                        // Get all terms in the industry taxonomy
+                        $terms = get_terms([
+                            'taxonomy' => 'industry',
+                            'hide_empty' => false,
+                            'meta_query' => [
+                                [
+                                    'key' => 'id',
+                                    'value' => $industry_name,
+                                    'compare' => '='
+                                ]
+                            ]
+                        ]);
+                        
+                        if (!empty($terms) && !is_wp_error($terms)) {
+                            // Found a term with matching id
+                            $industry_term_ids[] = $terms[0]->term_id;
                         }
                     }
-                    wp_set_object_terms($post_id, $industry_names, 'industry', false);
+                    
+                    if (!empty($industry_term_ids)) {
+                        wp_set_object_terms($post_id, $industry_term_ids, 'industry', false);
+                    }
                 }
 
                 // Handle custom taxonomy "startup-technology"
-                if (!empty($fields['Technologies'])) {
-                    $technologies = $fields['Technologies'];
-                    foreach ($technologies as $tech) {
-                        if (!term_exists($tech, 'startup-technology')) {
-                            wp_insert_term($tech, 'startup-technology');
+                if (!empty($fields['Technology'])) {
+                    $technologies = $fields['Technology'];
+                    $technology_term_ids = [];
+                    
+                    foreach ($technologies as $technology_name) {
+                        // Get all terms in the startup-technology taxonomy
+                        $terms = get_terms([
+                            'taxonomy' => 'startup-technology',
+                            'hide_empty' => false,
+                            'meta_query' => [
+                                [
+                                    'key' => 'id',
+                                    'value' => $technology_name,
+                                    'compare' => '='
+                                ]
+                            ]
+                        ]);
+                        
+                        if (!empty($terms) && !is_wp_error($terms)) {
+                            // Found a term with matching id
+                            $technology_term_ids[] = $terms[0]->term_id;
                         }
                     }
-                    wp_set_object_terms($post_id, $technologies, 'startup-technology', false);
+                    
+                    if (!empty($technology_term_ids)) {
+                        wp_set_object_terms($post_id, $technology_term_ids, 'startup-technology', false);
+                    }
+                }
+
+                // Handle custom taxonomy "fund"
+                if (!empty($fields['Funds'])) {
+                    $funds = $fields['Funds'];
+                    $fund_term_ids = [];
+                    
+                    foreach ($funds as $fund_name) {
+                        // Get all terms in the fund taxonomy
+                        $terms = get_terms([
+                            'taxonomy' => 'fund',
+                            'hide_empty' => false,
+                            'meta_query' => [
+                                [
+                                    'key' => 'id',
+                                    'value' => $fund_name,
+                                    'compare' => '='
+                                ]
+                            ]
+                        ]);
+                        
+                        if (!empty($terms) && !is_wp_error($terms)) {
+                            // Found a term with matching id
+                            $fund_term_ids[] = $terms[0]->term_id;
+                        }
+                    }
+                    
+                    if (!empty($fund_term_ids)) {
+                        wp_set_object_terms($post_id, $fund_term_ids, 'fund', false);
+                    }
                 }
             }
         }

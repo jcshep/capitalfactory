@@ -8,8 +8,11 @@
 .basic-text h3 {font-size: 38px;}
 .basic-text h4 {font-size: 30px;}
 
+.basic-text h2.display-xl {font-size: 70px; font-family: 'Heading Now 57';}
+
 .basic-text {}
 .basic-text .inside {max-width: 900px; margin: 0 auto}
 .basic-text.text-white .tag {border-color: #f3f0e7; opacity: 0.7;}
+.basic-text.text-white h2.display-xl {color: #f3f0e6;}
 .basic-text .tag {opacity: 0.5;}
 .basic-text.text-dark .display-xl {color: #000;}

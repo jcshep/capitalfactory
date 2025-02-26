@@ -40,7 +40,10 @@ function import_airtable_mentors($apiKey, $baseId, $tableName) {
 
     $data = json_decode($response, true);
 
-	
+	// echo '<pre>';
+	// print_r($data); // Print the data for debugging purposes
+    // echo '</pre>';
+    // die();
 
     if (!isset($data['records'])) return;
 

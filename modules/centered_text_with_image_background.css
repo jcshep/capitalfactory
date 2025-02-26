@@ -2,7 +2,7 @@
 
 #centered-text-image-bg {position: relative;}
 #centered-text-image-bg img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
-#centered-text-image-bg .inside {max-width: 800px;}
+#centered-text-image-bg .inside {max-width: 800px; background: #f3f0e6 !important; }
 #centered-text-image-bg .bg-white .text-lg {color: #6a756d}
 
 #centered-text-image-bg.size-short {min-height: 500px; padding-bottom: 30px; padding-top: 30px;}

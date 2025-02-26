@@ -170,7 +170,7 @@ function manage_scripts()
 	wp_register_style('fonts', get_template_directory_uri() . '/fonts/fonts.css?cache='.time());
 	wp_enqueue_style('fonts');
 
-	if (is_page_template('template-events.php')) {
+	if (is_singular('event')) {
 		wp_register_style('hero', get_template_directory_uri() . '/modules/hero.css');
 		wp_enqueue_style('hero');
 
@@ -639,6 +639,26 @@ if (function_exists('acf_add_options_page')) {
 }
 
 
+function make_google_calendar_link($name, $begin, $end, $details, $location) {
+	$params = array('&dates=', '/', '&details=', '&location=', '&sf=true&output=xml');
+	$url = 'https://www.google.com/calendar/render?action=TEMPLATE&text=';
+	$arg_list = func_get_args();
+    for ($i = 0; $i < count($arg_list); $i++) {
+    	$current = $arg_list[$i];
+    	if(is_int($current)) {
+    		$t = new DateTime('@' . $current, new DateTimeZone('UTC'));
+    		$current = $t->format('Ymd\THis\Z');
+    		unset($t);
+    	}
+    	else {
+    		$current = urlencode($current);
+    	}
+    	$url .= (string) $current . $params[$i];
+    }
+    return $url;
+}
+
+
 
 // Events
 // Base ID: appuPQbhltfdTaodF
@@ -651,4 +671,11 @@ include 'airtable-startups-import.php';
 
 include 'airtable-mentors-import.php';
 
-// Mentors
+include 'airtable-import-startup-funds.php';
+
+include 'airtable-import-industries.php';
+
+include 'airtable-import-technologies.php';
+
+include 'airtable-events-import.php';
+

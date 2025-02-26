@@ -1438,7 +1438,7 @@
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1449,10 +1449,10 @@
                             },
                             "default_value": "",
                             "maxlength": "",
-                            "allow_in_bindings": 0,
+                            "allow_in_bindings": 1,
+                            "rows": 2,
                             "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "new_lines": "br"
                         },
                         {
                             "key": "field_6761685774fad",
@@ -2243,7 +2243,7 @@
                                 "14": "All Access Application",
                                 "13": "Email Subscription Form",
                                 "9": "Federal Team Contact",
-                                "7": "Fellowship Form Lead Generation",
+                                "7": "Fellowship Fund Lead Generation",
                                 "10": "Footer Contact",
                                 "2": "Hubspot Test",
                                 "6": "Investor Relations Deal Flow Registration",
@@ -3288,7 +3288,7 @@
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -3299,10 +3299,31 @@
                             },
                             "default_value": "",
                             "maxlength": "",
-                            "allow_in_bindings": 0,
+                            "allow_in_bindings": 1,
+                            "rows": 2,
                             "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_67be02598fda8",
+                            "label": "Subtitle",
+                            "name": "subtitle",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 1,
+                            "rows": 2,
+                            "placeholder": "",
+                            "new_lines": "br"
                         },
                         {
                             "key": "field_67898c5e0a010",
@@ -3487,7 +3508,7 @@
                                 "14": "All Access Application",
                                 "13": "Email Subscription Form",
                                 "9": "Federal Team Contact",
-                                "7": "Fellowship Form Lead Generation",
+                                "7": "Fellowship Fund Lead Generation",
                                 "10": "Footer Contact",
                                 "2": "Hubspot Test",
                                 "6": "Investor Relations Deal Flow Registration",
@@ -3580,5 +3601,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1740153719
+    "modified": 1740505695
 }

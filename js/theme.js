@@ -54,6 +54,18 @@ $(document).ready(function() {
 	  ]
 	});	
 
+	// Smooth scroll for anchor links
+	$('.btn[href^="#"]').on('click', function(e) {
+		e.preventDefault();
+		
+		var target = $(this.hash);
+		if (target.length) {
+			$('html, body').animate({
+				scrollTop: target.offset().top - 100 // Offset by 100px to account for fixed headers
+			}, 800, 'swing');
+		}
+	});
+
 	// Affix actions
 	// $(window).on('scroll', function(event) {
 	// 	var scrollValue = $(window).scrollTop();

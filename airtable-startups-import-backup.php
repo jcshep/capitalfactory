@@ -4,7 +4,7 @@
 // Airtable credentials
 $apiKey = "patvsDl2DOi1a14vQ.2947477e39a5777c5b49482b7e0b2f60c009561b8ffc3c014aba6478f6bf24ce";
 $baseId = "app3c8mUha4KsZAQV";
-$tableName = "tbljHA2exehxeQG11";
+$tableName = "tblyvgEPnmslAObJO";
 
 
 
@@ -62,6 +62,12 @@ function import_airtable_startups($apiKey, $baseId, $tableName)
 		}
 
 		$data = json_decode($response, true);
+
+
+		echo '<pre>';
+		print_r($data); // Print the data for debugging purposes
+		echo '</pre>';
+		die();
 
 		if (!isset($data['records'])) {
 			error_log("No records found in Airtable response");
