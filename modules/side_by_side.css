@@ -46,4 +46,5 @@
 	.side-by-side.v3 .col-text { padding-bottom: 0; }
   .side-by-side.v4 .image-bg { width: 100%; transform: translateX(0); }
   .boxes-grid { grid-template-columns: repeat(1, 1fr); }
+  .side-by-side .pl-60 { padding-left: 15px; }
 }

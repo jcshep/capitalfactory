@@ -184,7 +184,7 @@ function manage_scripts()
 
 
 	// Media Queries CSS
-	wp_register_style('media-queries', get_template_directory_uri() . '/media-queries.css');
+	wp_register_style('media-queries', get_template_directory_uri() . '/media-queries.css?cache='.time());
 	wp_enqueue_style('media-queries');
 
 	// Google Fonts

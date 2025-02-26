@@ -4,7 +4,7 @@
     "menu_order": 0,
     "active": true,
     "post_type": "event",
-    "advanced_configuration": true,
+    "advanced_configuration": false,
     "import_source": "",
     "import_date": "",
     "labels": {
@@ -59,7 +59,7 @@
     "menu_position": "",
     "menu_icon": {
         "type": "dashicons",
-        "value": "dashicons-calendar-alt"
+        "value": "dashicons-admin-post"
     },
     "rename_capabilities": false,
     "singular_capability_name": "post",
@@ -67,6 +67,7 @@
     "supports": [
         "title",
         "editor",
+        "thumbnail",
         "custom-fields"
     ],
     "taxonomies": "",
@@ -84,5 +85,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "",
-    "modified": 1737805115
+    "modified": 1740600583
 }

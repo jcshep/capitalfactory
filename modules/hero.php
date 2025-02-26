@@ -27,20 +27,20 @@
 				<div class="content-wrap d-flex align-items-end h-100">
 					<div class="p-60 position-relative two-columns">
 						<div class="row">
-							<div class="col-md-7 pr-5">
+							<div class="col-md-7 pr-md-5">
 
 								<?php if ($args['tag']): ?>
-									<div class="tag bd-black bg-white"><?= $args['tag'] ?></div>
+									<div class="tag bd-black bg-white mt-5 mt-md-0"><?= $args['tag'] ?></div>
 									<div class="spacer-md"></div>
 								<?php endif ?>
 
 								<h1 class="<?= $args['title_font_size'] == 'Large' ? 'display-xxl' : 'display-lg' ?> pr-5"><?= $args['title'] ?></h1>
 							</div> <!--col-->
 
-							<div class="col-md-4 pl-2">
+							<div class="col-md-4 pl-md-2">
 
 								<?php if ($args['tag']): ?>
-									<div class="spacer-md"></div>
+									<div class="spacer-md d-none d-md-block"></div>
 									<div class="spacer-md"></div>
 								<?php endif ?>
 

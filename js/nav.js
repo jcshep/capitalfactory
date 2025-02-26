@@ -25,11 +25,11 @@ $(document).ready(function() {
     if (open) {
       hamburger.attr('aria-expanded', true);
       nav.fadeIn(400);
-      disableBodyScroll($('.nav-scroller'));
+      //disableBodyScroll($('.nav-scroller'));
     } else {
       hamburger.attr('aria-expanded', false);
       nav.fadeOut(300);
-      enableBodyScroll($('.nav-scroller'));
+      //enableBodyScroll($('.nav-scroller'));
     }
   }
 });

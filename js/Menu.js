@@ -1,3 +1,7 @@
+function isMobile() {
+  return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
 class Menu {
   constructor(e) {
     this.el = e;
@@ -29,28 +33,38 @@ class Menu {
   }
 
   mouseEnter(e) {
-  	if (e.currentTarget.parentNode.parentNode.parentNode.classList.contains('.sub-menu')) {
-  		this.open(e.currentTarget.parentNode.parentNode.parentNode);
-  	} else {
-  		this.open(e.currentTarget.parentNode);
-  	}
+    if (!isMobile()) {
+      if (e.currentTarget.parentNode.parentNode.parentNode.classList.contains('.sub-menu')) {
+        this.open(e.currentTarget.parentNode.parentNode.parentNode);
+      } else {
+        this.open(e.currentTarget.parentNode);
+      }
+    }
   }
 
   mouseLeave(e) {
-    this.closeAll();
+    if (!isMobile()) {
+      this.closeAll();
+    }
   }
 
   open(e) {
-    this.current != e && (this.closeAll(), (this.isOpen = !0), e.classList.add("has-hover"), document.body.classList.add("menu-open"), (this.current = e));
+    if (!isMobile()) {
+      this.current != e && (this.closeAll(), (this.isOpen = !0), e.classList.add("has-hover"), document.body.classList.add("menu-open"), (this.current = e));
+    }
   }
 
   closeAll() {
-    for (let i= 0; i < this.links.length; i++) this.close(this.links[i].parentNode);
-    document.body.classList.remove("menu-open"), (this.current = null);
+    if (!isMobile()) {
+      for (let i= 0; i < this.links.length; i++) this.close(this.links[i].parentNode);
+      document.body.classList.remove("menu-open"), (this.current = null);
+    }
   }
 
   close(e) {
-    (this.isOpen = !1), (this.isOpen && this.current == e) || e.classList.remove("has-hover");
+    if (!isMobile()) {
+      (this.isOpen = !1), (this.isOpen && this.current == e) || e.classList.remove("has-hover");
+    }
   }
 }
 

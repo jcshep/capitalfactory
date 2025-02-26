@@ -12,6 +12,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+	.display-xxl { font-size: 64px; }
 	.display-xl { font-size: 54px; }
 }
 
@@ -20,6 +21,10 @@
   header .container, .nav .container { padding-left: 15px; padding-right: 15px; }
   .nav-row { grid-template-columns: 1fr 1fr 1fr; gap: 26px; }
   .nav-box { height: 340px; width: calc(300% + 26px + 26px); }
+  .newsletter p { margin-bottom: 16px; }
+  .newsletter .gform_fields { row-gap: 10px !important; flex-direction: column; }
+  .newsletter .gfield input { width: 100% !important; }
+  .newsletter .gform_wrapper { width: 100%; }
 }
 
 @media (max-width: 767px) {
@@ -35,24 +40,30 @@
 	.dropdown-menu li a span {color: #FFF !important; opacity: 0.8; font-size: 12px;}
 
 	header .logo, header .logo-container { max-width: 65px; }
+	.menu-right { position: relative; z-index: 5; }
   .nav-row { grid-template-columns: 1fr 1fr; gap: 26px; }
-  .nav-box { height: 340px; width: calc(200% + 26px); }
+  .nav-box { height: 340px; width: auto; }
+  .nav-box-title { width: 22px; }
+
+  #hero .content-wrap { min-height: 450px; justify-content: center; }
+
+  section.overlap .module-wrap { margin-top: -50px; }
 
 	.footer-bottom .copy { max-width: 100%; }
-	.footer-bottom .grid { display: grid; gap: 32px; grid-template-columns: repeat(2, 1fr); }
+	ul#menu-footer { display: grid; gap: 32px; grid-template-columns: repeat(2, 1fr); }
 	.footer-bottom .grid ul { gap: 10px 0; }
 
   .newsletter { margin: 0 -45px; padding: 40px 45px 36px; }
-  .newsletter .gform_fields { row-gap: 10px !important; flex-direction: column; }
-  .newsletter .gfield input { width: 100% !important; }
-  .newsletter .gform_wrapper { width: 100%; }
 
 }
 
 
 @media (max-width: 575px) {
-  .display-xl { font-size: 36px; }
-	.display-xxl { font-size: 48px; }
+	.display-xxl { font-size: 38px; }
+  .display-xl { font-size: 32px; }
+  .display-md { font-size: 20px; }
+
+  ul#menu-footer  { display: flex; flex-direction: column; }
 
 	.nav-row { display: flex; flex-wrap: wrap; }
 	.nav-row > ul { min-height: 1px; width: 100%; padding: 14px 20px; }

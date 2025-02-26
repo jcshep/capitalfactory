@@ -6,15 +6,26 @@
 				<div class="spacer-lg"></div>
 			</div>
 			<div class="col-md-2 mb-5 mb-md-0">
-				<div class="tag bd-white"><?= get_field('upper_section_content', 'option')['tag']; ?></div>
+
+				<?php if (get_field('upper_section_content', 'option')): ?>
+				  <div class="tag bd-white"><?= get_field('upper_section_content', 'option')['tag']; ?></div>
+				<?php endif; ?>
+
 			</div>
 			<div class="col-md-8">
-				<div class="display-xl"><?= get_field('upper_section_content', 'option')['title']; ?></div>
+				<?php if (get_field('upper_section_content', 'option')): ?>
+				  <div class="display-xl"><?= get_field('upper_section_content', 'option')['title']; ?></div>
+				<?php endif; ?>
+
 				<div class="spacer-md"></div>
-				<p><?= get_field('upper_section_content', 'option')['content']; ?></p>
+				<?php if (get_field('upper_section_content', 'option')): ?>
+				  <p><?= get_field('upper_section_content', 'option')['content']; ?></p>
+				<?php endif; ?>
 			</div>
 			<div class="col-md-2">
-				<a href="<?= get_field('upper_section_content', 'option')['button']['link']; ?>" class="btn btn-primary"><?= get_field('upper_section_content', 'option')['button']['title']; ?></a>
+				<?php if (get_field('upper_section_content', 'option')): ?>
+					<a href="<?= get_field('upper_section_content', 'option')['button']['link']; ?>" class="btn btn-primary"><?= get_field('upper_section_content', 'option')['button']['title']; ?></a>
+				<?php endif; ?>
 			</div>
 			<div class="col-12">
 				<div class="spacer-xxl"></div>
@@ -73,8 +84,10 @@
 			<div class="col-md-8">
 				<div class="newsletter flex-wrap flex-lg-nowrap rounded-corners-3 text-white d-flex justify-content-between align-items-center">
 					<div class="mr-5">
-						<h4><?= get_field('form_text', 'option')['title']; ?></h4>
-						<p><?= get_field('form_text', 'option')['content']; ?></p>
+						<?php if (get_field('form_text', 'option')): ?>
+						  <h4><?= get_field('form_text', 'option')['title']; ?></h4>
+						  <p><?= get_field('form_text', 'option')['content']; ?></p>
+					  <?php endif; ?>
 					</div>
 					<?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]'); ?>
 				</div>
