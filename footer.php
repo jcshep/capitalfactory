@@ -24,7 +24,7 @@
 			</div>
 			<div class="col-md-2">
 				<?php if (get_field('upper_section_content', 'option')): ?>
-					<a href="<?= get_field('upper_section_content', 'option')['button']['link']; ?>" class="btn btn-primary"><?= get_field('upper_section_content', 'option')['button']['title']; ?></a>
+					<a target="<?= get_field('upper_section_content', 'option')['button']['target']; ?>" href="<?= get_field('upper_section_content', 'option')['button']['url']; ?>" class="btn btn-primary"><?= get_field('upper_section_content', 'option')['button']['title']; ?></a>
 				<?php endif; ?>
 			</div>
 			<div class="col-12">

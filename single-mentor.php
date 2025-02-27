@@ -49,9 +49,9 @@ if (function_exists('wp_enqueue_style')) {
                 // Display mentor specialties
                 $specialties = get_the_terms(get_the_ID(), 'mentor-specialty');
                 if ($specialties && !is_wp_error($specialties)) {
-                    echo '<div class="d-flex">';
+                    echo '<div class="d-flex flex-wrap justify-content-center">';
                     foreach ($specialties as $specialty) {
-                        echo '<div class="tag bd-white d-inline-block mx-2">' . esc_html($specialty->name) . '</div>';
+                        echo '<div class="tag bd-white d-inline-block mx-2 mb-3">' . esc_html($specialty->name) . '</div>';
                     }
                     echo '</div>';
                 }

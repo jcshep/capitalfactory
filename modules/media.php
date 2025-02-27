@@ -28,19 +28,19 @@
 				</div>
 
 
-				<?php if(isset($args['media'])) : ?>								  
+				<?php if (isset($args['media'])) : ?>
 					<div class="spacer-lg mb-1 col-12"></div>
 				<?php endif; ?>
-				
+
 
 				<?php if ($args['subtitle']): ?>
-				  <div class="text-center col-12">
-				  	<h3 class="subtitle"><?= $args['subtitle']; ?></h3>
-				  </div>
-				  <?php if($args['media']) : ?>								  
-				  	<div class="col-12 spacer-md mb-1"></div>
-				  <?php endif; ?>
-			  <?php endif; ?>
+					<div class="text-center col-12">
+						<h3 class="subtitle"><?= $args['subtitle']; ?></h3>
+					</div>
+					<?php if ($args['media']) : ?>
+						<div class="col-12 spacer-md mb-1"></div>
+					<?php endif; ?>
+				<?php endif; ?>
 
 			<?php else: ?>
 				<div class="col-md-9 mx-auto text-center">
@@ -53,69 +53,65 @@
 							<?= $args['content']; ?>
 						</div>
 					<?php endif; ?>
-					
+
 					<div class="spacer-xl"></div>
 				</div>
 			<?php endif; ?>
 
 			<?php if ($args['media']): ?>
-				<?php $i = 0; foreach ($args['media'] as $m): ?>
+				<?php $i = 0;
+				foreach ($args['media'] as $m): ?>
 					<?php if ($m['featured']): ?>
 						<div class="col-12 media-item featured">
-							<?php get_template_part('modules/media-item', null, array('featured' => true, 'm' => $m, 'i' => $i, 'j' => $j, 'variant'=> $args['variant'])); ?>	
+							<?php get_template_part('modules/media-item', null, array('featured' => true, 'm' => $m, 'i' => $i, 'j' => $j, 'variant' => $args['variant'])); ?>
 						</div>
 						<div class="spacer-xl d-none d-md-block col-12"></div>
-						<div class="modal pr-0 fade" id="modal-<?= $j; ?>-<?= $i; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-title-<?= $j; ?>-<?= $i; ?>" aria-hidden="true">
-						  <div class="modal-dialog modal-dialog-centered" role="document">
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <h5 class="modal-title" id="modal-title-<?= $j; ?>-<?= $i ?>"><?= $m['title']; ?></h5>
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          <span aria-hidden="true">&times;</span>
-						        </button>
-						      </div>
-						      <div class="modal-body">
-						      	<div class="ratio" style="--aspect-ratio: 56.25%">
-						      		<?= $m['video']; ?>
-						      	</div>
-						      </div>
-						    </div>
-						  </div>
-						</div>
+						
 					<?php endif; ?>
-				<?php $i++; endforeach; ?>
+				<?php $i++;
+				endforeach; ?>
 
 				<div class="col-12">
 					<div class="<?php if ($args['variant'] !== 'v3'): ?>masonry d-flex flex-wrap <?php else: ?>grid <?php endif; ?>position-relative">
-						<?php $i = 0; $k = 0; foreach ($args['media'] as $m): ?>
+						<?php $i = 0;
+						$k = 0;
+						foreach ($args['media'] as $m): ?>
 							<?php if (!$m['featured']): ?>
 
 								<?php if ($i == 0 && ($args['variant'] !== 'v3')): ?><div class="media-item-sizer col-md-6 col-lg-4"></div><?php endif; ?>
 
 								<div class="media-item<?php if ($args['variant'] !== 'v3'): ?> col-md-6 col-lg-4<?php else: ?> mb-0 px-0<?php endif; ?>">
-									<?php get_template_part('modules/media-item', null, array('featured' => false, 'm' => $m, 'i' => $i, 'j' => $j, 'variant'=> $args['variant'], 'k' => $k )); ?>	
+									
+									<?php get_template_part('modules/media-item', null, array('featured' => false, 'm' => $m, 'i' => $i, 'j' => $j, 'variant' => $args['variant'], 'k' => $k)); ?>
+									
 									<?php if ($m['video'] && ($m['type'] == 'video')): ?>
-									<div class="modal pr-0 fade" id="modal-<?= $j; ?>-<?= $i; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-title-<?= $j; ?>-<?= $i; ?>" aria-hidden="true">
-									  <div class="modal-dialog modal-dialog-centered" role="document">
-									    <div class="modal-content">
-									      <div class="modal-header">
-									        <h5 class="modal-title" id="modal-title-<?= $j; ?>-<?= $i ?>"><?= $m['title']; ?></h5>
-									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									          <span aria-hidden="true">&times;</span>
-									        </button>
-									      </div>
-									      <div class="modal-body">
-									      	<div class="ratio" style="--aspect-ratio: 56.25%">
-									      		<?= $m['video']; ?>
-									      	</div>
-									      </div>
-									    </div>
-									  </div>
-									</div>
+
+										<div class="modal pr-0 fade" id="modal-<?= $j; ?>-<?= $i; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-title-<?= $j; ?>-<?= $i; ?>" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="modal-title-<?= $j; ?>-<?= $i ?>"><?= $m['title']; ?></h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<div class="ratio" style="--aspect-ratio: 56.25%">
+															<?= $m['video']; ?>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									<?php endif; ?>
 								</div>
 							<?php endif; ?>
-						<?php $i++; $k++; if ($k >= 6) { $k = 0;} endforeach; ?>
+						<?php $i++;
+							$k++;
+							if ($k >= 6) {
+								$k = 0;
+							}
+						endforeach; ?>
 					</div>
 				</div>
 			<?php endif; ?>
@@ -139,18 +135,18 @@
 </div>
 
 
-	<!-- Style -->
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/modules/media.css">
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<script>
-		(function() {
-			var grid = document.querySelector('#section<?= $j; ?> .masonry');
-			if (grid) {
-				var msnry = new Masonry( grid, {
-				  itemSelector: '.media-item',
-				  // columnWidth: '.media-item-sizer',
-				 // gutter: 34
-				});
-			}
-		})();
-	</script>
+<!-- Style -->
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/modules/media.css">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+	(function() {
+		var grid = document.querySelector('#section<?= $j; ?> .masonry');
+		if (grid) {
+			var msnry = new Masonry(grid, {
+				itemSelector: '.media-item',
+				// columnWidth: '.media-item-sizer',
+				// gutter: 34
+			});
+		}
+	})();
+</script>
